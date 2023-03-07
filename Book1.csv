@@ -1,0 +1,94 @@
+﻿0,Scientific name,Common name,IUCN Red List (2007) Category,IUCN Red List (2008) Category,IUCN Red List (2009) Category,Reason for change,Data collection date,Kingdom
+1,Abrothrix illutea,Gray Akodont,NT,LC,LC,N,2016-3,Mammal
+2,Acerodon celebensis,Sulawesi Fruit Bat,LC,VU,EN,N,2016-2,Reptile
+3,Ailuropoda melanoleuca,Giant Panda,EN,VU,NT,G,2016-2,Reptile
+4,Anoura cultrata,Handley's Tailless Bat,NT,LC,LC,N,2016-2,Reptile
+5,Antechinus bellus,Fawn Antechinus,LC,VU,EN,G,2016-2,Mammal
+6,Apodemus gurkha,Nepalese Field Mouse,EN,LC,NT,N,2016-3,Mammal
+7,Arctonyx collaris,Greater Hog Badger,NT,VU,EN,N,2016-1,Mammal
+8,Brachytarsomys villosa,Hairy-tailed Tree Rat,EN,VU,VU,N,2016-3,Mammal
+9,Callosciurus adamsi,Ear-spot Squirrel,VU,NT,NT,N,2016-2,Amphibian
+10,Cephalophus dorsalis,Bay Duiker,LC,NT,NT,G,2016-1,Amphibian
+11,Cephalophus leucogaster,White-bellied Duiker,LC,NT,NT,G,2016-1,Mammal
+12,Cephalophus silvicultor,Yellow-backed Duiker,LC,NT,EN,G,2016-1,Amphibian
+13,Cercocebus atys,Sooty Mangabey,VU,NT,EN,N,2016-1,Amphibian
+14,Chacodelphys formosa,,VU,NT,EN,N,2016-3,Amphibian
+15,Chinchilla chinchilla,Short-tailed Chinchilla,CR,EN,VU,N,2016-2,Mammal
+16,Chinchilla lanigera,Long-tailed Chinchilla,CR,EN,EN,N,2016-2,Mammal
+17,Chiroderma improvisum,Guadeloupean Big-eared Bat,VU,EN,VU,N,2016-1,Reptile
+18,Chiropodomys karlkoopmani,Koopman's Pencil-tailed Tree Mouse,EN,VU,LC,N,2016-3,Reptile
+19,Chrotogale owstoni,Owston's Civet,VU,EN,LC,N,2016-1,Reptile
+20,Conilurus penicillatus,Brush-tailed Rabbit-rat,NT,VU,LC,G,2016-1,Mammal
+21,Crocidura baileyi,Bailey's Shrew,EN,LC,VU,N,2016-3,Mammal
+22,Crocidura baluensis,Kinabalu Shrew,VU,LC,VU,N,2016-3,Mammal
+23,Crocidura fumosa,Smoky White-toothed Shrew,VU,LC,EN,N,2016-3,Mammal
+24,Crocidura glassi,Glass's Shrew,VU,NT,VU,N,2016-3,Amphibian
+25,Crocidura kivuana,Kivu Shrew,VU,NT,LC,N,2016-3,Amphibian
+26,Crocidura lanosa,Lemara Shrew,EN,VU,NT,N,2016-3,Amphibian
+27,Crocidura macmillani,Macmillan's Shrew,VU,NT,LC,N,2016-3,Mammal
+28,Crocidura orientalis,Oriental Shrew,VU,LC,VU,N,2016-3,Amphibian
+29,Crocidura telfordi,Telford's Shrew,EN,VU,CR,N,2016-3,Amphibian
+30,Cryptotis obscura,Grizzled Mexican Small-eared Shrew,VU,LC,CR,N,2016-3,Amphibian
+31,Dasycercus cristicauda,Crest-tailed Mulgara,LC,NT,VU,N,2016-1,Mammal
+32,Dasyurus viverrinus,Eastern Quoll,NT,EN,EN,G,2016-1,Reptile
+33,Dendrolagus lumholtzi,Lumholtz's Tree Kangaroo,LC,NT,VU,N,2016-1,Reptile
+34,Dendrolagus spadix,Lowlands Tree Kangaroo,LC,VU,NT,G,2016-2,Mammal
+35,Dendromus oreas,Cameroon Climbing Mouse,VU,LC,NT,N,2016-3,Mammal
+36,Desmana moschata,Russian Desman,VU,EN,EN,G,2016-2,Mammal
+37,Desmomys yaldeni,Yalden's Desmomys,EN,VU,EN,N,2016-3,Mammal
+38,Eliurus petteri,Petter's Tuft-tailed Rat,VU,EN,EN,N,2016-3,Amphibian
+,,,,,,,,
+40,Eptesicus guadeloupensis,Guadeloupe Big Brown Bat,VU,EN,EN,N,2016-1,Amphibian
+41,Equus quagga,Plains Zebra,LC,NT,VU,G,2016-2,Mammal
+42,Eumops floridanus,Florida Bonneted Bat,CR,VU,LC,N,2016-1,Amphibian
+43,Eupleres goudotii,Eastern Falanouc,EN,VU,LC,G,2016-1,Amphibian
+44,Felis margarita,Sand Cat,NT,LC,EN,N,2016-2,Amphibian
+45,Galidictis fasciata,Broad-striped Vontsira,NT,VU,VU,G,2016-1,Mammal
+46,Gazella cuvieri,Cuvier's Gazelle,EN,VU,LC,N,2016-2,Amphibian
+47,Genetta johnstoni,Johnston's Genet,VU,NT,NT,N,2016-1,Amphibian
+48,Giraffa camelopardalis,Giraffe,LC,VU,LC,G,2016-3,Mammal
+49,Gorilla beringei,Eastern Gorilla,EN,CR,LC,G,2016-2,Mammal
+50,Gracilinanus dryas,Wood Sprite Gracile Mouse Opossum,NT,LC,VU,N,2016-1,Reptile
+51,Gymnobelideus leadbeateri,Leadbeater's Possum,EN,CR,VU,G,2016-1,Mammal
+52,Herpestes brachyurus,Short-tailed Mongoose,LC,NT,EN,N,2016-1,Mammal
+53,Hipposideros durgadasi,Durga Das's Leaf-nosed Bat,EN,VU,VU,N,2016-2,Amphibian
+54,Hipposideros halophyllus,Thailand Leaf-nosed Bat,EN,VU,LC,N,2016-2,Amphibian
+55,Hipposideros hypophyllus,Kolar Leaf-nosed Bat,EN,CR,NT,G,2016-2,Amphibian
+56,Hipposideros orbiculus,Orbiculus Leaf-nosed Bat,EN,VU,EN,N,2016-2,Mammal
+57,Lagostrophus fasciatus,Banded Hare Wallaby,EN,VU,NT,N,2016-1,Amphibian
+58,Laonastes aenigmamus,Kha-nyou,EN,LC,VU,N,2016-2,Amphibian
+59,Lasiorhinus latifrons,Southern Hairy-nosed Wombat,LC,NT,LC,N,2016-1,Amphibian
+60,Leopoldamys siporanus,Mentawai Archipelago Leopoldamys,EN,VU,EN,N,2016-2,Mammal
+61,Leporillus apicalis,Lesser Stick-nest Rat,CR,EX,VU,N,2016-1,Amphibian
+62,Leporillus conditor,Greater Stick-nest Rat,VU,NT,EN,G,2016-2,Amphibian
+63,Leptonycteris yerbabuenae,Lesser Long-nosed Bat,VU,NT,VU,N,2016-1,Mammal
+64,Lepus hainanus,Hainan Hare,VU,EN,VU,N,2016-3,Mammal
+65,Lonchophylla concava,,NT,LC,EN,N,2016-2,Reptile
+66,Lonchophylla dekeyseri,Dekeyser's Nectar Bat,NT,EN,VU,N,2016-2,Amphibian
+67,Lonchophylla mordax,Goldman's Nectar Bat,LC,NT,VU,N,2016-3,Mammal
+68,Lonchorhina marinkellei,Marinkelle's Sword-nosed Bat,EN,VU,EN,N,2016-2,Amphibian
+69,Lophuromys eisentrauti,,EN,CR,VU,N,2016-3,Amphibian
+70,Lophuromys rahmi,Rahm's Brush-furred Rat,EN,NT,LC,N,2016-3,Amphibian
+71,Lycalopex fulvipes,Darwin's Fox,CR,EN,NT,N,2016-1,Mammal
+72,Mastomys awashensis,Awash Multimammate Mouse,VU,LC,CR,N,2016-3,Mammal
+73,Maxomys pagensis,Mentawai Archipelago Maxomys,EN,VU,NT,N,2016-3,Reptile
+74,Melomys rubicola,Bramble Cay Melomys,CR,EX,VU,G,2016-2,Reptile
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
