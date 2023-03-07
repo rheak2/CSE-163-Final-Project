@@ -1,11 +1,22 @@
 '''
-docstring
+Giulia Clini, Elizabeth Karas, and Rhea Kulkarni
+CSE 163 Final Project
+This file reads a hardcoded txt file storing the World
+Animal Protection index for each country in the database
+and produces a pandas DataFrame with both values plus a
+hardcoded numerical ranking for 1 to 7.
 '''
 
 import pandas as pd
 
 
-def process_data(file_name: str) -> pd.DataFrame:
+def process_data(file_path: str) -> pd.DataFrame:
+    '''
+    Given the path of the file as a string, returns a DataFrame
+    storing each country in the World Animal Protection Index
+    dataset, it's (letter) ranking, and a numerical index from
+    1 to 7, with 1 corresponding to ranking 'A' and 7 to 'G'.
+    '''
     conservation_df: pd.DataFrame = pd.DataFrame(columns=('Country', 'Letter Index', 'Num Index'))
     letter_num_index: dict[str, int] = {'A': 1, 'B': 2, 'C': 3, 'D': 4, 'E': 5, 'F': 6, 'G': 7}
     with open(file_name) as f:
