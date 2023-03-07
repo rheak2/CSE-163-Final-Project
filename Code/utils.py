@@ -1,8 +1,6 @@
 import pandas as pd
 import geopandas as pgd
-import seaborn as sns
-sns.set()
-import matplotlib.pyplot as plt
+
 
 def extinction_level_numerical(year: str, df: pd.DataFrame) -> pd.DataFrame:
     """
@@ -20,7 +18,8 @@ def extinction_level_numerical(year: str, df: pd.DataFrame) -> pd.DataFrame:
         numerical_list.append(extinction_category_dict[species])
     return numerical_list
 
-def species_threat_level_change_between_years(lower_year: int, upper_year: int, df: pd.DataFrame):
+
+def tl_change_between_two_yrs(lower_year: int, upper_year: int, df: pd.DataFrame):
     """
     This method takes as argument any two consecutive years and a dataframe and adds a column
     to that dataframe showing the change in extinction threat level between those two years for
@@ -29,10 +28,28 @@ def species_threat_level_change_between_years(lower_year: int, upper_year: int, 
     year_range_string = str(lower_year) + "-" + str(upper_year)
     lower_year_column = "List (" + str(lower_year) + ")"
     upper_year_column = "List (" + str(upper_year) + ")"
-    for species in df:
-        df.loc[:, "Average Species Threat Level Change " + year_range_string] = (df.loc[:, upper_year_column] - 
-                                                                         df.loc[:, lower_year_column])
+    df.loc[:, "Average Species Threat Level Change " + year_range_string] =
+          (df.loc[:, upper_year_column] - df.loc[:, lower_year_column])
     return df
+
+
+def tl_change_between_multiple_yrs(lower_year: int, upper_year: int, df: pd.DataFrame):
+    """
+    This method takes as argument any range of years and a dataframe and adds columns
+    to that dataframe showing the change in extinction threat level between consecutive years for
+    all the species in the dataframe.
+    """
+    for year in range(lower_year, upper_year):
+        df = tl_change_between_two_yrs(year, year + 1, df)
+    return df
+
+
+def avg_tl_change_multiple_years(lower_year: int, upper_year: int, data:pd.DataFrame) -> pd.DataFrame:
+    data = tl_change_between_multiple_yrs(lower_year, upper_year, data)
+    col_lst = data.columns()
+    df['Average TL Change Over Time'] = df[col_lst].mean(axis=1)
+    return df
+
 
 def process_conservation_data(file_path: str) -> pd.DataFrame:
     '''
