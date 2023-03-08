@@ -36,6 +36,48 @@ CLASSES_2 = ['MAMMALS (Mammalia)', 'BIRDS (Aves)', 'REPTILES (Reptilia)',
              'MILLIPEDES (Diplopoda)', 'FUNGI (Mushrooms and Lichens)']
 
 
+def process_merge_loc_data(dataframe):
+    print('running process loc data')
+    # clean up data to match other data
+    filename = os.path.join(DIRECTORY, 'msw3-all.pdf')
+    loc = pd.DataFrame()
+    df_1 = pd.DataFrame()
+    df_2 = pd.DataFrame()
+    for i in range(1, 107):
+        hold_df = pd.DataFrame()
+        print('running 1' + str(i))
+        curr_table = cm.read_pdf(filename, flavor='stream',
+                                 pages=str(i))
+        hold_df = curr_table[0].df
+        df_1 = df_1.append(hold_df, ignore_index=True)
+    for i in range(107, 213):
+        hold_df = pd.DataFrame()
+        print('running 2' + str(i))
+        curr_table = cm.read_pdf(filename, flavor='stream',
+                                 pages=str(i),
+                                 columns=['358, 882, 965, 1389'])
+        hold_df = curr_table[0].df
+        df_2 = df_2.append(hold_df, ignore_index=True)
+    print('done with loops')
+    # drop the extra info on top, make row 1 the column names
+    df_1.columns = df_1.iloc[0]
+    # drop column names from data
+    df_1 = df_1.drop([0])
+    print(df_1)
+    # make row 1 the column names
+    df_2.columns = df_2.iloc[0]
+    # drop column names from data
+    df_2 = df_2.drop([0])
+    print(df_2)
+    loc = pd.merge(df_1, df_2,
+                   on=['ID'], how='left')
+    loc['Scientific name'] = loc['Genus'] + ' ' + loc['Species']
+    loc = loc[['Scientific name', 'CommonName', 'TypeLocality']]
+    loc = loc.rename(columns={'CommonName': 'Common name'})
+    merged = pd.merge(dataframe, loc, how='left')
+    return merged
+
+
 def process_big_data(directory_name: str) -> pd.DataFrame:
     """
     Not complete docstring
@@ -46,6 +88,7 @@ def process_big_data(directory_name: str) -> pd.DataFrame:
     merged_df = pd.DataFrame(columns=['Scientific name'])
     # go through each file in the folder
     for pdf_name in os.listdir(directory_name):
+        filename = os.path.join(directory_name, pdf_name)
         # if the file is the right pdf
         if (pdf_name[-4:] == '.pdf') and (pdf_name != 'msw3-all.pdf'):
             yr = int(pdf_name[0:4])
@@ -56,19 +99,19 @@ def process_big_data(directory_name: str) -> pd.DataFrame:
                 hold_df = pd.DataFrame()
                 try:
                     if yr == 2008 and i == 1:
-                        curr_table = cm.read_pdf(pdf_name,
+                        curr_table = cm.read_pdf(filename,
                                                  flavor='stream',
                                                  pages=str(i),
                                                  table_areas=['0,790,1000,0'])
                         hold_df = curr_table[0].df
                     elif yr == 2009 and i == 1:
-                        curr_table = cm.read_pdf(pdf_name,
+                        curr_table = cm.read_pdf(filename,
                                                  flavor='stream',
                                                  pages=str(i),
                                                  table_areas=['0,910,1000,0'])
                         hold_df = curr_table[0].df
                     else:
-                        curr_table = cm.read_pdf(pdf_name,
+                        curr_table = cm.read_pdf(filename,
                                                  flavor='stream',
                                                  pages=str(i))
                         hold_df = curr_table[0].df
@@ -165,10 +208,10 @@ def process_big_data(directory_name: str) -> pd.DataFrame:
             if yr != 2008:
                 fin_df = fin_df.drop(columns=['Reason for change'])
             merged_df = pd.merge(merged_df, fin_df, how='outer')
-            # print(merged_df.columns)
-            # print(merged_df)
-    return(merged_df)
-    # to save as a CSV, uncomment code below, comment out return
+    big_df = process_merge_loc_data(merged_df)
+    print(big_df)
+    return(big_df)
+    # to save as CSV, uncomment code below, comment out return
     # if pdf_name != 'msw3-all.pdf':
     #     print(pdf_name)
     #     fin_df.to_csv(pdf_name + '.csv')
