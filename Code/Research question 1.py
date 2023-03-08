@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set()
-from utils import extinction_level_numerical, species_threat_level_change_between_years
+from utils import extinction_level_numerical, avg_tl_change_multiple_years
 
 """
 List of variables/strings that need to be changed when data processing complete:
@@ -36,8 +36,7 @@ def main():
 
     # Find average threat level change by year for each species
     
-    for year in range(2007, 2009):
-        species_threat_level_change_between_years(year, year + 1, mini_df)
+    species_threat_level_data = avg_tl_change_multiple_years(2007, 2009, mini_df)
         
     # Ask Rhea if I can take this out
     species_threat_level_change_df = mini_df[["Common name", "Class", "Average Species Threat Level Change 2007-2008",
