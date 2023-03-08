@@ -28,7 +28,7 @@ def tl_change_between_two_yrs(lower_year: int, upper_year: int, df: pd.DataFrame
     year_range_string = str(lower_year) + "-" + str(upper_year)
     lower_year_column = "List (" + str(lower_year) + ")"
     upper_year_column = "List (" + str(upper_year) + ")"
-    df.loc[:, "Average Species Threat Level Change " + year_range_string] =
+    df.loc[:, "Species Threat Level Change " + year_range_string] = \
           (df.loc[:, upper_year_column] - df.loc[:, lower_year_column])
     return df
 
@@ -45,10 +45,12 @@ def tl_change_between_multiple_yrs(lower_year: int, upper_year: int, df: pd.Data
 
 
 def avg_tl_change_multiple_years(lower_year: int, upper_year: int, data:pd.DataFrame) -> pd.DataFrame:
-    data = tl_change_between_multiple_yrs(lower_year, upper_year, data)
-    col_lst = data.columns()
-    df['Average TL Change Over Time'] = df[col_lst].mean(axis=1)
-    return df
+    df = tl_change_between_multiple_yrs(lower_year, upper_year, data)
+    year_range_length = upper_year - lower_year
+    # Find mean of the threat level changes between all years and add this as a column
+    # to the dataframe
+    data['Average TL Change Over Time'] = df.iloc[:, year_range_length + 3:].mean(axis=1)
+    return data
 
 
 def process_conservation_data(file_path: str) -> pd.DataFrame:
