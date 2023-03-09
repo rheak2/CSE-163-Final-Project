@@ -3,6 +3,11 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set()
 from utils import extinction_level_numerical, avg_tl_change_multiple_years, csv_processing, species_threat_level_data_processing
+# import sys
+#     # caution: path[0] is reserved for script path (or '' in REPL)
+# sys.path.insert(1, '/CSE-163-Final-Project/process_table_7.py')
+# from process_table_7 
+from process_table_7 import process_big_data
 
 """
 List of variables/strings that need to be changed when data processing complete:
@@ -37,7 +42,7 @@ def main():
         
     # species_threat_level_data = avg_tl_change_multiple_years(2007, 2009, mini_df)
     # print(species_threat_level_data)
-
+    csv_file = 
     mini_df = csv_processing("Code/Book1.csv")
     species_threat_level_data = species_threat_level_data_processing(mini_df)
 
