@@ -5,7 +5,7 @@ import numpy as np
 from operator import itemgetter
 
 
-DIRECTORY = '/Users/elizabethkaras/Desktop/Table_7_2007-2021'
+DIRECTORY = 'Table 7. Loc Data'
 
 CLASSES_1 = ['INVERTEBRATES', 'REPTILES', 'BIRDS', 'PLANTS',
              'FUNGI', 'FISHES', 'ORCHIDS', 'LEGUMES', 'AMPHIBIANS',
@@ -36,46 +36,59 @@ CLASSES_2 = ['MAMMALS (Mammalia)', 'BIRDS (Aves)', 'REPTILES (Reptilia)',
              'MILLIPEDES (Diplopoda)', 'FUNGI (Mushrooms and Lichens)']
 
 
-def process_merge_loc_data(dataframe):
+def process_loc_data(directory_name: str):
     print('running process loc data')
     # clean up data to match other data
-    filename = os.path.join(DIRECTORY, 'msw3-all.pdf')
+    filename = os.path.join(directory_name, 'msw3-all.pdf')
     loc = pd.DataFrame()
     df_1 = pd.DataFrame()
     df_2 = pd.DataFrame()
-    for i in range(1, 107):
+    for i in range(1, 3):
         hold_df = pd.DataFrame()
         print('running 1' + str(i))
         curr_table = cm.read_pdf(filename, flavor='stream',
-                                 pages=str(i))
+                                 pages=str(i),
+                                 table_area=['0, 100, 100, 0'])
+        print('done')
         hold_df = curr_table[0].df
         df_1 = df_1.append(hold_df, ignore_index=True)
-    for i in range(107, 213):
-        hold_df = pd.DataFrame()
-        print('running 2' + str(i))
-        curr_table = cm.read_pdf(filename, flavor='stream',
-                                 pages=str(i),
-                                 columns=['358, 882, 965, 1389'])
-        hold_df = curr_table[0].df
-        df_2 = df_2.append(hold_df, ignore_index=True)
-    print('done with loops')
-    # drop the extra info on top, make row 1 the column names
+    # for i in range(107, 109):
+    #     hold_df = pd.DataFrame()
+    #     print('running 2' + str(i))
+    #     curr_table = cm.read_pdf(filename, flavor='stream',
+    #                              pages=str(i),
+    #                              columns=['358, 882, 965, 1389'])
+    #     hold_df = curr_table[0].df
+    #     df_2 = df_2.append(hold_df, ignore_index=True)
+    # print('done with loops')
+    # # drop the extra info on top, make row 1 the column names
     df_1.columns = df_1.iloc[0]
-    # drop column names from data
+    # # drop column names from data
     df_1 = df_1.drop([0])
+    # # make row 1 the column names
+    # df_2.columns = df_2.iloc[0]
+    # # drop column names from data
+    # df_2 = df_2.drop([0])
+    print(df_1.columns)
+    # print(df_2.columns)
+    print('df 1')
     print(df_1)
-    # make row 1 the column names
-    df_2.columns = df_2.iloc[0]
-    # drop column names from data
-    df_2 = df_2.drop([0])
-    print(df_2)
-    loc = pd.merge(df_1, df_2,
-                   on=['ID'], how='left')
-    loc['Scientific name'] = loc['Genus'] + ' ' + loc['Species']
-    loc = loc[['Scientific name', 'CommonName', 'TypeLocality']]
-    loc = loc.rename(columns={'CommonName': 'Common name'})
-    merged = pd.merge(dataframe, loc, how='left')
-    return merged
+    # print(df_1['Genus'])
+    # print(df_1['Extinct?'])
+    # df_1 = df_1[['Genus', 'Species', 'ID']]
+    # print('df 1')
+    # print(df_1)
+    # loc = pd.merge(df_1, df_2,
+    #                on=['ID'], how='left')
+    # loc['Scientific name'] = loc['Genus'] + ' ' + loc['Species']
+    # loc = loc[['Scientific name', 'CommonName', 'TypeLocality']]
+    # print()
+    # print(loc['Scientific name'])
+    # print()
+    # print(loc['TypeLocality'])
+    # loc = loc.rename(columns={'CommonName': 'Common name'})
+    # print(loc['Common name'])
+    # loc.to_csv('mammal_location_2.csv')
 
 
 def process_big_data(directory_name: str) -> pd.DataFrame:
@@ -208,10 +221,12 @@ def process_big_data(directory_name: str) -> pd.DataFrame:
             if yr != 2008:
                 fin_df = fin_df.drop(columns=['Reason for change'])
             merged_df = pd.merge(merged_df, fin_df, how='outer')
-    big_df = process_merge_loc_data(merged_df)
-    print(big_df)
-    return(big_df)
+    return(merged_df)
     # to save as CSV, uncomment code below, comment out return
     # if pdf_name != 'msw3-all.pdf':
     #     print(pdf_name)
     #     fin_df.to_csv(pdf_name + '.csv')
+
+
+process_loc_data(DIRECTORY)
+# process_big_data(DIRECTORY)
