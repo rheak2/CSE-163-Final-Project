@@ -38,7 +38,7 @@ def main():
     # species_threat_level_data = avg_tl_change_multiple_years(2007, 2009, mini_df)
     # print(species_threat_level_data)
 
-    mini_df = csv_processing("Book1.csv")
+    mini_df = csv_processing("Code/Book1.csv")
     species_threat_level_data = species_threat_level_data_processing(mini_df)
 
     # Find species with top 5 average threat level change 2007-2021
