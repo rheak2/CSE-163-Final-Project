@@ -5,8 +5,6 @@ import numpy as np
 from operator import itemgetter
 
 
-DIRECTORY = 'Table 7. Loc Data'
-
 CLASSES_1 = ['INVERTEBRATES', 'REPTILES', 'BIRDS', 'PLANTS',
              'FUNGI', 'FISHES', 'ORCHIDS', 'LEGUMES', 'AMPHIBIANS',
              'MOLLUSCS', 'CORALS', 'CRUSTACEANS', 'GRASSHOPPERS & CRICKETS'
@@ -36,10 +34,10 @@ CLASSES_2 = ['MAMMALS (Mammalia)', 'BIRDS (Aves)', 'REPTILES (Reptilia)',
              'MILLIPEDES (Diplopoda)', 'FUNGI (Mushrooms and Lichens)']
 
 
-def process_loc_data(directory_name: str):
+def process_loc_data():
     print('running process loc data')
     # clean up data to match other data
-    filename = os.path.join(directory_name, 'msw3-all.pdf')
+    filename = os.path.join('Table 7. Loc Data', 'msw3-all.pdf')
     loc = pd.DataFrame()
     df_1 = pd.DataFrame()
     df_2 = pd.DataFrame()
@@ -92,7 +90,7 @@ def process_loc_data(directory_name: str):
     # loc.to_csv('mammal_location_2.csv')
 
 
-def process_big_data(directory_name: str) -> pd.DataFrame:
+def process_big_data() -> pd.DataFrame:
     """
     Not complete docstring
     lots of if statements because the files are all read differently by
@@ -101,8 +99,8 @@ def process_big_data(directory_name: str) -> pd.DataFrame:
     print('running process big data')
     merged_df = pd.DataFrame(columns=['Scientific name'])
     # go through each file in the folder
-    for pdf_name in os.listdir(directory_name):
-        filename = os.path.join(directory_name, pdf_name)
+    for pdf_name in os.listdir('Table 7. Loc Data'):
+        filename = os.path.join('Table 7. Loc Data', pdf_name)
         # if the file is the right pdf
         if (pdf_name[-4:] == '.pdf') and (pdf_name != 'msw3-all.pdf'):
             yr = int(pdf_name[0:4])
@@ -229,5 +227,6 @@ def process_big_data(directory_name: str) -> pd.DataFrame:
     #     fin_df.to_csv(pdf_name + '.csv')
 
 
-process_loc_data(DIRECTORY)
-# process_big_data(DIRECTORY)
+# process_loc_data(DIRECTORY)
+data = process_big_data(DIRECTORY)
+print(data)
