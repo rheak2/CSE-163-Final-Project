@@ -2,6 +2,36 @@ import pandas as pd
 import geopandas as pgd
 
 
+def csv_processing(csv_filepath):
+    # Will probably not have to dropna once data is processed
+    df = pd.read_csv("Book1.csv")
+    df = df.dropna()
+    
+    # Create dataframe with numerical values for extinction threat level in given year range
+        # Create new dataframe including species name, class, average threat level
+    mini_df = df[["Common name", "Class", "List (2007)", "List (2008)", "List (2009)"]]
+    # mini_df = df[["Common name", "Class", "List (2007)", "List (2008)",
+    #               "List (2009)", "List (2010)", "List (2011)",
+    #               "List (2012)", "List (2013)", "List (2013)",
+    #               "List (2014)", "List (2015)", "List (2016)",
+    #               "List (2017)", "List (2018)", "List (2019)",
+    #               "List (2020)", "List (2021)"]]
+    for year in range(2007, 2010):
+        numerical_exinction_category = extinction_level_numerical(str(year), mini_df)
+        column_label = "List (" + str(year) + ")"
+        # Replace string extinction threat level with the numerical value
+        mini_df.loc[:, column_label] = numerical_exinction_category
+    
+    return mini_df
+
+def species_threat_level_data_processing(df):
+    # Find average threat level change by year for each species
+        
+    species_threat_level_data = avg_tl_change_multiple_years(2007, 2009, df)
+    return species_threat_level_data
+    
+
+
 def extinction_level_numerical(year: str, df: pd.DataFrame) -> pd.DataFrame:
     """
     This methods  takes as argument the year, and returns a DataFrame
