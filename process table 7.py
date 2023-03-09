@@ -52,6 +52,7 @@ def process_loc_data(directory_name: str):
         print('done')
         hold_df = curr_table[0].df
         df_1 = df_1.append(hold_df, ignore_index=True)
+    print(df_1)
     # for i in range(107, 109):
     #     hold_df = pd.DataFrame()
     #     print('running 2' + str(i))
