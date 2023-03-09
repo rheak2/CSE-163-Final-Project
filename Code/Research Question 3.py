@@ -5,8 +5,11 @@ docstring
 import utils
 import pandas as pd
 from sklearn.tree import DecisionTreeRegressor
-import species_data_processing_file
+from Species_Data_Processing.py import process_big_data
 from sklearn.model_selection import train_test_split
+from sklearn.metrics import mean_squared_error
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 sns.set()
 
@@ -15,10 +18,12 @@ def manipulate_data(data:pd.DataFrame) -> pd.DataFrame:
     data = utils.tl_change_between_multiple_yrs(2007, 2021, data)
     return data
 
-def train_and_test_model(data: pd.DataFrame) -> Any:
+
+def train_and_test_model(data: pd.DataFrame) -> pd.DataFrame:
 
     # Separate data into features and labels
-    features = data.loc[:, ['Common name', 'location']]
+    # features = data.loc[:, ['Common name', 'location']]
+    features = data.loc[:, ['Common name']]
     features = pd.get_dummies(features)
     labels = data['Average TL Change Over Time']
 
@@ -26,39 +31,46 @@ def train_and_test_model(data: pd.DataFrame) -> Any:
     features_train, features_test, labels_train, labels_test = train_test_split(features, labels, test_size=0.2)
 
     # Create an untrained model
-    model = DecisionTreeClassifier()
+    model = DecisionTreeRegressor()
 
     # Train it on the **training set**
     model.fit(features_train, labels_train)
 
     # Compute training accuracy
     train_predictions = model.predict(features_train)
-    train_accuracy = accuracy_score(labels_train, train_predictions)
+    train_error = mean_squared_error(labels_train, train_predictions)
 
     # Compute test accuracy
     test_predictions = model.predict(features_test)
-    test_accuracy = accuracy_score(labels_test, test_predictions)
+    test_error = mean_squared_error(labels_test, test_predictions)
 
-    output = [train_predictions, train_accuracy, test_predictions, test_accuracy]
+    data['Train Predictions'] = pd.Series(train_predictions)
+    data['Test Predictions'] = pd.Series(test_predictions)
 
-def plot_change_over_time(model_output: list[Any]):
+    return data
+
+
+def plot_change_over_time(df: pd.DataFrame):
     '''
     given the training predictions, plot the change as a line plot between 2021-2035.
     '''
-    sns.relplot(data=class_threat_level_by_year_df.T, kind="line")
+    avg_pred_train_by_type = df.groupby('Class')['Train Predictions'].mean()
+    avg_pred_test_by_type = df.groupby('Class')['Test Predictions'].mean()
+    avg_start_tl_by_type = df.groupby('Class')('IUCN Red List (2007) Category').mean()
+    test_and_train_df = avg_pred_train_by_type.merge(avg_pred_test_by_type, left_on='Class', right_on='Class')
+    pred_and_tl_df = test_and_train_df.merge(avg_start_tl_by_type, left_on='Class', right_on='Class')
+    pred_and_tl_df.loc[:, 'Predicted TL 2035 Category'] = pred_and_tl_df.loc[:, 'IUCN Red List (2007) Category'] - 2 * pred_and_tl_df.loc[:, 'IUCN Red List (2007) Category']
+    
+    sns.relplot(data=pred_and_tl_df, x='')
     plt.title("Class Exctinction Threat Levels 2021-2035")
     plt.xlabel("Year")
     plt.ylabel("Threat Level")
     plt.savefig("Threat Levels by Class 2021-2035.png", bbox_inches="tight")
 
 
+def do_question_3():
+    csv_file = process_big_data('/Users/elizabethkaras/Desktop/Table_7_2007-2021')
 
-def main():
-    df = species_data_df
     df = manipulate_data(df)
-
-
-
-
-if __name__ == "__main__":
-   main()
+    output = train_and_test_model(df)
+    plot_change_over_time(output)
