@@ -99,8 +99,8 @@ def process_big_data() -> pd.DataFrame:
     print('running process big data')
     merged_df = pd.DataFrame(columns=['Scientific name'])
     # go through each file in the folder
-    for pdf_name in os.listdir('Table 7. Loc Data'):
-        filename = os.path.join('Table 7. Loc Data', pdf_name)
+    for pdf_name in os.listdir('Table_7_Loc_Data'):
+        filename = os.path.join('Table_7_Loc_Data', pdf_name)
         # if the file is the right pdf
         if (pdf_name[-4:] == '.pdf') and (pdf_name != 'msw3-all.pdf'):
             yr = int(pdf_name[0:4])
@@ -228,5 +228,5 @@ def process_big_data() -> pd.DataFrame:
 
 
 # process_loc_data(DIRECTORY)
-data = process_big_data(DIRECTORY)
+data = process_big_data()
 print(data)

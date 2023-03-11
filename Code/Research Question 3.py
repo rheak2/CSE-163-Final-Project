@@ -5,7 +5,7 @@ docstring
 import utils
 import pandas as pd
 from sklearn.tree import DecisionTreeRegressor
-from Species_Data_Processing.py import process_big_data
+from process_table_7.py import process_big_data
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
 import seaborn as sns
@@ -47,30 +47,36 @@ def train_and_test_model(data: pd.DataFrame) -> pd.DataFrame:
     data['Train Predictions'] = pd.Series(train_predictions)
     data['Test Predictions'] = pd.Series(test_predictions)
 
+    print("The MSE between the train predictions and the true values is ", train_error)
+    print("The MSE between the test predictions and the true values is ", test_error)
+
     return data
 
 
-def plot_change_over_time(df: pd.DataFrame):
+def plot_change_over_time(df: pd.DataFrame) -> None:
     '''
     given the training predictions, plot the change as a line plot between 2021-2035.
     '''
     avg_pred_train_by_type = df.groupby('Class')['Train Predictions'].mean()
     avg_pred_test_by_type = df.groupby('Class')['Test Predictions'].mean()
-    avg_start_tl_by_type = df.groupby('Class')('IUCN Red List (2007) Category').mean()
-    test_and_train_df = avg_pred_train_by_type.merge(avg_pred_test_by_type, left_on='Class', right_on='Class')
-    pred_and_tl_df = test_and_train_df.merge(avg_start_tl_by_type, left_on='Class', right_on='Class')
-    pred_and_tl_df.loc[:, 'Predicted TL 2035 Category'] = pred_and_tl_df.loc[:, 'IUCN Red List (2007) Category'] - 2 * pred_and_tl_df.loc[:, 'IUCN Red List (2007) Category']
-    
-    sns.relplot(data=pred_and_tl_df, x='')
-    plt.title("Class Exctinction Threat Levels 2021-2035")
-    plt.xlabel("Year")
-    plt.ylabel("Threat Level")
-    plt.savefig("Threat Levels by Class 2021-2035.png", bbox_inches="tight")
+    plot_predictions(avg_pred_train_by_type, 'Average Change Over Time By Class Based on Training Predictions', 'Avg Change in TL by Class (train)')
+    plot_predictions(avg_pred_test_by_type, 'Average Change Over Time By Class Based on Training Predictions', 'Avg Change in TL by Class (test)')
+
+
+
+def plot_predictions(data_df: pd.DataFrame, graph_title: str, img_title: str) -> None:
+    '''
+    ...
+    '''
+    sns.catplot(data=data_df, x='Class', y='Train Predictions')
+    plt.title(graph_title)
+    plt.xlabel("Class")
+    plt.ylabel("Average Change in Threat Level")
+    plt.savefig(img_title, bbox_inches="tight")
 
 
 def do_question_3():
-    csv_file = process_big_data('/Users/elizabethkaras/Desktop/Table_7_2007-2021')
-
+    df = process_big_data('Table_7_Loc_Data')
     df = manipulate_data(df)
-    output = train_and_test_model(df)
-    plot_change_over_time(output)
+    df_with_predictions = train_and_test_model(df)
+    plot_change_over_time(df_with_predictions)
