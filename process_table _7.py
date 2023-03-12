@@ -40,6 +40,7 @@ def first_loc(place):
     """
     if place != np.nan:
         place = place.split(',')
+        place[0] = place[0].strip('"')
         return(place[0])
 
 
@@ -61,12 +62,13 @@ def fill_in_threat(df):
         year = int(col[6:10])
         prev_yr = year - 1
         df[col] = update_threat(df, prev_yr, year)
+    return df
 
 
 def process_loc_data():
     print('running process loc data')
     # clean up data to match other data
-    filename = os.path.join('Table_7_Loc_Data', 'msw3-all.pdf')
+    filename = os.path.join('Table_7_Loc_Data', 'msw3-all-2.pdf')
     # loc = pd.DataFrame()
     # next_pages = pd.DataFrame()
     df_2 = pd.DataFrame()
@@ -84,14 +86,13 @@ def process_loc_data():
     #     hold_df = curr_table[0].df
     #     next_pages = next_pages.append(hold_df, ignore_index=True)
     # print(next_pages)
-    # df_1 = df_1.append(next_pages)
-    for i in range(107, 108):
+    for i in range(107, 120):
         hold_df = pd.DataFrame()
         print('running 2 ' + str(i))
         curr_table = cm.read_pdf(filename, flavor='stream',
                                  pages=str(i),
-                                 table_areas=['810, 2900, 2000, 300'])
-                                #  columns=['900, 940, 1360'])
+                                 table_areas=['810, 2900, 2000, 300'],
+                                 columns=['900, 1036, 1747'])
         hold_df = curr_table[0].df
         df_2 = df_2.append(hold_df, ignore_index=True)
     print('done with loops')
@@ -110,14 +111,15 @@ def process_loc_data():
     df_2.columns = df_2.iloc[0]
     # drop column names from data
     df_2 = df_2.drop([0])
+    print(df_2.columns)
     df_2['Location'] = df_2['TypeLocality'].apply(first_loc)
     df_2 = df_2[['ID', 'CommonName', 'Location']]
-    print(df_2)
+    print(df_2.loc[203:205])
     # print(df_2['CommonName'])
     # print('df 1')
     # print(df_1)
-    # loc = pd.merge(df_1, df_2,
-    #                on=['ID'], how='outer')
+    # loc = pd.merge(pd.merge(df_1, df_2, on=['ID'], how='outer'),
+    #                next_pages, on = ['ID'], how='outer')
     # loc['Scientific name'] = loc['Genus'] + ' ' + loc['Species']
     # loc = loc[['Scientific name', 'CommonName', 'Location']]
     # print(loc.columns)
@@ -258,59 +260,72 @@ def process_big_data() -> pd.DataFrame:
             if yr != 2008:
                 fin_df = fin_df.drop(columns=['Reason for change'])
             merged_df = pd.merge(merged_df, fin_df, how='outer')
-    merged_df = merged_df.apply(fill_in_threat())
+    # merged_df = merged_df.apply(fill_in_threat())
     merged_df = merged_df[['Scientific name', 'Common name', 'Class',
                            'List (2007)', 'List (2008)', 'List (2009)',
                            'List (2010)', 'List (2011)', 'List (2012)',
                            'List (2013)', 'List (2014)', 'List (2015)',
                            'List (2016)', 'List (2017)', 'List (2018)',
                            'List (2019)', 'List (2020)', 'List (2021)']]
+    merged_df = merged_df.astype(str)
     merged_df = fill_in_threat(merged_df)
-    loc_data = pd.read_csv('location.csv')
-    merged_df = pd.merge(merged_df, loc_data, left_on='Scientific name',
-                         right_on='Scientific name', how='outer')
+    # loc_data = pd.read_csv('location.csv')
+    # merged_df = pd.merge(merged_df, loc_data, left_on='Scientific name',
+                        #  right_on='Scientific name', how='outer')
     # to save to csv for testing purposes
     merged_df.to_csv('final_combined_data')
     return(merged_df)
 
 
-<<<<<<< HEAD
-data = process_loc_data()
-# data = process_big_data()
-# data = pd.read_csv('checking part_2.csv')
-# print(data)
-# print(data['8'])
-# data = pd.read_csv('testing_red_list_processing.cvs')
-# print(data.columns)
+# EVERYTHING BELOW THIS LINE IS FOR TESTING PURPOSES
+# AND RUNNING CERTAIN FUNCTIONS FOR TESTING
+
+# def update_and_merge(df: pd.DataFrame): # add in , csv_file: str
+    # final_df = pd.DataFrame()
+    # csv = pd.read_csv(csv_file)
+    # df = df.astype(str)
+    # df = df.apply(fill_in_threat)
+    # final_df = pd.merge(df, csv, how='left')
+    # return df
 
 
-# modifying the data in each year to match the previous year
-# test_set = pd.read_csv('testing_red_list_processing.cvs')
-# test_set = test_set.astype(str)
-# test_set = test_set[['Scientific name', 'Common name', 'Class',
-#                      'List (2007)', 'List (2008)', 'List (2009)',
-#                      'List (2010)', 'List (2011)', 'List (2012)',
-#                      'List (2013)', 'List (2014)', 'List (2015)',
-#                      'List (2016)', 'List (2017)', 'List (2018)',
-#                      'List (2019)', 'List (2020)', 'List (2021)']]
-# fill_in_threat()
+# df = pd.read_csv('final_combined_data')
+# df = df.astype(str)
+# df = df[['Scientific name', 'Common name', 'Class',
+#                            'List (2007)', 'List (2008)', 'List (2009)',
+#                            'List (2010)', 'List (2011)', 'List (2012)',
+#                            'List (2013)', 'List (2014)', 'List (2015)',
+#                            'List (2016)', 'List (2017)', 'List (2018)',
+#                            'List (2019)', 'List (2020)', 'List (2021)']]
+
+# print(df)
+# df = fill_in_threat(df)
+# # df = df.apply(fill_in_threat(df))
+# print(df)
+
+# print(update_and_merge(df))
 
 
-# print(test_set)
-# print(test_set['List (2017)'])
-# year = 2017
-# # prev_yr = 'List (2016)'
-# prev_yr = 2016
-# print(test_set['List (2017)'])
-# test_set['List (2017)'] = test_set['List (2017)'].apply(update_threat(prev_yr, year))
-# test_set['List (2017)'] = test_set['List (2017)'].where(test_set['List (2017)'] != 'nan', test_set['List (2016)'])
-# print(test_set['List (2017)'])
+# test_df = pd.read_csv()
 
 
-# test_set['List (2017)'] = test_set['List (2017)'].replace('nan', test_set['List (2016)'], inplace=True)
-# print(test_set['List (2016)'])
-=======
-# process_loc_data(DIRECTORY)
-data = process_big_data()
-print(data)
->>>>>>> 62aa67d5a8838048d2ef68018b3064100d02be0d
+# if '\n' in word:
+#     word = word.split('\n')
+#     test_df['Common name'] = word[0]
+#     test_df['Location'] = word[1]
+#     return (data['Common name', 'Location'])
+
+# print(test_df['Common name'])
+# def split(word):
+#     if '\n' in word:
+#         word = word.split('\n')
+#         return (word[1])
+
+# def repl(df, cn, loc):
+#     # df[loc] = df[loc].where('\n' not in df[cn], df[cn][1].)
+#     new_loc = df[cn].apply(split)
+#     df[loc] = df[new_loc]
+#     return (df[cn, loc])
+
+# test_df = test_df.apply(repl(test_df, 'Common name', 'Location'))
+# print(test_df)
