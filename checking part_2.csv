@@ -1,129 +1,1719 @@
 ,ID,CommonName,Location
-1,,,
-2,,,
-3,,,
-4,,Short-beaked Echidna,Australia
-5,,,Australia
-6,,,
-7,,,
-8,,,
-9,,,
-10,,,
-11,,Sir David’s Long-beaked Echidna.,Indonesia
-12,,Eastern Long-beaked Echidna,Papua New Guinea
-13,,,Papua New Guinea
-14,,,
-15,,,
-16,,,
-17,,Western Long-beaked Echidna.,Indonesia
-18,,,
-19,,,
-20,,Platypus.,Australia
-21,,,
-22,,,
-23,,,
-24,,,
-25,,,
-26,,,
-27,,Derby’s Woolly Opossum,None given; restricted to Colombia
-28,,,None given; restricted to Colombia
-29,,,
-30,,,
-31,,,
-32,,,
-33,,,
-34,,Brown-eared Woolly Opossum,"""Paraguay;"" restricted to Caazapá"
-35,,,"""Paraguay;"" restricted to Caazapá"
-36,,,
-37,,,
-38,,,
-39,,,
-40,,,
-41,,Bare-tailed Woolly Opossum,"""America;"" restricted to Surinam (Thomas"
-42,,,"""America;"" restricted to Surinam (Thomas"
-43,,,
-44,,,
-45,,,
-46,,,
-47,,Black-shouldered Opossum,Perú
-48,,,
-49,,Bushy-tailed Opossum,Perú
-50,,,
-51,,,
-52,,Water Opossum,"""Gujana;"" restricted to Cayenne"
-53,,,"""Gujana;"" restricted to Cayenne"
-54,,,
-55,,,
-56,,,
-57,,,
-58,,White-eared Opossum,Brazil
-59,,Big-eared Opossum,Brazil
-60,,Guianan White-eared Opossum,Venezuela
-61,,Common Opossum,"""America;"" restricted to Surinam (Thomas"
-62,,,"""America;"" restricted to Surinam (Thomas"
-63,,,
-64,,Andean White-eared Opossum,Perú
-65,,Virginia Opossum,"""Virginia"
-66,,,"""Virginia"
-67,,,
-68,,,
-69,,,
-70,,,
-71,,Aceramarca Gracile Opossum,Bolivia
-72,,Agile Gracile Opossum,Brazil
-73,,Agricola’s Gracile Opossum,Brazil
-74,,Wood Sprite Gracile Opossum,Venezuela
-75,,Emilia’s Gracile Opossum,Brazil
-76,,Pygmy Opossum,Argentina
-77,,Red-bellied Gracile Opossum,Argentina
-78,,Northern Gracile Opossum,Venezuela
-79,,Brazilian Gracile Opossum,Brazil
-80,,,Brazil
-81,,,
-82,,,
-83,,Kalinowski’s Mouse Opossum,Perú
-84,,,
-85,,Patagonian Opossum,Argentina
-86,,,
-87,,Lutrine Opossum,Paraguay
-88,,,Paraguay
-89,,,
-90,,,
-91,,Heavy-browed Mouse Opossum,Perú
-92,,Rufous Mouse Opossum,"""Peruvian Amazons;"" identiﬁed as Perú"
-93,,Mexican Mouse Opossum,México
-94,,,México
-95,,,
-96,,,
-97,,Linnaeus’s Mouse Opossum,"""Asia"
-98,,Quechuan Mouse Opossum,"""Ocabamba"" identiﬁed as Valle de Occobamba by Ceballos Bendezu (1981)"
-99,,Robinson’s Mouse Opossum,Venezuela
-100,,,Venezuela
-101,,,
-102,,,
-103,,,
-104,,,
-105,,,
-106,,,
-107,,,
-108,,Red Mouse Opossum,Perú
-109,,Tyleria Mouse Opossum,Venezuela
-110,,Guajira Mouse Opossum,Colombia
-111,,,
-112,,Bishop’s Slender Opossum,"""264 km N (by road) Xavantina (locality is at 12°51'S"
-113,,"Narrow-headed Slender Opossum Venezuela, Falcón, ""near La Pastora (11°12'N, 68°37'W), 150 m, 14 km ENE Mirimire.""",
-114,,Dorothys’ Slender opossum,Bolivia
-115,,Dusky Slender Opossum,Venezuela
-116,,,Venezuela
-117,,,
-118,,,
-119,,Handley’s Slender Opossum,Colombia
-120,,Tschudi’s Slender Opossum,"""Der mittleren und tiefen Waldregion;"" interpreted by Cabrera (1958:16) as Perú"
-121,,Gray Slender Opossum,Brazil
-122,,Panama Slender Opossum,Panamá
-123,,Junin Slender Opossum,"""Utcuyacu. Between Tarma and Chanchamayo"
-124,,Neblina Slender Opossum,Venezuela
-125,,White-bellied Slender Opossum,"""Der mittleren und tiefen Waldregion""; restricted by Tate (1933) to Perú"
-126,,Delicate Slender Opossum,Guyana
-127,,Brazilian Slender Opossum,Brazil
-128,,Pinheiro’s Slender Opossum,Brazil
+1,10300001,,
+2,10300002,,
+3,10300003,,
+4,10300004,Short-beaked Echidna,Australia
+5,10300005,,Australia
+6,10300006,,
+7,10300007,,
+8,10300008,,
+9,10300009,,
+10,10300010,,
+11,10300011,Sir David’s Long-beaked Echidna.,Indonesia
+12,10300012,Eastern Long-beaked Echidna,Papua New Guinea
+13,10300013,,Papua New Guinea
+14,10300014,,
+15,10300015,,
+16,10300016,,
+17,10300017,Western Long-beaked Echidna.,Indonesia
+18,10300018,,
+19,10300019,,
+20,10300020,Platypus.,Australia
+21,10400001,,
+22,10400002,,
+23,10400003,,
+24,10400004,,
+25,10400005,,
+26,10400006,,
+27,10400007,Derby’s Woolly Opossum,None given; restricted to Colombia
+28,10400008,,None given; restricted to Colombia
+29,10400009,,
+30,10400010,,
+31,10400011,,
+32,10400012,,
+33,10400013,,
+34,10400014,Brown-eared Woolly Opossum,"""Paraguay;"" restricted to Caazapá"
+35,10400015,,"""Paraguay;"" restricted to Caazapá"
+36,10400016,,
+37,10400017,,
+38,10400018,,
+39,10400019,,
+40,10400020,,
+41,10400021,Bare-tailed Woolly Opossum,"""America;"" restricted to Surinam (Thomas"
+42,10400022,,"""America;"" restricted to Surinam (Thomas"
+43,10400023,,
+44,10400024,,
+45,10400025,,
+46,10400026,,
+47,10400027,Black-shouldered Opossum,Perú
+48,10400028,,
+49,10400029,Bushy-tailed Opossum,Perú
+50,10400030,,
+51,10400031,,
+52,10400032,Water Opossum,"""Gujana;"" restricted to Cayenne"
+53,10400033,,"""Gujana;"" restricted to Cayenne"
+54,10400034,,
+55,10400035,,
+56,10400036,,
+57,10400037,,
+58,10400038,White-eared Opossum,Brazil
+59,10400039,Big-eared Opossum,Brazil
+60,10400040,Guianan White-eared Opossum,Venezuela
+61,10400041,Common Opossum,"""America;"" restricted to Surinam (Thomas"
+62,10400042,,"""America;"" restricted to Surinam (Thomas"
+63,10400043,,
+64,10400044,Andean White-eared Opossum,Perú
+65,10400045,Virginia Opossum,"""Virginia"
+66,10400046,,"""Virginia"
+67,10400047,,
+68,10400048,,
+69,10400049,,
+70,10400050,,
+71,10400051,Aceramarca Gracile Opossum,Bolivia
+72,10400052,Agile Gracile Opossum,Brazil
+73,10400053,Agricola’s Gracile Opossum,Brazil
+74,10400054,Wood Sprite Gracile Opossum,Venezuela
+75,10400055,Emilia’s Gracile Opossum,Brazil
+76,10400056,Pygmy Opossum,Argentina
+77,10400057,Red-bellied Gracile Opossum,Argentina
+78,10400058,Northern Gracile Opossum,Venezuela
+79,10400059,Brazilian Gracile Opossum,Brazil
+80,10400060,,Brazil
+81,10400061,,
+82,10400062,,
+83,10400063,Kalinowski’s Mouse Opossum,Perú
+84,10400064,,
+85,10400065,Patagonian Opossum,
+86,10400066,,
+87,10400067,Lutrine Opossum,Paraguay
+88,10400068,,Paraguay
+89,10400069,,
+90,10400070,,
+91,10400071,Heavy-browed Mouse Opossum,Perú
+92,10400072,Rufous Mouse Opossum,"""Peruvian Amazons;"" identiﬁed as Perú"
+93,10400073,Mexican Mouse Opossum,México
+94,10400074,,México
+95,10400075,,
+96,10400076,,
+97,10400077,Linnaeus’s Mouse Opossum,"""Asia"
+98,10400078,Quechuan Mouse Opossum,"""Ocabamba"" identiﬁed as Valle de Occobamba by Ceballos Bendezu (1981)"
+99,10400079,Robinson’s Mouse Opossum,Venezuela
+100,10400080,,Venezuela
+101,10400081,,
+102,10400082,,
+103,10400083,,
+104,10400084,,
+105,10400085,,
+106,10400086,,
+107,10400087,,
+108,10400088,Red Mouse Opossum,Perú
+109,10400089,Tyleria Mouse Opossum,Venezuela
+110,10400090,Guajira Mouse Opossum,Colombia
+111,10400091,,
+112,10400092,Bishop’s Slender Opossum,"""264 km N (by road) Xavantina (locality is at 12°51'S"
+113,10400093,Narrow-headed Slender Opossum,Venezuela
+114,10400094,Dorothys’ Slender opossum,Bolivia
+115,10400095,Dusky Slender Opossum,Venezuela
+116,10400096,,Venezuela
+117,10400097,,
+118,10400098,,
+119,10400099,Handley’s Slender Opossum,Colombia
+120,10400100,Tschudi’s Slender Opossum,
+121,10400101,Gray Slender Opossum,Brazil
+122,10400102,Panama Slender Opossum,Panamá
+123,10400103,Junin Slender Opossum,"""Utcuyacu. Between Tarma and Chanchamayo"
+124,10400104,Neblina Slender Opossum,Venezuela
+125,10400105,White-bellied Slender Opossum,
+126,10400106,Delicate Slender Opossum,Guyana
+127,10400107,Brazilian Slender Opossum,Brazil
+128,10400108,Pinheiro’s Slender Opossum,Brazil
+129,10400109,,
+130,10400110,Brown Four-eyed Opossum,French Guiana
+131,10400111,,French Guiana
+132,10400112,,
+133,10400113,,
+134,10400114,,
+135,10400115,,
+136,10400116,,
+137,10400117,Alston’s Mouse Opossum,Costa Rica
+138,10400118,White-bellied Woolly Mouse Opossum,Brazil
+139,10400119,Woolly Mouse Opossum,Guyana
+140,10400120,,Guyana
+141,10400121,,
+142,10400122,,
+143,10400123,,
+144,10400124,,
+145,10400125,Tate’s Woolly Mouse Opossum,Paraguay
+146,10400126,,Paraguay
+147,10400127,,
+148,10400128,Little Woolly Mouse Opossum,Colombia
+149,10400129,Bare-tailed Woolly Mouse Opossum,Colombia
+150,10400130,,Colombia
+151,10400131,,
+152,10400132,,
+153,10400133,,
+154,10400134,Sepia Short-tailed Opossum,Colombia
+155,10400135,Northern Three-striped Opossum,"""Brasilien"
+156,10400136,Northern Red-sided Opossum,"""In Americae australis silvis;"" restricted to Surinam by Matschie (1916)."
+157,10400137,Yellow-sided Opossum,Uruguay
+158,10400138,Gray Short-tailed Opossum,Brazil
+159,10400139,Emilia’s Short-tailed Opossum,Brazil
+160,10400140,Amazonian Red-sided Opossum,Brazil
+161,10400141,Ihering’s Three-striped Opossum,"""Rio Grande do Sul;"" identiﬁed as Brazil"
+162,10400142,Pygmy Short-tailed Opossum,Bolivia
+163,10400143,Marajó Short-tailed Opossum,Brazil
+164,10400144,Osgood’s Short-tailed Opossum,Bolivia
+165,10400145,Hooded Red-sided Opossum,"""San Juan de Colon"
+166,10400146,Chestnut-striped Opossum,Brazil
+167,10400147,Long-nosed Short-tailed Opossum,"""Brazil;"" restricted to Rio de Janeiro"
+168,10400148,Southern Red-sided Opossum,"""Provinz Rio Grande do Sul;"" restricted to Brazil"
+169,10400149,Southern Three-striped Opossum,Brazil
+170,10400150,Red Three-striped Opossum,Brazil
+171,10400151,One-striped Opossum,Brazil
+172,10400152,,
+173,10400153,Anderson’s Four-eyed Opossum,Perú
+174,10400154,Southeastern Four-eyed Opossum,"""Südamerica;"" restricted to Bahia"
+175,10400155,McIlhenny’s Four-eyed Opossum,Perú
+176,10400156,Gray Four-eyed Opossum,"""America;"" restricted to Surinam by J. A. Allen (1900) and further restricted to Paramaribo"
+177,10400157,,"""America;"" restricted to Surinam by J. A. Allen (1900) and further restricted to Paramaribo"
+178,10400158,,
+179,10400159,,
+180,10400160,,
+181,10400161,,
+182,10400162,Cinderella Fat-tailed Mouse Opossum,Argentina
+183,10400163,Elegant Fat-tailed Mouse Opossum,Chile
+184,10400164,Karimi’s Fat-tailed Mouse Opossum,Brazil
+185,10400165,Paraguayan Fat-tailed Mouse Opossum,"""Sudamerica;"" restricted to Paraguay"
+186,10400166,White-bellied Fat-tailed Mouse Opossum,Bolivia
+187,10400167,Common Fat-tailed Mouse Opossum,Not stated; restricted to Paraguay
+188,10400168,Argentine Fat-tailed Mouse Opossum,Argentina
+189,10400169,Tate’s Fat-tailed Mouse Opossum,"""Chasquitambo 9710 m"
+190,10400170,Dwarf Fat-tailed Mouse Opossum,Brazil
+191,10400171,Buﬀ-bellied Fat-tailed Mouse Opossum,Bolivia
+192,10400172,,
+193,10400173,Gray Mouse Opossum,México
+194,10400174,,México
+195,10400175,,
+196,10500001,,
+197,10500002,,
+198,10500003,,
+199,10500004,Gray-bellied Caenolestid,Ecuador
+200,10500005,Andean Caenolestid,Ecuador
+201,10500006,Northern Caenolestid,
+202,10500007,,
+203,10500008,,
+204,10500009,"Dusky Caenolestid
+""Ecuador.""",
+205,10500010,"""Ecuador.""",
+206,10500011,,
+207,10500012,,
+208,10500013,,
+209,10500014,Incan Caenolestid,Perú
+210,10500015,,
+211,10500016,Long-nosed Caenolestid,Chile
+212,10500017,,Chile
+213,10500018,,
+214,10600001,,
+215,10600002,,
+216,10600003,,
+217,10600004,Monito del Monte,Chile
+218,10700001,,
+219,10700002,,
+220,10700003,,
+221,10700004,Northern Marsupial Mole,Australia
+222,10700005,Southern Marsupial Mole,Australia
+223,10800001,,
+224,10800002,,
+225,10800003,,
+226,10800004,Thylacine,Australia
+227,10800005,,
+228,10800006,,
+229,10800007,Numbat,Australia
+230,10800008,,Australia
+231,10800009,,
+232,10800010,,
+233,10800011,,
+234,10800012,,
+235,10800013,,
+236,10800014,Mulgara,Australia
+237,10800015,,
+238,10800016,Little Red Kaluta,Australia
+239,10800017,,
+240,10800018,Kowari,Australia
+241,10800019,,
+242,10800020,New Guinean Quoll,Indonesia
+243,10800021,Western Quoll,Australia
+244,10800022,Northern Quoll,Australia
+245,10800023,Tiger Quoll,Australia
+246,10800024,Bronze Quoll,Papua New Guinea
+247,10800025,Eastern Quoll,Australia
+248,10800026,,
+249,10800027,Three-striped Dasyure,
+250,10800028,"Wallace’s Dasyure
+Aru Isl.",
+251,10800029,,
+252,10800030,Speckled Dasyure,Indonesia
+253,10800031,,
+254,10800032,Southern Dibbler,Australia
+255,10800033,,
+256,10800034,Red-bellied Marsupial Shrew,Indonesia
+257,10800035,Narrow-striped Marsupial Shrew,Indonesia
+258,10800036,,Indonesia
+259,10800037,,
+260,10800038,,
+261,10800039,,
+262,10800040,Sandstone Dibbler,Australia
+263,10800041,Fat-tailed False Antechinus,Australia
+264,10800042,Alexandria False Antechinus,Australia
+265,10800043,Ningbing False Antechinus,Australia
+266,10800044,Rory Cooper’s False Antechinus,Australia
+267,10800045,Woolley's False Antechinus,Australia
+268,10800046,,
+269,10800047,"Tasmanian Devil
+Tasmania.",
+270,10800048,Tasmania.,
+271,10800049,,
+272,10800050,,
+273,10800051,,
+274,10800052,Tropical Antechinus,Australia
+275,10800053,Agile Antechinus,
+276,10800054,Fawn Antechinus,Australia
+277,10800055,Yellow-footed Antechinus,Australia
+278,10800056,,Australia
+279,10800057,,
+280,10800058,Atherton Antechinus,Australia
+281,10800059,Cinnamon Antechinus,Australia
+282,10800060,Swamp Antechinus,Australia
+283,10800061,Brown Antechinus,Australia
+284,10800062,Subtropical Antechinus,Australia
+285,10800063,Dusky Antechinus,Australia
+286,10800064,,
+287,10800065,Habbema Dasyure,Indonesia
+288,10800066,,
+289,10800067,Black-tailed Dasyure,Papua New Guinea
+290,10800068,,
+291,10800069,Short-furred Dasyure,Indonesia
+292,10800070,,
+293,10800071,Broad-striped Dasyure,Papua New Guinea
+294,10800072,,
+295,10800073,Long-nosed Dasyure,Indonesia
+296,10800074,,
+297,10800075,Red-tailed Phascogale,Australia
+298,10800076,Brush-tailed Phascogale,Australia
+299,10800077,,
+300,10800078,,
+301,10800079,,
+302,10800080,Kultarr,Australia
+303,10800081,,
+304,10800082,Wongai Ningaui,Australia
+305,10800083,Pilbara Ningaui,Australia
+306,10800084,Southern Ningaui,"""Mt. Manning Area"
+307,10800085,,
+308,10800086,Kangaroo Island Dunnart,Australia
+309,10800087,Chestnut Dunnart,Papua New Guinea
+310,10800088,Kakadu Dunnart,Australia
+311,10800089,Boullanger Island Dunnart,Australia
+312,10800090,Carpentarian Dunnart,Australia
+313,10800091,Fat-tailed Dunnart,Australia
+314,10800092,Little Long-tailed Dunnart,Western Australia
+315,10800093,Julia Creek Dunnart,Australia
+316,10800094,Sooty Dunnart,Western Australia
+317,10800095,Gilbert's Dunnart,Western Australia
+318,10800096,White-tailed Dunnart,Australia
+319,10800097,Gray-bellied Dunnart,Western Australia
+320,10800098,Hairy-footed Dunnart,Australia
+321,10800099,White-footed Dunnart,Australia
+322,10800100,Long-tailed Dunnart,Australia
+323,10800101,Stripe-faced Dunnart,Australia
+324,10800102,Slender-tailed Dunnart,Australia
+325,10800103,Ooldea Dunnart,Australia
+326,10800104,Sandhill Dunnart,Australia
+327,10800105,Red-cheeked Dunnart,None given; Archer (1981:132) designated Australia
+328,10800106,,None given; Archer (1981:132) designated Australia
+329,10800107,,
+330,10800108,,
+331,10800109,Lesser Hairy-footed Dunnart,Western Australia
+332,10800110,,
+333,10800111,,
+334,10800112,Paucident Planigale,Australia
+335,10800113,Long-tailed Planigale,Australia
+336,10800114,,Australia
+337,10800115,,
+338,10800116,,
+339,10800117,Pygmy Planigale,Australia
+340,10800118,,Australia
+341,10800119,,
+342,10800120,New Guinean Planigale,Papua New Guinea
+343,10800121,Narrow-nosed Planigale,Australia
+344,10900001,,
+345,10900002,,
+346,10900003,,
+347,10900004,Greater Bilby,Australia
+348,10900005,Lesser Bilby,
+349,10900006,,
+350,10900007,,
+351,10900008,Pig-footed Bandicoot,Australia
+352,10900009,,
+353,10900010,,
+354,10900011,,
+355,10900012,Golden Bandicoot,Australia
+356,10900013,,Australia
+357,10900014,,
+358,10900015,,
+359,10900016,Northern Brown Bandicoot,Australia
+360,10900017,,Australia
+361,10900018,,
+362,10900019,Southern Brown Bandicoot,Australia
+363,10900020,,Australia
+364,10900021,,
+365,10900022,,
+366,10900023,Western Barred Bandicoot,Australia
+367,10900024,Desert Bandicoot,Australia
+368,10900025,Eastern Barred Bandicoot,Australia
+369,10900026,Long-nosed Bandicoot,Australia
+370,10900027,,
+371,10900028,,
+372,10900029,Giant Bandicoot,Papua New Guinea
+373,10900030,Raﬀray’s Bandicoot,Indonesia
+374,10900031,,Indonesia
+375,10900032,,
+376,10900033,,
+377,10900034,,
+378,10900035,Clara’s Echymipera,Indonesia
+379,10900036,David’s Echymipera,Papua New Guinea
+380,10900037,Menzies’ Echymipera,Papua New Guinea
+381,10900038,Common Echymipera,Indonesia
+382,10900039,,Indonesia
+383,10900040,,
+384,10900041,,
+385,10900042,,
+386,10900043,Long-nosed Echymipera,Indonesia
+387,10900044,,Indonesia
+388,10900045,,
+389,10900046,,
+390,10900047,Striped Bandicoot,Indonesia
+391,10900048,,Indonesia
+392,10900049,,
+393,10900050,,
+394,10900051,Mouse Bandicoot,Indonesia
+395,10900052,Papuan Bandicoot,Papua New Guinea
+396,10900053,,
+397,10900054,Seram Bandicoot,Indonesia
+398,11000001,,
+399,11000002,,
+400,11000003,,
+401,11000004,,
+402,11000005,Koala,Australia
+403,11000006,,
+404,11000007,,
+405,11000008,Northern Hairy-nosed Wombat,Australia
+406,11000009,,Australia
+407,11000010,,
+408,11000011,,
+409,11000012,Southern Hairy-nosed Wombat,Australia
+410,11000013,,
+411,11000014,Common Wombat,Australia
+412,11000015,,
+413,11000016,,
+414,11000017,,
+415,11000018,,
+416,11000019,Mountain Pygmy Possum,Australia
+417,11000020,,
+418,11000021,Long-tailed Pygmy Possum,Indonesia
+419,11000022,,Indonesia
+420,11000023,,
+421,11000024,Southwestern Pygmy Possum,Australia
+422,11000025,,Australia
+423,11000026,,
+424,11000027,Tasmanian Pygmy Possum,Australia
+425,11000028,Eastern Pygmy Possum,Australia
+426,11000029,,Australia
+427,11000030,,
+428,11000031,,
+429,11000032,,
+430,11000033,,
+431,11000034,Talaud Bear Cuscus,Indonesia
+432,11000035,Sulawesi Bear Cuscus,Indonesia
+433,11000036,,Indonesia
+434,11000037,,
+435,11000038,,
+436,11000039,,
+437,11000040,,
+438,11000041,,
+439,11000042,,
+440,11000043,Gebe Cuscus,Indonesia
+441,11000044,Mountain Cuscus,Papua New Guinea
+442,11000045,,Papua New Guinea
+443,11000046,,
+444,11000047,Ground Cuscus,Indonesia
+445,11000048,,Indonesia
+446,11000049,,
+447,11000050,Eastern Common Cuscus,Papua New Guinea
+448,11000051,Woodlark Cuscus,Papua New Guinea
+449,11000052,Blue-eyed Cuscus,Indonesia
+450,11000053,Telefomin Cuscus,Papua New Guinea
+451,11000054,Southern Common Cuscus,Indonesia
+452,11000055,,Indonesia
+453,11000056,,
+454,11000057,Northern Common Cuscus,Indonesia
+455,11000058,,Indonesia
+456,11000059,,
+457,11000060,Ornate Cuscus,Indonesia: Bachian (= Bacan or Batjan) Isl.
+458,11000061,Rothschild’s Cuscus,Moluccas
+459,11000062,Silky Cuscus,Papua New Guinea
+460,11000063,,Papua New Guinea
+461,11000064,,
+462,11000065,Stein’s Cuscus,Indonesia
+463,11000066,,
+464,11000067,Admiralty Island Cuscus,Papua New Guinea
+465,11000068,Common Spotted Cuscus,Indonesia
+466,11000069,,Indonesia
+467,11000070,,
+468,11000071,,
+469,11000072,,
+470,11000073,Waigeou Cuscus,Indonesia
+471,11000074,Black-spotted Cuscus,Papua New Guinea
+472,11000075,,
+473,11000076,,
+474,11000077,Sulawesi Dwarf Cuscus,Indonesia
+475,11000078,,Indonesia
+476,11000079,,
+477,11000080,,
+478,11000081,Banggai Cuscus,Indonesia: Peleng Isl.
+479,11000082,,Indonesia: Peleng Isl.
+480,11000083,,
+481,11000084,,
+482,11000085,Northern Brushtail,Australia
+483,11000086,Short-eared Possum,Australia
+484,11000087,Mountain Brushtail Possum,Australia
+485,11000088,Coppery Brushtail,Australia
+486,11000089,Common Brushtail,Australia
+487,11000090,,
+488,11000091,Scaly-tailed Possum,Australia
+489,11000092,,
+490,11000093,,
+491,11000094,,
+492,11000095,,
+493,11000096,Lemur-like Ringtail,Australia
+494,11000097,,
+495,11000098,Greater Glider,Australia
+496,11000099,,Australia
+497,11000100,,
+498,11000101,,
+499,11000102,,
+500,11000103,Rock-haunting ringtail,Australia
+501,11000104,,
+502,11000105,Common Ringtail,Australia
+503,11000106,,Australia
+504,11000107,,
+505,11000108,,
+506,11000109,,
+507,11000110,,
+508,11000111,Lowland Ringtail,Indonesia
+509,11000112,,Indonesia
+510,11000113,,
+511,11000114,,
+512,11000115,,
+513,11000116,,
+514,11000117,Weyland Ringtail,Indonesia
+515,11000118,,Indonesia
+516,11000119,,
+517,11000120,Cinereous Ringtail,Australia
+518,11000121,Painted Ringtail,Papua New Guinea
+519,11000122,Herbert River Ringtail,Australia
+520,11000123,Masked Ringtail,Papua New Guinea
+521,11000124,Pygmy Ringtail,Indonesia
+522,11000125,Vogelkop Ringtail,Indonesia
+523,11000126,,
+524,11000127,,
+525,11000128,D’Albertis’ Ringtail,Indonesia
+526,11000129,,Indonesia
+527,11000130,,
+528,11000131,,
+529,11000132,Green Ringtail,Australia
+530,11000133,Plush-coated Ringtail,Papua New Guinea
+531,11000134,,Papua New Guinea
+532,11000135,,
+533,11000136,,
+534,11000137,Reclusive Ringtail,Indonesia
+535,11000138,Coppery Ringtail,Papua New Guinea
+536,11000139,,
+537,11000140,,
+538,11000141,Great-tailed Triok,Indonesia
+539,11000142,Long-ﬁngered Triok,"""South coast of New Guinea""."
+540,11000143,Tate’s Triok,Papua New Guinea
+541,11000144,Striped Possum,Indonesia
+542,11000145,,Indonesia
+543,11000146,,
+544,11000147,,
+545,11000148,,
+546,11000149,,
+547,11000150,Leadebeater’s Possum,Australia
+548,11000151,,
+549,11000152,Northern Glider,Papua New Guinea
+550,11000153,Yellow-bellied Glider,Australia
+551,11000154,,Australia
+552,11000155,,
+553,11000156,Biak Glider,Indonesia
+554,11000157,Sugar Glider,Australia
+555,11000158,,Australia
+556,11000159,,
+557,11000160,,
+558,11000161,,
+559,11000162,Ebony Glider,Australia
+560,11000163,Squirrel Glider,Australia
+561,11000164,,
+562,11000165,,
+563,11000166,Honey possum,Australia
+564,11000167,,
+565,11000168,,
+566,11000169,Feather-tailed Glider,Australia
+567,11000170,,
+568,11000171,Feather-tailed Possum,
+569,11000172,,
+570,11000173,,
+571,11000174,,
+572,11000175,Musky Rat-kangaroo,Australia
+573,11000176,,
+574,11000177,,
+575,11000178,Rufous Rat-kangaroo,Australia
+576,11000179,,
+577,11000180,Eastern Bettong,Australia
+578,11000181,Boodie,Australia
+579,11000182,Woylie,Australia
+580,11000183,Northern Bettong,Australia
+581,11000184,,
+582,11000185,Desert Rat-kangaroo,Australia
+583,11000186,,
+584,,Gilbert’s Potoroo,Australia
+585,11000188,Long-footed Potoroo,Australia
+586,11000189,Broad-faced Potoroo,Australia
+587,11000190,Long-nosed Potoroo,Australia
+588,11000191,,Australia
+589,11000192,,
+590,11000193,,
+591,11000194,,
+592,11000195,,
+593,11000196,Banded Hare-wallaby,Australia
+594,11000197,,Australia
+595,11000198,,
+596,11000199,,
+597,11000200,,
+598,11000201,Bennett’s Tree-kangaroo,Australia
+599,11000202,Doria’s Tree-kangaroo,Papua New Guinea
+600,11000203,,Papua New Guinea
+601,11000204,,
+602,11000205,,
+603,11000206,Goodfellow’s Tree-kangaroo,Papua New Guinea
+604,11000207,,Papua New Guinea
+605,11000208,,
+606,"20, footnote [1840], see comments",Grizzled Tree-kangaroo,Indonesia
+607,"20, footnote [1840], see comments",,Indonesia
+608,11000211,,
+609,11000212,Lumholtz’s Tree-kangaroo,Australia
+610,11000213,Huon Tree-kangaroo,Papua New Guinea
+611,11000214,Dingiso,
+612,11000215,Golden-mantled Tree-kangaroo,Papua New Guinea
+613,11000216,Tenkile,Papua New Guinea
+614,11000217,Lowlands Tree-kangaroo,Papua New Guinea
+615,11000218,Seri’s Tree-kangaroo,Papua New Guinea
+616,11000219,Ursine Tree-kangaroo,Indonesia
+617,11000220,,
+618,11000221,Black Dorcopsis,Papua New Guinea
+619,11000222,White-striped Dorcopsis,Papua New Guinea
+620,11000223,Grey Dorcopsis,"""Southeast of New Guinea""."
+621,11000224,,"""Southeast of New Guinea""."
+622,11000225,,
+623,11000226,Brown Dorcopsis,Indonesia
+624,11000227,,Indonesia
+625,11000228,,
+626,11000229,,
+627,11000230,,
+628,11000231,,
+629,11000232,Macleay’s Dorcopsis,Papua New Guinea
+630,11000233,Small Dorcopsis,Indonesia
+631,11000234,,
+632,11000235,Lake Mackay Hare-wallaby,Australia
+633,11000236,Spectacled Hare-wallaby,Australia
+634,11000237,Rufous Hare-wallaby,Australia
+635,11000238,Eastern Hare-wallaby,Australia
+636,11000239,,
+637,11000240,,
+638,11000241,,
+639,11000242,,
+640,11000243,Agile Wallaby,Australia
+641,11000244,,Australia
+642,11000245,,
+643,11000246,,
+644,11000247,,
+645,11000248,Antilopine Kangaroo,Australia
+646,11000249,Woodward’s Wallaroo,Australia
+647,11000250,Black-striped Wallaby,Australia
+648,11000251,Tammar Wallaby,Australia
+649,11000252,Western Grey Kangaroo,Australia
+650,11000253,,Australia
+651,11000254,,
+652,11000255,,
+653,11000256,Eastern Grey Kangaroo,Australia
+654,11000257,,Australia
+655,11000258,,
+656,11000259,Toolache Wallaby,Australia
+657,11000260,Western Brush Wallaby,Australia
+658,11000261,Parma Wallaby,Australia
+659,11000262,Pretty-faced Wallaby,Australia
+660,11000263,Wallaroo,Australia
+661,11000264,,Australia
+662,11000265,,
+663,11000266,,
+664,11000267,,
+665,11000268,Red-necked Wallaby,Australia
+666,11000269,,Australia
+667,11000270,,
+668,11000271,,
+669,11000272,Red Kangaroo,Australia
+670,11000273,,
+671,11000274,Bridled Nail-tail Wallaby,Australia
+672,11000275,Crescent Nail-tail Wallaby,Australia
+673,11000276,Northern Nail-tail Wallaby,Australia
+674,11000277,,
+675,11000278,Allied Rock-wallaby,Australia
+676,11000279,Short-eared Rock-wallaby,Australia
+677,11000280,Monjon,Australia
+678,11000281,Cape York Rock-wallaby,Australia
+679,11000282,Nabarlek,Australia
+680,11000283,Godman’s Rock-wallaby,Australia
+681,11000284,Herbert’s Rock-wallaby,Australia
+682,11000285,Unadorned Rock-wallaby,Australia
+683,11000286,Black-ﬂanked Rock-wallaby,Australia
+684,11000287,,Australia
+685,11000288,,
+686,11000289,,
+687,11000290,Mareeba Rock-wallaby,Australia
+688,11000291,Brush-tailed Rock-wallaby,Australia
+689,11000292,Proserpine Rock-wallaby,Australia
+690,11000293,Purple-necked Rock-wallaby,Australia
+691,11000294,Rothschild’s Rock-wallaby,Australia
+692,11000295,Mt. Claro Rock-wallaby,Australia
+693,11000296,Yellow-footed Rock-wallaby,Australia
+694,11000297,,Australia
+695,11000298,,
+696,11000299,,
+697,11000300,Quokka,Australia
+698,11000301,,
+699,11000302,Tasmanian Pademelon,Australia
+700,11000303,Brown’s Pademelon,Papua New Guinea
+701,11000304,Dusky Pademelon,Indonesia
+702,11000305,Calaby’s Pademelon,Papua New Guinea
+703,11000306,Mountain Pademelon,Papua New Guinea
+704,11000307,Red-legged Pademelon,Australia
+705,11000308,,Australia
+706,11000309,,
+707,11000310,,
+708,11000311,,
+709,11000312,Red-necked Pademelon,Australia
+710,11000313,,
+711,11000314,"Swamp Wallaby
+Unknown.",
+712,11100001,,
+713,11100002,,
+714,11100003,,
+715,11100004,,
+716,11100005,,
+717,11100006,Large-eared Tenrec,Madagascar
+718,11100007,,Madagascar
+719,11100008,,
+720,11100009,,
+721,11100010,,
+722,11100011,Web-footed Tenrec,Madagascar
+723,11100012,,
+724,11100013,Short-tailed Shrew Tenrec,
+725,11100014,Cowan's Shrew Tenrec,
+726,11100015,Dobson's Shrew Tenrec,
+727,11100016,Drouhard’s Shrew Tenrec,"""Environs de Diego-Suarez"
+728,11100017,Dryad Shrew Tenrec,Site 1
+729,11100018,Pale Shrew Tenrec,
+730,11100019,Gracile Shrew Tenrec,
+731,11100020,Naked-nosed Shrew Tenrec,
+732,11100021,Lesser Long-tailed Shrew Tenrec,
+733,11100022,Montane Shrew Tenrec,Madagascar
+734,11100023,Nasolo’s Shrew Tenrec,
+735,11100024,Pygmy Shrew Tenrec,"""Environs de Diego Suarez"
+736,11100025,Greater Long-tailed Shrew Tenrec,"""Midongy-du-Sud"
+737,11100026,Least Shrew Tenrec,
+738,11100027,Shrew-toothed Shrew Tenrec,
+739,11100028,Taiva Shrew Tenrec,
+740,11100029,Talazac's Shrew Tenrec,
+741,11100030,Thomas's Shrew Tenrec,
+742,11100031,,
+743,11100032,Mole-like Rice Tenrec,
+744,11100033,Four-toed Rice Tenrec,"""Du plateau d’Emirne"" [Imerina"
+745,11100034,,
+746,11100035,,
+747,11100036,Nimba Otter Shrew,"""Ziéla"
+748,11100037,Ruwenzori Otter Shrew,
+749,11100038,,
+750,11100039,Giant Otter Shrew,"""Mountains of the interior"
+751,11100040,,
+752,11100041,,
+753,11100042,"Lesser Hedgehog Tenrec
+Madagascar.",
+754,11100043,,
+755,11100044,Highland Streaked Tenrec,Fienerentova [? = Fianarantsoa
+756,11100045,"Lowland Streaked Tenrec
+Madagascar.",
+757,11100046,,
+758,11100047,"Greater Hedgehog Tenrec
+Madagascar.",
+759,11100048,,
+760,11100049,"Tail-less Tenrec
+Madagascar.",
+761,11100050,,
+762,11100051,,
+763,11100052,,
+764,11100053,,
+765,11100054,Arend’s Golden Mole,E escarpment of Zimbabwe
+766,11100055,,
+767,11100056,Duthie’s Golden Mole,South Africa
+768,11100057,Sclater’s Golden Mole,South Africa
+769,11100058,,South Africa
+770,11100059,,
+771,11100060,,
+772,11100061,,
+773,11100062,,
+774,11100063,,
+775,11100064,,
+776,11100065,Cape Golden Mole,"""In Sibiria""; usually taken as Cape of Good Hope"
+777,11100066,Stuhlmann’s Golden Mole,Uganda
+778,11100067,,Uganda
+779,11100068,,
+780,11100069,,
+781,11100070,Visagie’s Golden Mole,South Africa
+782,11100071,,
+783,11100072,Giant Golden Mole,South Africa
+784,11100073,Rough-haired Golden Mole,"""Towards Natal"""
+785,11100074,,"""Towards Natal"""
+786,11100075,,
+787,11100076,,
+788,11100077,,
+789,11100078,,
+790,11100079,,
+791,11100080,,
+792,11100081,De Winton’s Golden Mole,South Africa
+793,11100082,Van Zyl’s Golden Mole,South Africa
+794,11100083,,
+795,11100084,Grant’s Golden Mole,South Africa: Garies
+796,11100085,,South Africa: Garies
+797,11100086,,
+798,11100087,,
+799,11100088,,
+800,11100089,Fynbos Golden Mole,South Africa
+801,11100090,,South Africa
+802,11100091,,
+803,11100092,Hottentot Golden Mole,"""Interior parts of South Africa"""
+804,11100093,,"""Interior parts of South Africa"""
+805,11100094,,
+806,11100095,,
+807,11100096,,
+808,11100097,,
+809,11100098,Marley’s Golden Mole,South Africa
+810,11100099,Robust Golden Mole,South Africa
+811,11100100,Highveld Golden Mole,South Africa
+812,11100101,,
+813,11100102,,
+814,11100103,,
+815,11100104,Congo Golden Mole,"""Gulf of Guinea Coast"
+816,11100105,,"""Gulf of Guinea Coast"
+817,11100106,,
+818,11100107,Yellow Golden Mole,Coastal Mozambique
+819,11100108,,Coastal Mozambique
+820,11100109,,
+821,11100110,,
+822,11100111,Somali Golden Mole,Somalia
+823,11100112,,
+824,11100113,Gunning’s Golden Mole,South Africa
+825,11100114,Juliana’s Golden Mole,South Africa
+826,11200001,,
+827,11200002,,
+828,11200003,,
+829,11200004,Short-snouted Elephant Shrew,"""The country between Lake Latakoo and the Tropic"" (= South Africa"
+830,11200005,Cape Elephant Shrew,South Africa
+831,11200006,Dusky-footed Elephant Shrew,Dem. Rep. Congo
+832,11200007,Dusky Elephant Shrew,Mozambique
+833,11200008,Bushveld Elephant Shrew,South Africa
+834,11200009,Eastern Rock Elephant Shrew,South Africa
+835,11200010,Somali Elephant Shrew,Somalia
+836,11200011,North African Elephant Shrew,Algeria
+837,11200012,,Algeria
+838,11200013,,
+839,11200014,Rufous Elephant Shrew,Kenya
+840,11200015,,Kenya
+841,11200016,,
+842,11200017,,
+843,11200018,,
+844,11200019,,
+845,11200020,,
+846,11200021,Western Rock Elephant Shrew,South Africa or Namibia
+847,11200022,,
+848,11200023,Short-eared Elephant Shrew,South Africa
+849,11200024,,South Africa
+850,11200025,,
+851,11200026,,
+852,11200027,Four-toed Elephant Shrew,Mozambique
+853,11200028,,Mozambique
+854,11200029,,
+855,11200030,,
+856,11200031,,
+857,11200032,,
+858,11200033,,
+859,11200034,,
+860,11200035,,
+861,11200036,,
+862,11200037,,
+863,11200038,Golden-rumped Elephant Shrew,Kenya
+864,11200039,Checkered Elephant Shrew,Mozambique
+865,11200040,,Mozambique
+866,11200041,,
+867,11200042,,
+868,11200043,,
+869,11200044,,
+870,11200045,,
+871,11200046,Black and Rufous Elephant Shrew,Tanzania
+872,11200047,,Tanzania
+873,11200048,,
+874,11300001,,
+875,11300002,,
+876,11300003,,
+877,11300004,Aardvark,South Africa
+878,11300005,,South Africa
+879,11300006,,
+880,11300007,,
+881,11300008,,
+882,11300009,,
+883,11300010,,
+884,11300011,,
+885,11300012,,
+886,11300013,,
+887,11300014,,
+888,11300015,,
+889,11300016,,
+890,11300017,,
+891,11300018,,
+892,11300019,,
+893,11300020,,
+894,11300021,,
+895,11400001,,
+896,11400002,,
+897,11400003,,
+898,11400004,Southern Tree Hyrax.,South Africa
+899,11400005,Western Tree Hyrax.,Equatorial Guinea
+900,11400006,,Equatorial Guinea
+901,11400007,,
+902,11400008,,
+903,11400009,,
+904,11400010,,
+905,11400011,,
+906,11400012,,
+907,11400013,Yellow-spotted Rock Hyrax.,Ethiopia (= Abyssinia).
+908,11400014,,Ethiopia (= Abyssinia).
+909,11400015,,
+910,11400016,,
+911,11400017,,
+912,11400018,,
+913,11400019,,
+914,11400020,,
+915,11400021,,
+916,11400022,,
+917,11400023,,
+918,11400024,,
+919,11400025,,
+920,11400026,,
+921,11400027,,
+922,11400028,,
+923,11400029,,
+924,11400030,,
+925,11400031,,
+926,11400032,,
+927,11400033,,
+928,11400034,,
+929,11400035,,
+930,11400036,,
+931,11400037,,
+932,11400038,,
+933,11400039,,
+934,11400040,Rock Hyrax.,South Africa
+935,11400041,,South Africa
+936,11400042,,
+937,11400043,,
+938,11400044,,
+939,11400045,,
+940,11400046,,
+941,11400047,,
+942,11400048,,
+943,11400049,,
+944,11400050,,
+945,11400051,,
+946,11400052,,
+947,11400053,,
+948,11400054,,
+949,11400055,,
+950,11400056,,
+951,11400057,,
+952,11500001,,
+953,11500002,,
+954,11500003,,
+955,11500004,Asian Elephant,"""Zeylonae"" [Sri Lanka]."
+956,11500005,,"""Zeylonae"" [Sri Lanka]."
+957,11500006,,
+958,11500007,,
+959,11500008,,
+960,11500009,African Bush Elephant,Restricted to the Orange River
+961,11500010,African Forest Elephant,Yaunde
+962,11600001,,
+963,11600002,,
+964,11600003,,
+965,11600004,,
+966,11600005,Dugong,Cape of Good Hope to the Philippines.
+967,11600006,,
+968,11600007,,
+969,11600008,Steller's Sea Cow,Bering Sea
+970,11600009,,
+971,11600010,,
+972,11600011,Amazonian Manatee,Brazil
+973,11600012,West Indian Manatee,"""Mari Americano""; restricted by Thomas (1911<i>a</i>) to ""West Indies."""
+974,11600013,"African Manatee
+Senegal",
+975,11700001,,
+976,11700002,,
+977,11700003,,
+978,11700004,,
+979,11700005,Southern Long-nosed Armadillo,Paraguay
+980,11700006,Greater Long-nosed Armadillo,
+981,11700007,,
+982,11700008,,
+983,11700009,Nine-banded Armadillo,"""America Meridionali;"" restricted to Pernambuco"
+984,11700010,,"""America Meridionali;"" restricted to Pernambuco"
+985,11700011,,
+986,11700012,,
+987,11700013,,
+988,11700014,,
+989,11700015,,
+990,11700016,Hairy Long-nosed Armadillo,"""Peru;"" restricted to montane Perú by Wetzel and Mondolﬁ (1979)."
+991,11700017,Llanos Long-nosed Armadillo,Venezuela
+992,11700018,Seven-banded Armadillo,"""Indiis;"" restricted to Pernambuco"
+993,11700019,Yepes’s Mulita,Argentina
+994,11700020,,
+995,11700021,,
+996,11700022,Greater Fairy Armadillo,Bolivia
+997,11700023,,
+998,11700024,Andean Hairy Armadillo,Bolivia
+999,11700025,Screaming Hairy Armadillo,Bolivia
+1000,11700026,,Bolivia
+1001,11700027,,
+1002,11700028,Big Hairy Armadillo,Argentina
+1003,11700029,,
+1004,11700030,Pink Fairy Armadillo,
+1005,11700031,,
+1006,11700032,Six-banded Armadillo,"""America meridionale;"" restricted to Pará"
+1007,11700033,,"""America meridionale;"" restricted to Pará"
+1008,11700034,,
+1009,11700035,,
+1010,11700036,,
+1011,11700037,,
+1012,11700038,,
+1013,11700039,Pichi,Argentina
+1014,11700040,,Argentina
+1015,11700041,,
+1016,11700042,,
+1017,11700043,,
+1018,11700044,Northern Naked-tailed Armadillo,Honduras
+1019,11700045,Chacoan Naked-tailed Armadillo,Paraguay
+1020,11700046,Greater Naked-tailed Armadillo,Paraguay
+1021,11700047,Southern Naked-tailed Armadillo,"""Africa;"" restricted to ""l'Amérique"" by Buﬀon (1763)"
+1022,11700048,,"""Africa;"" restricted to ""l'Amérique"" by Buﬀon (1763)"
+1023,11700049,,
+1024,11700050,,
+1025,11700051,Giant Armadillo,French Guiana
+1026,11700052,,
+1027,11700053,Southern Three-banded Armadillo,No locality mentioned; restricted to Argentina
+1028,11700054,Brazilian Three-banded Armadillo,"""In India orientali;"" redeﬁned as Pernambuco"
+1029,11800001,,
+1030,11800002,,
+1031,11800003,,
+1032,11800004,,
+1033,11800005,Pygmy Three-toed Sloth,Panamá
+1034,11800006,Maned Sloth,
+1035,11800007,Pale-throated Sloth,"""Americć meridionalis arboribus;"" restricted to Surinam by Thomas (1911<i>a</i>)."
+1036,11800008,Brown-throated Sloth,"""Sudamerika;"" restricted to Brazil by Mertens (1925) who suggested that the type may have come from Bahia."
+1037,11800009,,"""Sudamerika;"" restricted to Brazil by Mertens (1925) who suggested that the type may have come from Bahia."
+1038,11800010,,
+1039,11800011,,
+1040,11800012,,
+1041,11800013,,
+1042,11800014,,
+1043,11800015,,
+1044,11800016,,
+1045,11800017,,
+1046,11800018,Linnaeus’s Two-toed Sloth,"""Zeylona;"" corrected to Surinam by Thomas (1911<i>a</i>). Not British Guiana as stated by Tate (1939)."
+1047,11800019,Hoﬀmann’s Two-toed Sloth,
+1048,11800020,,
+1049,11800021,,
+1050,11800022,,
+1051,11800023,,
+1052,11800024,,
+1053,11800025,,
+1054,11800026,,
+1055,11800027,,
+1056,11800028,Silky Anteater,"""America australi;"" restricted to Surinam by Thomas (1911<i>a</i>)."
+1057,11800029,,"""America australi;"" restricted to Surinam by Thomas (1911<i>a</i>)."
+1058,11800030,,
+1059,11800031,,
+1060,11800032,,
+1061,11800033,,
+1062,11800034,,
+1063,11800035,,
+1064,11800036,,
+1065,11800037,,
+1066,11800038,Giant Anteater,"""America <i>meridionali</i>;"" restricted to Brazil"
+1067,11800039,,"""America <i>meridionali</i>;"" restricted to Brazil"
+1068,11800040,,
+1069,11800041,,
+1070,11800042,,
+1071,11800043,Northern Tamandua,México
+1072,11800044,,México
+1073,11800045,,
+1074,11800046,,
+1075,11800047,,
+1076,11800048,Southern Tamandua,"""America meridionali;"" restricted to Brazil"
+1077,11800049,,"""America meridionali;"" restricted to Brazil"
+1078,11800050,,
+1079,11800051,,
+1080,11800052,,
+1081,11900001,,
+1082,11900002,,
+1083,11900003,,
+1084,11900004,Madras Treeshrew,India
+1085,11900005,,
+1086,11900006,Bornean Smooth-Tailed Treeshrew,Borneo
+1087,11900007,,Borneo
+1088,11900008,,
+1089,11900009,Northern Smooth-Tailed Treeshrew,
+1090,11900010,,
+1091,11900011,Northern Treeshrew,Burma
+1092,11900012,,Burma
+1093,11900013,,
+1094,11900014,Golden-bellied Treeshrew,N Pagai Isl
+1095,11900015,Striped Treeshrew,W Borneo
+1096,11900016,Common Treeshrew,Malaysia
+1097,11900017,Slender Treeshrew,Borneo
+1098,11900018,,Borneo
+1099,11900019,,
+1100,11900020,,
+1101,11900021,Horsﬁeld’s Treeshrew,Java
+1102,11900022,Long-footed Treeshrew,Borneo
+1103,11900023,,Borneo
+1104,11900024,,
+1105,11900025,Pygmy Treeshrew,Borneo
+1106,11900026,,Borneo
+1107,11900027,,
+1108,11900028,,
+1109,11900029,,
+1110,11900030,Calamian Treeshrew,Philippines
+1111,11900031,,Philippines
+1112,11900032,,
+1113,11900033,,
+1114,11900034,Mountain Treeshrew,Borneo
+1115,11900035,,Borneo
+1116,11900036,,
+1117,11900037,Nicobar Treeshrew,Nicobar Isls
+1118,11900038,,Nicobar Isls
+1119,11900039,,
+1120,11900040,Palawan Treeshrew,Philippines
+1121,11900041,Painted Treeshrew,Borneo
+1122,11900042,,Borneo
+1123,11900043,,
+1124,11900044,Ruddy Treeshrew,Borneo (no speciﬁc locality).
+1125,11900045,,Borneo (no speciﬁc locality).
+1126,11900046,,
+1127,11900047,,
+1128,11900048,,
+1129,11900049,,
+1130,11900050,Large Treeshrew,Indonesia
+1131,11900051,,Indonesia
+1132,11900052,,
+1133,11900053,,
+1134,11900054,,
+1135,11900055,,
+1136,11900056,,
+1137,11900057,,
+1138,11900058,,
+1139,11900059,,
+1140,11900060,,
+1141,11900061,,
+1142,11900062,,
+1143,11900063,,
+1144,11900064,,
+1145,11900065,,
+1146,11900066,,
+1147,11900067,Mindanao Treeshrew,Philippines
+1148,11900068,,
+1149,11900069,,
+1150,11900070,Pen-tailed Treeshrew,Borneo
+1151,11900071,,Borneo
+1152,11900072,,
+1153,12000001,,
+1154,12000002,,
+1155,12000003,,
+1156,12000004,Philippine Flying Lemur,Philippine Isls
+1157,12000005,,
+1158,12000006,Sunda Flying Lemur,Indonesia
+1159,12100001,,
+1160,12100002,,
+1161,12100003,,
+1162,12100004,,
+1163,12100005,,
+1164,12100006,,
+1165,12100007,Hairy-eared Dwarf Lemur,Madagascar
+1166,12100008,,
+1167,12100009,Spiny Desert Dwarf Lemur,Madagascar
+1168,12100010,Crossley’s Dwarf Lemur,Madagascar
+1169,12100011,Greater Dwarf Lemur,Madagascar
+1170,12100012,Lesser Dwarf Lemur,Madagascar
+1171,12100013,Small Iron-gray Dwarf Lemur,Madagascar
+1172,12100014,Large Iron-gray Dwarf Lemur,Madagascar
+1173,12100015,Sibree’s Dwarf Lemur,Madagascar
+1174,12100016,,
+1175,12100017,Berthe’s Mouse Lemur,Madagascar
+1176,12100018,Red-and-gray Mouse Lemur,Madagascar
+1177,12100019,Gray Mouse Lemur,
+1178,12100020,Peters’ Mouse Lemur,Madagascar
+1179,12100021,Ravelobe Mouse Lemur,Madagascar
+1180,12100022,"Eastern Rufous Mouse Lemur
+Madagascar.",
+1181,12100023,Sambirano Mouse Lemur,Madagascar
+1182,12100024,Northern Rufous Mouse Lemur,Madagascar
+1183,12100025,,
+1184,12100026,Giant Mouse Lemur,Madagascar
+1185,12100027,,
+1186,12100028,Mt. d’Ambre Fork-crowned Lemur,Madagascar
+1187,12100029,Masoala Fork-crowned Lemur,Madagascar
+1188,12100030,Pale Fork-crowned Lemur,Madagascar
+1189,12100031,Pariente’s Fork-crowned Lemur,NW Madagascar
+1190,12100032,,
+1191,12100033,,
+1192,,,
+1193,12100035,"White-headed Lemur
+Madagascar.",
+1194,12100036,White-collared Lemur,Madagascar
+1195,12100037,Gray-headed Lemur,Madagascar
+1196,12100038,"Red-collared Lemur
+Madagascar.",
+1197,12100039,"Crowned Lemur
+Madagascar.",
+1198,12100040,"Brown Lemur
+Madagascar.",
+1199,12100041,"Black Lemur
+Madagascar.",
+1200,12100042,Madagascar.,
+1201,12100043,,
+1202,12100044,Mongoose Lemur,Comoros
+1203,12100045,Red-bellied Lemur,Madagascar
+1204,12100046,"Red-fronted Lemur
+Madagascar.",
+1205,12100047,Sanford’s Lemur,Madagascar
+1206,12100048,,
+1207,12100049,Bandro,Madagascar
+1208,12100050,Golden Bamboo Lemur,Madagascar
+1209,12100051,"Gray Bamboo Lemur
+Madagascar.",
+1210,12100052,Madagascar.,
+1211,12100053,,
+1212,12100054,Sambirano Bamboo Lemur,North and West of Madagascar.
+1213,12100055,,
+1214,12100056,"Ring-tailed Lemur
+Madagascar.",
+1215,12100057,,
+1216,12100058,"Greater Bamboo Lemur
+Madagascar.",
+1217,12100059,,
+1218,12100060,"Red Ruﬀed Lemur
+Madagascar.",
+1219,12100061,"Black-and-white Ruﬀed Lemur
+Madagascar.",
+1220,12100062,Madagascar.,
+1221,12100063,,
+1222,12100064,,
+1223,12100065,,
+1224,12100066,,
+1225,12100067,Ankarana Sportive Lemur,Madagascar
+1226,12100068,Black-striped Sportive Lemur,NW Madagascar.
+1227,12100069,Milne-Edwards’s Sportive Lemur,Madagascar
+1228,12100070,White-footed Sportive Lemur,Madagascar
+1229,12100071,Small-toothed Sportive Lemur,Madagascar
+1230,12100072,Weasel Lemur,Madagascar
+1231,12100073,Red-tailed Sportive Lemur,Madagascar
+1232,12100074,Northern Sportive Lemur,Madagascar
+1233,12100075,,
+1234,12100076,,
+1235,12100077,"Eastern Woolly Lemur
+Madagascar.",
+1236,12100078,Western Woolly Lemur,
+1237,12100079,Sambirano Woolly Lemur,Madagascar
+1238,12100080,,
+1239,12100081,"Indri
+Madagascar.",
+1240,12100082,Madagascar.,
+1241,12100083,,
+1242,12100084,,
+1243,12100085,Coquerel’s Sifaka,Madagascar
+1244,12100086,Van der Decken’s Sifaka,Madagascar
+1245,12100087,,Madagascar
+1246,12100088,,
+1247,12100089,"Diademed Sifaka
+Madagascar.",
+1248,12100090,Madagascar.,
+1249,12100091,,
+1250,12100092,Milne-Edwards’s Sifaka,Madagascar
+1251,12100093,Perrier’s Sifaka,Madagascar
+1252,12100094,Golden-crowned Sifaka,Madagascar
+1253,12100095,Verreaux’s Sifaka,Madagascar
+1254,12100096,,
+1255,12100097,,
+1256,12100098,,
+1257,12100099,Aye-aye,NW Madagascar.
+1258,12100100,,
+1259,12100101,,
+1260,12100102,,
+1261,12100103,Calabar Angwantibo,Equatorial Guinea
+1262,12100104,Golden Angwantibo,Nigeria
+1263,12100105,,
+1264,12100106,Gray Slender Loris,India: Madras.
+1265,12100107,,India: Madras.
+1266,12100108,,
+1267,12100109,,
+1268,12100110,,
+1269,12100111,"Red Slender Loris
+Sri Lanka.",
+1270,12100112,,
+1271,12100113,Bengal Slow Loris,India
+1272,12100114,Bengal Slow Loris,Malaysia
+1273,12100115,,Malaysia
+1274,12100116,,
+1275,12100117,,
+1276,12100118,Pygmy Slow Loris,Vietnam
+1277,12100119,,
+1278,12100120,Potto,Ghana
+1279,12100121,,Ghana
+1280,12100122,,
+1281,12100123,,
+1282,12100124,,
+1283,12100125,False Potto,"""Equatorial Africa""."
+1284,12100126,,
+1285,12100127,,
+1286,12100128,Southern Needle-clawed Bushbaby,Gabon
+1287,12100129,Northern Needle-clawed Bushbaby,Equatorial Guinea
+1288,12100130,,Equatorial Guinea
+1289,12100131,,
+1290,12100132,,
+1291,12100133,Bioko Allen’s Bushbaby,Equatorial Guinea
+1292,12100134,Cross River Bushbaby,Cameroon: Duala.
+1293,12100135,"Prince Demidoﬀ’s Bushbaby
+Senegal.",
+1294,12100136,"Gabon Bushbaby
+Gabon.",
+1295,12100137,Somali Bushbaby,Ethiopia
+1296,12100138,Grant’s Bushbaby,Mozambique
+1297,12100139,Dusky Bushbaby,Dem. Rep. Congo: Moera
+1298,12100140,Moholi Bushbaby,South Africa
+1299,12100141,Malawi Bushbaby,Mozambique
+1300,12100142,Uluguru Bushbaby,Tanzania
+1301,12100143,Rondo Bushbaby,Tanzania
+1302,12100144,"Senegal Bushbaby
+Senegal.",
+1303,12100145,Senegal.,
+1304,12100146,,
+1305,12100147,,
+1306,12100148,,
+1307,12100149,Thomas’s Bushbaby,Dem. Rep. Congo
+1308,12100150,Zanzibar Bushbaby,Tanzania
+1309,12100151,,
+1310,12100152,Brown Greater Galago,Mozambique
+1311,12100153,,Mozambique
+1312,12100154,,
+1313,12100155,Northern Greater Galago,Zanzibar (designated by Thomas
+1314,12100156,,Zanzibar (designated by Thomas
+1315,12100157,,
+1316,12100158,,
+1317,12100159,,
+1318,12100160,Silvery Greater Galago,Angola: Cuvo Bay.
+1319,12100161,,Angola: Cuvo Bay.
+1320,12100162,,
+1321,12100163,,
+1322,12100164,,
+1323,12100165,,
+1324,12100166,,
+1325,12100167,Horsﬁeld’s Tarsier,Indonesia
+1326,12100168,,Indonesia
+1327,12100169,,
+1328,12100170,,
+1329,12100171,Dian’s Tarsier,C Sulawesi
+1330,12100172,Peleng Tarsier,Indonesia
+1331,12100173,Pygmy Tarsier,C Sulawesi
+1332,12100174,Sangihe Tarsier,Indonesia
+1333,12100175,Philippine Tarsier,Philippine Isls
+1334,12100176,Spectral Tarsier,
+1335,12100177,,
+1336,12100178,,
+1337,12100179,,
+1338,12100180,,
+1339,12100181,Goeldi’s Marmoset,Brazil
+1340,12100182,,
+1341,12100183,,
+1342,12100184,,
+1343,12100185,,
+1344,12100186,,
+1345,12100187,Rio Acari Marmoset,
+1346,12100188,Silvery Marmoset,Brazil
+1347,12100189,Buﬀy-tufted Marmoset,Brazil
+1348,12100190,Gold-and-white Marmoset,Brazil
+1349,12100191,Emilia’s Marmoset,Brazil
+1350,12100192,Buﬀy-headed Marmoset,Brazil
+1351,12100193,White-headed Marmoset,Brazil
+1352,12100194,Santarem Marmoset,Brazil
+1353,12100195,Roosmalens’ Dwarf Marmoset,
+1354,12100196,Hershkovitz’s Marmoset,Brazil
+1355,12100197,Common Marmoset,Brazil
+1356,12100198,Wied’s Marmoset,Brazil
+1357,12100199,White Marmoset,Brazil
+1358,12100200,Manicore Marmoset,Brazil
+1359,12100201,Marca’s Marmoset,Brazil
+1360,12100202,Maués Marmoset,Brazil
+1361,12100203,Black-tailed Marmoset,Brazil
+1362,12100204,Black-headed Marmoset,Brazil
+1363,12100205,Black-tufted Marmoset,Brazil
+1364,12100206,Pygmy Marmoset,Brazil
+1365,12100207,,Brazil
+1366,12100208,,
+1367,12100209,Satéré Marmoset,
+1368,12100210,,
+1369,12100211,Superagui Lion Tamarin,Brazil
+1370,12100212,Golden-headed Lion Tamarin,Brazil
+1371,12100213,Black Lion Tamarin,Brazil
+1372,12100214,Golden Lion Tamarin,Brazil
+1373,12100215,,
+1374,12100216,Pied Tamarin,Brazil
+1375,12100217,Brown-mantled Tamarin,Brazil
+1376,12100218,,Brazil
+1377,12100219,,
+1378,12100220,,
+1379,12100221,,
+1380,12100222,,
+1381,12100223,,
+1382,12100224,,
+1383,12100225,,
+1384,12100226,,
+1385,12100227,,
+1386,12100228,Geoﬀroy’s Tamarin,Panama
+1387,12100229,Graells’s Tamarin,Peru
+1388,12100230,Emperor Tamarin,Brazil
+1389,12100231,,Brazil
+1390,12100232,,
+1391,12100233,Mottle-faced Tamarin,Brazil
+1392,12100234,White-lipped Tamarin,Brazil
+1393,12100235,,Brazil
+1394,12100236,,
+1395,12100237,,
+1396,12100238,White-footed Tamarin,Colombia
+1397,12100239,Martins’ Tamarin,Brazil
+1398,12100240,,Brazil
+1399,12100241,,
+1400,12100242,White-mantled Tamarin,Brazil
+1401,12100243,"Red-handed Tamarin
+Surinam.",
+1402,12100244,Moustached Tamarin,Brazil
+1403,12100245,,Brazil
+1404,12100246,,
+1405,12100247,Black Tamarin,Brazil: Belem.
+1406,12100248,Black-mantled Tamarin,Brazil
+1407,12100249,,Brazil
+1408,12100250,,
+1409,12100251,Cottontop Tamarin,Colombia
+1410,12100252,Red-capped Tamarin,Brazil
+1411,12100253,Golden-mantled Tamarin,Equador
+1412,12100254,,
+1413,12100255,,
+1414,12100256,White-fronted Capuchin,Venezuela
+1415,12100257,,Venezuela
+1416,12100258,,
+1417,12100259,,
+1418,12100260,,
+1419,12100261,,
+1420,12100262,,
+1421,12100263,Tufted Capuchin,French Guiana.
+1422,12100264,,French Guiana.
+1423,12100265,,
+1424,12100266,,
+1425,12100267,,
+1426,12100268,,
+1427,12100269,,
+1428,12100270,"White-headed Capuchin
+N Colombia.",
+1429,12100271,Kaapori Capuchin,Brazil
+1430,12100272,Black-striped Capuchin,Brazil
+1431,12100273,,Brazil
+1432,12100274,,
+1433,12100275,,
+1434,12100276,,
+1435,12100277,Black Capuchin,Brazil: Rio de Janeiro
+1436,12100278,,Brazil: Rio de Janeiro
+1437,12100279,,
+1438,12100280,,
+1439,12100281,Weeper Capuchin,Venezuela
+1440,12100282,Golden-bellied Capuchin,Brazil
+1441,12100283,,
+1442,12100284,,
+1443,12100285,Black-capped Squirrel Monkey,Bolivia
+1444,12100286,,Bolivia
+1445,12100287,,
+1446,12100288,Central American Squirrel Monkey,Panama
+1447,12100289,,Panama
+1448,12100290,,
+1449,12100291,Common Squirrel Monkey,Guyana
+1450,12100292,,Guyana
+1451,12100293,,
+1452,12100294,,
+1453,12100295,,
+1454,12100296,Bare-eared Squirrel Monkey,Brazil
+1455,12100297,Black Squirrel Monkey,Brazil
+1456,12100298,,
+1457,12100299,,
+1458,12100300,Azara’s Night Monkey,Argentina
+1459,12100301,,Argentina
+1460,12100302,,
+1461,12100303,,
+1462,12100304,Hershkovitz’s Night Monkey,Colombia
+1463,12100305,Gray-bellied Night Monkey,Colombia
+1464,12100306,,Colombia
+1465,12100307,,
+1466,12100308,,
+1467,12100309,,
+1468,12100310,Peruvian Night Monkey,Peru
+1469,12100311,Nancy Ma’s Night Monkey,Peru
+1470,12100312,Black-headed Night Monkey,type locality: Peru
+1471,12100313,Three-striped Night Monkey,Venezuela
+1472,12100314,Spix’s Night Monkey,Brazil
+1473,12100315,,
+1474,12100316,,
+1475,12100317,,
+1476,12100318,,
+1477,12100319,,
+1478,12100320,Baptista Lake Titi,Brazil
+1479,12100321,Barbara Brown’s Titi,Brazil
+1480,12100322,Prince Bernhard’s Titi,Brazil
+1481,12100323,Brown Titi,Brazil
+1482,12100324,Chestnut-bellied Titi,Brazil
+1483,12100325,Ashy Black Titi,
+1484,12100326,Coimbra Filho’s Titi,Brazil
+1485,12100327,Coppery Titi,Brazil
+1486,12100328,White-tailed titi,Brazil
+1487,12100329,White-eared Titi,Bolivia
+1488,12100330,Hershkovitz’ Titi,Brazil
+1489,12100331,Hoﬀmanns’s Titi,Brazil
+1490,12100332,Lucifer Titi,Peru
+1491,12100333,Black Titi,Venezuela
+1492,12100334,Colombian Black-handed Titi,Colombia
+1493,12100335,Coastal Black-handed Titi,Brazil
+1494,12100336,Rio Beni Titi,Bolivia
+1495,12100337,Red-bellied Titi,Brazil
+1496,12100338,Black-fronted Titi,Brazil
+1497,12100339,Rio Mayo Titi,Peru
+1498,12100340,Ollala Brothers’ Titi,Bolivia
+1499,12100341,Ornate Titi,Colombia
+1500,12100342,White-coated Titi,Paraguay
+1501,12100343,Atlantic Titi,Brazil
+1502,12100344,Rio Purus Titi,Brazil
+1503,12100345,Red-headed Titi,Brazil
+1504,12100346,Stephen Nash’s Titi,Brazil: somewhere along the middle to upper Rio Purus.
+1505,12100347,Collared Titi,Brazil
+1506,12100348,,
+1507,12100349,,
+1508,12100350,Bald Uacari,Brazil
+1509,12100351,,Brazil
+1510,12100352,,
+1511,12100353,,
+1512,12100354,,
+1513,12100355,Black-headed Uacari,Venezuela
+1514,12100356,,
+1515,12100357,White-nosed Saki,Brazil
+1516,12100358,Red-backed Bearded Saki,
+1517,12100359,Brown-backed Bearded Saki,Brazil
+1518,12100360,Black Bearded Saki,Brazil
+1519,12100361,Uta Hick’s Bearded Saki,Brazil
+1520,12100362,,
+1521,12100363,Equatorial Saki,Peru
+1522,12100364,White-footed Saki,Brazil
+1523,12100365,Rio Tapajos Saki,Brazil
+1524,12100366,Monk Saki,Brazil
+1525,12100367,,Brazil
+1526,12100368,,
+1527,12100369,White-faced Saki,French Guiana
+1528,12100370,,French Guiana
+1529,12100371,,
+1530,12100372,,
+1531,12100373,,
+1532,12100374,,
+1533,12100375,Red-handed Howler,Brazil
+1534,12100376,"Black Howler
+Paraguay.",
+1535,12100377,Coiba Island Howler,Panama
+1536,12100378,,Panama
+1537,12100379,,
+1538,12100380,"Brown Howler
+Brazil.",
+1539,12100381,Brazil.,
+1540,12100382,,
+1541,12100383,Guyanan Red Howler,Guyana: coast region.
+1542,12100384,Amazon Black Howler,Brazil
+1543,12100385,Mantled Howler,Nicaragua
+1544,12100386,Guatemalan Black Howler,Guatemala
+1545,12100387,Bolivian Red Howler,Bolivia
+1546,12100388,Venezuelan Red Howler,Colombia
+1547,12100389,,Colombia
+1548,12100390,,
+1549,12100391,,
+1550,12100392,,
+1551,12100393,,
+1552,12100394,White-fronted Spider Monkey,Venezuela
+1553,12100395,Peruvian Spider Monkey,Peru
+1554,12100396,Black-headed Spider Monkey,NW Ecuador
+1555,12100397,,NW Ecuador
+1556,12100398,,
+1557,12100399,Geoﬀroy’s Spider Monkey,Nicaragua
+1558,12100400,,Nicaragua
+1559,12100401,,
+1560,12100402,,
+1561,12100403,,
+1562,12100404,,
+1563,12100405,Brown Spider Monkey,Colombia
+1564,12100406,White-cheeked Spider Monkey,Brazil
+1565,12100407,Red-faced Spider Monkey,French Guiana.
+1566,12100408,,
+1567,12100409,Southern Muriqui,Brazil
+1568,12100410,Northern Muriqui,Brazil
+1569,12100411,,
+1570,12100412,Gray Woolly Monkey,Brazil
+1571,12100413,,Brazil
+1572,12100414,,
+1573,12100415,Brown Woolly Monkey,Colombia
+1574,12100416,Colombian Woolly Monkey,Colombia
+1575,12100417,Silvery Woolly Monkey,Peru
+1576,12100418,,
+1577,12100419,Yellow-tailed Woolly Monkey,Peru
+1578,12100420,,
+1579,12100421,,
+1580,12100422,,
+1581,12100423,,
+1582,12100424,Allen’s Swamp Monkey,Dem. Rep. Congo
+1583,12100425,,
+1584,12100426,Agile Mangabey,Dem. Rep. Congo
+1585,12100427,"Sooty Mangabey
+West Africa.",
+1586,12100428,West Africa.,
+1587,12100429,,
+1588,12100430,Golden-bellied Mangabey,Dem. Rep. Congo: Upper Congo.
+1589,12100431,Tana River Mangabey,Kenya
+1590,12100432,Sanje Mangabey,Tanzania
+1591,12100433,"Collared Mangabey
+West Africa.",
+1592,12100434,,
+1593,12100435,"Sykes’ Monkey
+Angola.",
+1594,12100436,Angola.,
+1595,12100437,,
+1596,12100438,,
+1597,12100439,,
+1598,12100440,,
+1599,12100441,,
+1600,12100442,,
+1601,12100443,,
+1602,12100444,,
+1603,12100445,,
+1604,12100446,,
+1605,12100447,,
+1606,12100448,Red-tailed Monkey,Angola (NW
+1607,12100449,,Angola (NW
+1608,12100450,,
+1609,12100451,,
+1610,12100452,,
+1611,12100453,,
+1612,12100454,Campbell’s Mona Monkey,Sierra Leone.
+1613,12100455,"Moustached Guenon
+Africa.",
+1614,12100456,Africa.,
+1615,12100457,,
+1616,12100458,,
+1617,12100459,Dent’s Mona Monkey,Dem. Rep. Congo
+1618,12100460,"Diana Monkey
+Liberia.",
+1619,12100461,Silver Monkey,Uganda: SW Ankole.
+1620,12100462,Dryas Monkey,Dem. Rep. Congo
+1621,12100463,White-throated Guenon,"""West Africa""; restricted by Groves (2001<i>c</i>:214) to Benin"
+1622,12100464,,"""West Africa""; restricted by Groves (2001<i>c</i>:214) to Benin"
+1623,12100465,,
+1624,12100466,Red-eared Guenon,Equatorial Guinea
+1625,12100467,,Equatorial Guinea
+1626,12100468,,
+1627,12100469,Hamlyn’s Monkey,Dem. Rep. Congo
+1628,12100470,,Dem. Rep. Congo
+1629,12100471,,
+1630,12100472,Golden Monkey,Dem. Rep. Congo
+1631,12100473,L’Hoest’s Monkey,Dem. Rep. Congo
+1632,12100474,Lowe’s Mona Monkey,Côte d’Ivoire: Bandama.
+1633,12100475,"Blue Monkey
+Angola.",
+1634,12100476,Angola.,
+1635,12100477,,
+1636,12100478,,
+1637,12100479,,
+1638,12100480,,
+1639,12100481,,
+1640,12100482,"Mona Monkey
+""Guinea"".",
+1641,12100483,De Brazza’s Monkey,Sudan
+1642,12100484,Greater spot-nosed Monkey,Equatorial Guinea
+1643,12100485,,Equatorial Guinea
+1644,12100486,,
+1645,12100487,"Lesser Spot-nosed Monkey
+""Guinea"".",
+1646,12100488,"""Guinea"".",
+1647,12100489,,
+1648,12100490,Crested Mona Monkey,Equatorial Guinea
+1649,12100491,,Equatorial Guinea
+1650,12100492,,
+1651,12100493,,
+1652,12100494,,
+1653,12100495,Preuss’s Monkey,Cameroon
+1654,12100496,,Cameroon
+1655,12100497,,
+1656,12100498,Roloway Monkey,"""Guinea"" (= West Africa in general)."
+1657,12100499,Sclater’s Guenon,Nigeria
+1658,12100500,Sun-tailed Monkey,C Gabon
+1659,12100501,Wolf’s Mona Monkey,"""Central West Africa."""
+1660,12100502,,"""Central West Africa."""
+1661,12100503,,
+1662,12100504,,
+1663,12100505,Grivet,Sudan
+1664,12100506,Malbrouck,Dem. Rep. Congo
+1665,12100507,Bale Mountains Vervet,Ethiopia
+1666,12100508,"Vervet Monkey
+""Africa"".",
+1667,12100509,"""Africa"".",
+1668,12100510,,
+1669,12100511,,
+1670,12100512,,
+1671,12100513,,
+1672,12100514,Green Monkey,Cape Verde Isls.
+1673,12100515,"Tantalus Monkey
+No locality.",
+1674,12100516,No locality.,
+1675,12100517,,
+1676,12100518,,
