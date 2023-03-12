@@ -273,6 +273,7 @@ def process_big_data() -> pd.DataFrame:
     return(merged_df)
 
 
+<<<<<<< HEAD
 data = process_loc_data()
 # data = process_big_data()
 # data = pd.read_csv('checking part_2.csv')
@@ -307,3 +308,8 @@ data = process_loc_data()
 
 # test_set['List (2017)'] = test_set['List (2017)'].replace('nan', test_set['List (2016)'], inplace=True)
 # print(test_set['List (2016)'])
+=======
+# process_loc_data(DIRECTORY)
+data = process_big_data()
+print(data)
+>>>>>>> 62aa67d5a8838048d2ef68018b3064100d02be0d

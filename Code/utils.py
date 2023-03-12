@@ -4,7 +4,7 @@ import geopandas as pgd
 
 def csv_processing(csv_filepath):
     # Will probably not have to dropna once data is processed
-    df = pd.read_csv("Book1.csv")
+    df = pd.read_csv(csv_filepath)
     df = df.dropna()
     
     # Create dataframe with numerical values for extinction threat level in given year range
