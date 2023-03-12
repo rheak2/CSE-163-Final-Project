@@ -112,6 +112,7 @@ def process_loc_data():
     df_2 = df_2.drop([0])
     df_2['Location'] = df_2['TypeLocality'].apply(first_loc)
     df_2 = df_2[['ID', 'CommonName', 'Location']]
+    print(df_2)
     # print(df_2['CommonName'])
     # print('df 1')
     # print(df_1)
