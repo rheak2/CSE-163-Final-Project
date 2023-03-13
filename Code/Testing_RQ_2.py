@@ -48,7 +48,7 @@ def main():
     # Create a colour coded map showing the average extinction threat level change
     # 2007-2021 around the world
 
-    extinction_data = csv_processing("Code/Book1.csv")
+    extinction_data = csv_processing(process_big_data())
     threat_data = species_threat_level_data_processing(extinction_data)
 
     # ADD LOCATION TO THIS DF ONCE FULL DATASET AVAILABLE
@@ -80,5 +80,9 @@ def main():
     plt.title("Conservation Efforts vs Threat Level for Species in 2021")
     plt.savefig("Conservation vs threat level change scatterplot.png")
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
+
+extinction_data = csv_processing(process_big_data())
+print(extinction_data)
+threat_data = species_threat_level_data_processing(extinction_data)

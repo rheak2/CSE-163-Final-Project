@@ -20,7 +20,7 @@ def first_loc(place):
         return(place[0])
 
 
-def process_loc_data():
+def process_loc_data() -> None:
     # clean up data to match other data
     filename = os.path.join('Table_7_Loc_Data', 'msw3-all.pdf')
     loc = pd.DataFrame()
@@ -65,14 +65,12 @@ def process_loc_data():
     loc = loc[['Scientific name', 'CommonName', 'Location']]
     loc = loc.rename(columns={'CommonName': 'Common name'})
     loc.to_csv('mammal_location_data.csv')
-    loc = loc.dropna()
-    return loc
 
 
 # PROCESS LOC TESTING
-# print(process_loc_data())
-data = pd.read_csv('mammal_location_data_2.csv')
-data = data[['Scientific name', 'Common name', 'Location']]
-print(data)
-data = data.dropna(thresh=2)
-print(data)
+print(process_loc_data())
+# data = pd.read_csv('mammal_location_data_2.csv')
+# data = data[['Scientific name', 'Common name', 'Location']]
+# print(data)
+# data = data.dropna(thresh=2)
+# print(data)
