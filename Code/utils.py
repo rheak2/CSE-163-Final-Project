@@ -201,10 +201,10 @@ def process_big_data() -> pd.DataFrame:
     final_df.to_csv('final_combined_data')
     return(final_df)
 
-def csv_processing(df):
+def csv_processing(csv_filepath):
     # Will probably not have to dropna once data is processed
-    # df = pd.read_csv(csv_filepath)
-    # df = df.dropna()
+    df = pd.read_csv(csv_filepath)
+    df = df.dropna()
     
     # Create dataframe with numerical values for extinction threat level in given year range
         # Create new dataframe including species name, class, average threat level
