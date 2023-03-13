@@ -195,6 +195,8 @@ def process_big_data() -> pd.DataFrame:
     merged_df = merged_df.astype(str)
     merged_df = fill_in_threat(merged_df)
     loc_data = pd.read_csv('mammal_location_data.csv')
+    loc_data = loc_data[['Scientific name', 'Common name', 'Location']]
+    loc_data = loc_data.dropna(thresh=2)
     final_df = pd.merge(merged_df, loc_data, how='left')
     # to save for testing purposes, will remove before final submission
     final_df.to_csv('final_combined_data')
