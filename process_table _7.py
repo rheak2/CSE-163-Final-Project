@@ -41,7 +41,7 @@ def update_threat(df, year_1, year_2):
         df[cy] = df[cy].where(df[cy] != 'nan', df[py])
         return(df[cy])
     else:
-        nt = ['NT'] * len(df[cy])
+        nt = ['NR'] * len(df[cy])
         df[cy] = df[cy].where(df[cy] != 'nan', nt)
         return(df[cy])
 
