@@ -32,15 +32,15 @@
 31,10400011,,
 32,10400012,,
 33,10400013,,
-34,10400014,Brown-eared Woolly Opossum,"""Paraguay;"" restricted to Caazapá"
-35,10400015,,"""Paraguay;"" restricted to Caazapá"
+34,10400014,Brown-eared Woolly Opossum,"Paraguay;"" restricted to Caazapá"
+35,10400015,,"Paraguay;"" restricted to Caazapá"
 36,10400016,,
 37,10400017,,
 38,10400018,,
 39,10400019,,
 40,10400020,,
-41,10400021,Bare-tailed Woolly Opossum,"""America;"" restricted to Surinam (Thomas"
-42,10400022,,"""America;"" restricted to Surinam (Thomas"
+41,10400021,Bare-tailed Woolly Opossum,"America;"" restricted to Surinam (Thomas"
+42,10400022,,"America;"" restricted to Surinam (Thomas"
 43,10400023,,
 44,10400024,,
 45,10400025,,
@@ -50,8 +50,8 @@
 49,10400029,Bushy-tailed Opossum,Perú
 50,10400030,,
 51,10400031,,
-52,10400032,Water Opossum,"""Gujana;"" restricted to Cayenne"
-53,10400033,,"""Gujana;"" restricted to Cayenne"
+52,10400032,Water Opossum,"Gujana;"" restricted to Cayenne"
+53,10400033,,"Gujana;"" restricted to Cayenne"
 54,10400034,,
 55,10400035,,
 56,10400036,,
@@ -59,12 +59,12 @@
 58,10400038,White-eared Opossum,Brazil
 59,10400039,Big-eared Opossum,Brazil
 60,10400040,Guianan White-eared Opossum,Venezuela
-61,10400041,Common Opossum,"""America;"" restricted to Surinam (Thomas"
-62,10400042,,"""America;"" restricted to Surinam (Thomas"
+61,10400041,Common Opossum,"America;"" restricted to Surinam (Thomas"
+62,10400042,,"America;"" restricted to Surinam (Thomas"
 63,10400043,,
 64,10400044,Andean White-eared Opossum,Perú
-65,10400045,Virginia Opossum,"""Virginia"
-66,10400046,,"""Virginia"
+65,10400045,Virginia Opossum,Virginia
+66,10400046,,Virginia
 67,10400047,,
 68,10400048,,
 69,10400049,,
@@ -90,13 +90,13 @@
 89,10400069,,
 90,10400070,,
 91,10400071,Heavy-browed Mouse Opossum,Perú
-92,10400072,Rufous Mouse Opossum,"""Peruvian Amazons;"" identiﬁed as Perú"
+92,10400072,Rufous Mouse Opossum,"Peruvian Amazons;"" identiﬁed as Perú"
 93,10400073,Mexican Mouse Opossum,México
 94,10400074,,México
 95,10400075,,
 96,10400076,,
-97,10400077,Linnaeus’s Mouse Opossum,"""Asia"
-98,10400078,Quechuan Mouse Opossum,"""Ocabamba"" identiﬁed as Valle de Occobamba by Ceballos Bendezu (1981)"
+97,10400077,Linnaeus’s Mouse Opossum,Asia
+98,10400078,Quechuan Mouse Opossum,"Ocabamba"" identiﬁed as Valle de Occobamba by Ceballos Bendezu (1981)"
 99,10400079,Robinson’s Mouse Opossum,Venezuela
 100,10400080,,Venezuela
 101,10400081,,
@@ -110,7 +110,7 @@
 109,10400089,Tyleria Mouse Opossum,Venezuela
 110,10400090,Guajira Mouse Opossum,Colombia
 111,10400091,,
-112,10400092,Bishop’s Slender Opossum,"""264 km N (by road) Xavantina (locality is at 12°51'S"
+112,10400092,Bishop’s Slender Opossum,264 km N (by road) Xavantina (locality is at 12°51'S
 113,10400093,Narrow-headed Slender Opossum,Venezuela
 114,10400094,Dorothys’ Slender opossum,Bolivia
 115,10400095,Dusky Slender Opossum,Venezuela
@@ -121,7 +121,7 @@
 120,10400100,Tschudi’s Slender Opossum,
 121,10400101,Gray Slender Opossum,Brazil
 122,10400102,Panama Slender Opossum,Panamá
-123,10400103,Junin Slender Opossum,"""Utcuyacu. Between Tarma and Chanchamayo"
+123,10400103,Junin Slender Opossum,Utcuyacu. Between Tarma and Chanchamayo
 124,10400104,Neblina Slender Opossum,Venezuela
 125,10400105,White-bellied Slender Opossum,
 126,10400106,Delicate Slender Opossum,Guyana
@@ -153,29 +153,29 @@
 152,10400132,,
 153,10400133,,
 154,10400134,Sepia Short-tailed Opossum,Colombia
-155,10400135,Northern Three-striped Opossum,"""Brasilien"
-156,10400136,Northern Red-sided Opossum,"""In Americae australis silvis;"" restricted to Surinam by Matschie (1916)."
+155,10400135,Northern Three-striped Opossum,Brasilien
+156,10400136,Northern Red-sided Opossum,"In Americae australis silvis;"" restricted to Surinam by Matschie (1916)."
 157,10400137,Yellow-sided Opossum,Uruguay
 158,10400138,Gray Short-tailed Opossum,Brazil
 159,10400139,Emilia’s Short-tailed Opossum,Brazil
 160,10400140,Amazonian Red-sided Opossum,Brazil
-161,10400141,Ihering’s Three-striped Opossum,"""Rio Grande do Sul;"" identiﬁed as Brazil"
+161,10400141,Ihering’s Three-striped Opossum,"Rio Grande do Sul;"" identiﬁed as Brazil"
 162,10400142,Pygmy Short-tailed Opossum,Bolivia
 163,10400143,Marajó Short-tailed Opossum,Brazil
 164,10400144,Osgood’s Short-tailed Opossum,Bolivia
-165,10400145,Hooded Red-sided Opossum,"""San Juan de Colon"
+165,10400145,Hooded Red-sided Opossum,San Juan de Colon
 166,10400146,Chestnut-striped Opossum,Brazil
-167,10400147,Long-nosed Short-tailed Opossum,"""Brazil;"" restricted to Rio de Janeiro"
-168,10400148,Southern Red-sided Opossum,"""Provinz Rio Grande do Sul;"" restricted to Brazil"
+167,10400147,Long-nosed Short-tailed Opossum,"Brazil;"" restricted to Rio de Janeiro"
+168,10400148,Southern Red-sided Opossum,"Provinz Rio Grande do Sul;"" restricted to Brazil"
 169,10400149,Southern Three-striped Opossum,Brazil
 170,10400150,Red Three-striped Opossum,Brazil
 171,10400151,One-striped Opossum,Brazil
 172,10400152,,
 173,10400153,Anderson’s Four-eyed Opossum,Perú
-174,10400154,Southeastern Four-eyed Opossum,"""Südamerica;"" restricted to Bahia"
+174,10400154,Southeastern Four-eyed Opossum,"Südamerica;"" restricted to Bahia"
 175,10400155,McIlhenny’s Four-eyed Opossum,Perú
-176,10400156,Gray Four-eyed Opossum,"""America;"" restricted to Surinam by J. A. Allen (1900) and further restricted to Paramaribo"
-177,10400157,,"""America;"" restricted to Surinam by J. A. Allen (1900) and further restricted to Paramaribo"
+176,10400156,Gray Four-eyed Opossum,"America;"" restricted to Surinam by J. A. Allen (1900) and further restricted to Paramaribo"
+177,10400157,,"America;"" restricted to Surinam by J. A. Allen (1900) and further restricted to Paramaribo"
 178,10400158,,
 179,10400159,,
 180,10400160,,
@@ -183,11 +183,11 @@
 182,10400162,Cinderella Fat-tailed Mouse Opossum,Argentina
 183,10400163,Elegant Fat-tailed Mouse Opossum,Chile
 184,10400164,Karimi’s Fat-tailed Mouse Opossum,Brazil
-185,10400165,Paraguayan Fat-tailed Mouse Opossum,"""Sudamerica;"" restricted to Paraguay"
+185,10400165,Paraguayan Fat-tailed Mouse Opossum,"Sudamerica;"" restricted to Paraguay"
 186,10400166,White-bellied Fat-tailed Mouse Opossum,Bolivia
 187,10400167,Common Fat-tailed Mouse Opossum,Not stated; restricted to Paraguay
 188,10400168,Argentine Fat-tailed Mouse Opossum,Argentina
-189,10400169,Tate’s Fat-tailed Mouse Opossum,"""Chasquitambo 9710 m"
+189,10400169,Tate’s Fat-tailed Mouse Opossum,Chasquitambo 9710 m
 190,10400170,Dwarf Fat-tailed Mouse Opossum,Brazil
 191,10400171,Buﬀ-bellied Fat-tailed Mouse Opossum,Bolivia
 192,10400172,,
@@ -307,7 +307,7 @@ Tasmania.",
 303,10800081,,
 304,10800082,Wongai Ningaui,Australia
 305,10800083,Pilbara Ningaui,Australia
-306,10800084,Southern Ningaui,"""Mt. Manning Area"
+306,10800084,Southern Ningaui,Mt. Manning Area
 307,10800085,,
 308,10800086,Kangaroo Island Dunnart,Australia
 309,10800087,Chestnut Dunnart,Papua New Guinea
@@ -540,7 +540,7 @@ Tasmania.",
 536,11000139,,
 537,11000140,,
 538,11000141,Great-tailed Triok,Indonesia
-539,11000142,Long-ﬁngered Triok,"""South coast of New Guinea""."
+539,11000142,Long-ﬁngered Triok,"South coast of New Guinea""."
 540,11000143,Tate’s Triok,Papua New Guinea
 541,11000144,Striped Possum,Indonesia
 542,11000145,,Indonesia
@@ -621,8 +621,8 @@ Tasmania.",
 617,11000220,,
 618,11000221,Black Dorcopsis,Papua New Guinea
 619,11000222,White-striped Dorcopsis,Papua New Guinea
-620,11000223,Grey Dorcopsis,"""Southeast of New Guinea""."
-621,11000224,,"""Southeast of New Guinea""."
+620,11000223,Grey Dorcopsis,"Southeast of New Guinea""."
+621,11000224,,"Southeast of New Guinea""."
 622,11000225,,
 623,11000226,Brown Dorcopsis,Indonesia
 624,11000227,,Indonesia
@@ -729,7 +729,7 @@ Unknown.",
 724,11100013,Short-tailed Shrew Tenrec,
 725,11100014,Cowan's Shrew Tenrec,
 726,11100015,Dobson's Shrew Tenrec,
-727,11100016,Drouhard’s Shrew Tenrec,"""Environs de Diego-Suarez"
+727,11100016,Drouhard’s Shrew Tenrec,Environs de Diego-Suarez
 728,11100017,Dryad Shrew Tenrec,Site 1
 729,11100018,Pale Shrew Tenrec,
 730,11100019,Gracile Shrew Tenrec,
@@ -737,8 +737,8 @@ Unknown.",
 732,11100021,Lesser Long-tailed Shrew Tenrec,
 733,11100022,Montane Shrew Tenrec,Madagascar
 734,11100023,Nasolo’s Shrew Tenrec,
-735,11100024,Pygmy Shrew Tenrec,"""Environs de Diego Suarez"
-736,11100025,Greater Long-tailed Shrew Tenrec,"""Midongy-du-Sud"
+735,11100024,Pygmy Shrew Tenrec,Environs de Diego Suarez
+736,11100025,Greater Long-tailed Shrew Tenrec,Midongy-du-Sud
 737,11100026,Least Shrew Tenrec,
 738,11100027,Shrew-toothed Shrew Tenrec,
 739,11100028,Taiva Shrew Tenrec,
@@ -746,13 +746,13 @@ Unknown.",
 741,11100030,Thomas's Shrew Tenrec,
 742,11100031,,
 743,11100032,Mole-like Rice Tenrec,
-744,11100033,Four-toed Rice Tenrec,"""Du plateau d’Emirne"" [Imerina"
+744,11100033,Four-toed Rice Tenrec,"Du plateau d’Emirne"" [Imerina"
 745,11100034,,
 746,11100035,,
-747,11100036,Nimba Otter Shrew,"""Ziéla"
+747,11100036,Nimba Otter Shrew,Ziéla
 748,11100037,Ruwenzori Otter Shrew,
 749,11100038,,
-750,11100039,Giant Otter Shrew,"""Mountains of the interior"
+750,11100039,Giant Otter Shrew,Mountains of the interior
 751,11100040,,
 752,11100041,,
 753,11100042,"Lesser Hedgehog Tenrec
@@ -782,7 +782,7 @@ Madagascar.",
 773,11100062,,
 774,11100063,,
 775,11100064,,
-776,11100065,Cape Golden Mole,"""In Sibiria""; usually taken as Cape of Good Hope"
+776,11100065,Cape Golden Mole,"In Sibiria""; usually taken as Cape of Good Hope"
 777,11100066,Stuhlmann’s Golden Mole,Uganda
 778,11100067,,Uganda
 779,11100068,,
@@ -790,8 +790,8 @@ Madagascar.",
 781,11100070,Visagie’s Golden Mole,South Africa
 782,11100071,,
 783,11100072,Giant Golden Mole,South Africa
-784,11100073,Rough-haired Golden Mole,"""Towards Natal"""
-785,11100074,,"""Towards Natal"""
+784,11100073,Rough-haired Golden Mole,Towards Natal
+785,11100074,,Towards Natal
 786,11100075,,
 787,11100076,,
 788,11100077,,
@@ -809,8 +809,8 @@ Madagascar.",
 800,11100089,Fynbos Golden Mole,South Africa
 801,11100090,,South Africa
 802,11100091,,
-803,11100092,Hottentot Golden Mole,"""Interior parts of South Africa"""
-804,11100093,,"""Interior parts of South Africa"""
+803,11100092,Hottentot Golden Mole,Interior parts of South Africa
+804,11100093,,Interior parts of South Africa
 805,11100094,,
 806,11100095,,
 807,11100096,,
@@ -821,8 +821,8 @@ Madagascar.",
 812,11100101,,
 813,11100102,,
 814,11100103,,
-815,11100104,Congo Golden Mole,"""Gulf of Guinea Coast"
-816,11100105,,"""Gulf of Guinea Coast"
+815,11100104,Congo Golden Mole,Gulf of Guinea Coast
+816,11100105,,Gulf of Guinea Coast
 817,11100106,,
 818,11100107,Yellow Golden Mole,Coastal Mozambique
 819,11100108,,Coastal Mozambique
@@ -835,7 +835,7 @@ Madagascar.",
 826,11200001,,
 827,11200002,,
 828,11200003,,
-829,11200004,Short-snouted Elephant Shrew,"""The country between Lake Latakoo and the Tropic"" (= South Africa"
+829,11200004,Short-snouted Elephant Shrew,"The country between Lake Latakoo and the Tropic"" (= South Africa"
 830,11200005,Cape Elephant Shrew,South Africa
 831,11200006,Dusky-footed Elephant Shrew,Dem. Rep. Congo
 832,11200007,Dusky Elephant Shrew,Mozambique
@@ -961,8 +961,8 @@ Madagascar.",
 952,11500001,,
 953,11500002,,
 954,11500003,,
-955,11500004,Asian Elephant,"""Zeylonae"" [Sri Lanka]."
-956,11500005,,"""Zeylonae"" [Sri Lanka]."
+955,11500004,Asian Elephant,"Zeylonae"" [Sri Lanka]."
+956,11500005,,"Zeylonae"" [Sri Lanka]."
 957,11500006,,
 958,11500007,,
 959,11500008,,
@@ -979,7 +979,7 @@ Madagascar.",
 970,11600009,,
 971,11600010,,
 972,11600011,Amazonian Manatee,Brazil
-973,11600012,West Indian Manatee,"""Mari Americano""; restricted by Thomas (1911<i>a</i>) to ""West Indies."""
+973,11600012,West Indian Manatee,"Mari Americano""; restricted by Thomas (1911<i>a</i>) to ""West Indies."
 974,11600013,"African Manatee
 Senegal",
 975,11700001,,
@@ -990,16 +990,16 @@ Senegal",
 980,11700006,Greater Long-nosed Armadillo,
 981,11700007,,
 982,11700008,,
-983,11700009,Nine-banded Armadillo,"""America Meridionali;"" restricted to Pernambuco"
-984,11700010,,"""America Meridionali;"" restricted to Pernambuco"
+983,11700009,Nine-banded Armadillo,"America Meridionali;"" restricted to Pernambuco"
+984,11700010,,"America Meridionali;"" restricted to Pernambuco"
 985,11700011,,
 986,11700012,,
 987,11700013,,
 988,11700014,,
 989,11700015,,
-990,11700016,Hairy Long-nosed Armadillo,"""Peru;"" restricted to montane Perú by Wetzel and Mondolﬁ (1979)."
+990,11700016,Hairy Long-nosed Armadillo,"Peru;"" restricted to montane Perú by Wetzel and Mondolﬁ (1979)."
 991,11700017,Llanos Long-nosed Armadillo,Venezuela
-992,11700018,Seven-banded Armadillo,"""Indiis;"" restricted to Pernambuco"
+992,11700018,Seven-banded Armadillo,"Indiis;"" restricted to Pernambuco"
 993,11700019,Yepes’s Mulita,Argentina
 994,11700020,,
 995,11700021,,
@@ -1013,8 +1013,8 @@ Senegal",
 1003,11700029,,
 1004,11700030,Pink Fairy Armadillo,
 1005,11700031,,
-1006,11700032,Six-banded Armadillo,"""America meridionale;"" restricted to Pará"
-1007,11700033,,"""America meridionale;"" restricted to Pará"
+1006,11700032,Six-banded Armadillo,"America meridionale;"" restricted to Pará"
+1007,11700033,,"America meridionale;"" restricted to Pará"
 1008,11700034,,
 1009,11700035,,
 1010,11700036,,
@@ -1028,23 +1028,23 @@ Senegal",
 1018,11700044,Northern Naked-tailed Armadillo,Honduras
 1019,11700045,Chacoan Naked-tailed Armadillo,Paraguay
 1020,11700046,Greater Naked-tailed Armadillo,Paraguay
-1021,11700047,Southern Naked-tailed Armadillo,"""Africa;"" restricted to ""l'Amérique"" by Buﬀon (1763)"
-1022,11700048,,"""Africa;"" restricted to ""l'Amérique"" by Buﬀon (1763)"
+1021,11700047,Southern Naked-tailed Armadillo,"Africa;"" restricted to ""l'Amérique"" by Buﬀon (1763)"
+1022,11700048,,"Africa;"" restricted to ""l'Amérique"" by Buﬀon (1763)"
 1023,11700049,,
 1024,11700050,,
 1025,11700051,Giant Armadillo,French Guiana
 1026,11700052,,
 1027,11700053,Southern Three-banded Armadillo,No locality mentioned; restricted to Argentina
-1028,11700054,Brazilian Three-banded Armadillo,"""In India orientali;"" redeﬁned as Pernambuco"
+1028,11700054,Brazilian Three-banded Armadillo,"In India orientali;"" redeﬁned as Pernambuco"
 1029,11800001,,
 1030,11800002,,
 1031,11800003,,
 1032,11800004,,
 1033,11800005,Pygmy Three-toed Sloth,Panamá
 1034,11800006,Maned Sloth,
-1035,11800007,Pale-throated Sloth,"""Americć meridionalis arboribus;"" restricted to Surinam by Thomas (1911<i>a</i>)."
-1036,11800008,Brown-throated Sloth,"""Sudamerika;"" restricted to Brazil by Mertens (1925) who suggested that the type may have come from Bahia."
-1037,11800009,,"""Sudamerika;"" restricted to Brazil by Mertens (1925) who suggested that the type may have come from Bahia."
+1035,11800007,Pale-throated Sloth,"Americć meridionalis arboribus;"" restricted to Surinam by Thomas (1911<i>a</i>)."
+1036,11800008,Brown-throated Sloth,"Sudamerika;"" restricted to Brazil by Mertens (1925) who suggested that the type may have come from Bahia."
+1037,11800009,,"Sudamerika;"" restricted to Brazil by Mertens (1925) who suggested that the type may have come from Bahia."
 1038,11800010,,
 1039,11800011,,
 1040,11800012,,
@@ -1053,7 +1053,7 @@ Senegal",
 1043,11800015,,
 1044,11800016,,
 1045,11800017,,
-1046,11800018,Linnaeus’s Two-toed Sloth,"""Zeylona;"" corrected to Surinam by Thomas (1911<i>a</i>). Not British Guiana as stated by Tate (1939)."
+1046,11800018,Linnaeus’s Two-toed Sloth,"Zeylona;"" corrected to Surinam by Thomas (1911<i>a</i>). Not British Guiana as stated by Tate (1939)."
 1047,11800019,Hoﬀmann’s Two-toed Sloth,
 1048,11800020,,
 1049,11800021,,
@@ -1063,8 +1063,8 @@ Senegal",
 1053,11800025,,
 1054,11800026,,
 1055,11800027,,
-1056,11800028,Silky Anteater,"""America australi;"" restricted to Surinam by Thomas (1911<i>a</i>)."
-1057,11800029,,"""America australi;"" restricted to Surinam by Thomas (1911<i>a</i>)."
+1056,11800028,Silky Anteater,"America australi;"" restricted to Surinam by Thomas (1911<i>a</i>)."
+1057,11800029,,"America australi;"" restricted to Surinam by Thomas (1911<i>a</i>)."
 1058,11800030,,
 1059,11800031,,
 1060,11800032,,
@@ -1073,8 +1073,8 @@ Senegal",
 1063,11800035,,
 1064,11800036,,
 1065,11800037,,
-1066,11800038,Giant Anteater,"""America <i>meridionali</i>;"" restricted to Brazil"
-1067,11800039,,"""America <i>meridionali</i>;"" restricted to Brazil"
+1066,11800038,Giant Anteater,"America <i>meridionali</i>;"" restricted to Brazil"
+1067,11800039,,"America <i>meridionali</i>;"" restricted to Brazil"
 1068,11800040,,
 1069,11800041,,
 1070,11800042,,
@@ -1083,8 +1083,8 @@ Senegal",
 1073,11800045,,
 1074,11800046,,
 1075,11800047,,
-1076,11800048,Southern Tamandua,"""America meridionali;"" restricted to Brazil"
-1077,11800049,,"""America meridionali;"" restricted to Brazil"
+1076,11800048,Southern Tamandua,"America meridionali;"" restricted to Brazil"
+1077,11800049,,"America meridionali;"" restricted to Brazil"
 1078,11800050,,
 1079,11800051,,
 1080,11800052,,
@@ -1168,552 +1168,3 @@ Senegal",
 1158,12000006,Sunda Flying Lemur,Indonesia
 1159,12100001,,
 1160,12100002,,
-1161,12100003,,
-1162,12100004,,
-1163,12100005,,
-1164,12100006,,
-1165,12100007,Hairy-eared Dwarf Lemur,Madagascar
-1166,12100008,,
-1167,12100009,Spiny Desert Dwarf Lemur,Madagascar
-1168,12100010,Crossley’s Dwarf Lemur,Madagascar
-1169,12100011,Greater Dwarf Lemur,Madagascar
-1170,12100012,Lesser Dwarf Lemur,Madagascar
-1171,12100013,Small Iron-gray Dwarf Lemur,Madagascar
-1172,12100014,Large Iron-gray Dwarf Lemur,Madagascar
-1173,12100015,Sibree’s Dwarf Lemur,Madagascar
-1174,12100016,,
-1175,12100017,Berthe’s Mouse Lemur,Madagascar
-1176,12100018,Red-and-gray Mouse Lemur,Madagascar
-1177,12100019,Gray Mouse Lemur,
-1178,12100020,Peters’ Mouse Lemur,Madagascar
-1179,12100021,Ravelobe Mouse Lemur,Madagascar
-1180,12100022,"Eastern Rufous Mouse Lemur
-Madagascar.",
-1181,12100023,Sambirano Mouse Lemur,Madagascar
-1182,12100024,Northern Rufous Mouse Lemur,Madagascar
-1183,12100025,,
-1184,12100026,Giant Mouse Lemur,Madagascar
-1185,12100027,,
-1186,12100028,Mt. d’Ambre Fork-crowned Lemur,Madagascar
-1187,12100029,Masoala Fork-crowned Lemur,Madagascar
-1188,12100030,Pale Fork-crowned Lemur,Madagascar
-1189,12100031,Pariente’s Fork-crowned Lemur,NW Madagascar
-1190,12100032,,
-1191,12100033,,
-1192,,,
-1193,12100035,"White-headed Lemur
-Madagascar.",
-1194,12100036,White-collared Lemur,Madagascar
-1195,12100037,Gray-headed Lemur,Madagascar
-1196,12100038,"Red-collared Lemur
-Madagascar.",
-1197,12100039,"Crowned Lemur
-Madagascar.",
-1198,12100040,"Brown Lemur
-Madagascar.",
-1199,12100041,"Black Lemur
-Madagascar.",
-1200,12100042,Madagascar.,
-1201,12100043,,
-1202,12100044,Mongoose Lemur,Comoros
-1203,12100045,Red-bellied Lemur,Madagascar
-1204,12100046,"Red-fronted Lemur
-Madagascar.",
-1205,12100047,Sanford’s Lemur,Madagascar
-1206,12100048,,
-1207,12100049,Bandro,Madagascar
-1208,12100050,Golden Bamboo Lemur,Madagascar
-1209,12100051,"Gray Bamboo Lemur
-Madagascar.",
-1210,12100052,Madagascar.,
-1211,12100053,,
-1212,12100054,Sambirano Bamboo Lemur,North and West of Madagascar.
-1213,12100055,,
-1214,12100056,"Ring-tailed Lemur
-Madagascar.",
-1215,12100057,,
-1216,12100058,"Greater Bamboo Lemur
-Madagascar.",
-1217,12100059,,
-1218,12100060,"Red Ruﬀed Lemur
-Madagascar.",
-1219,12100061,"Black-and-white Ruﬀed Lemur
-Madagascar.",
-1220,12100062,Madagascar.,
-1221,12100063,,
-1222,12100064,,
-1223,12100065,,
-1224,12100066,,
-1225,12100067,Ankarana Sportive Lemur,Madagascar
-1226,12100068,Black-striped Sportive Lemur,NW Madagascar.
-1227,12100069,Milne-Edwards’s Sportive Lemur,Madagascar
-1228,12100070,White-footed Sportive Lemur,Madagascar
-1229,12100071,Small-toothed Sportive Lemur,Madagascar
-1230,12100072,Weasel Lemur,Madagascar
-1231,12100073,Red-tailed Sportive Lemur,Madagascar
-1232,12100074,Northern Sportive Lemur,Madagascar
-1233,12100075,,
-1234,12100076,,
-1235,12100077,"Eastern Woolly Lemur
-Madagascar.",
-1236,12100078,Western Woolly Lemur,
-1237,12100079,Sambirano Woolly Lemur,Madagascar
-1238,12100080,,
-1239,12100081,"Indri
-Madagascar.",
-1240,12100082,Madagascar.,
-1241,12100083,,
-1242,12100084,,
-1243,12100085,Coquerel’s Sifaka,Madagascar
-1244,12100086,Van der Decken’s Sifaka,Madagascar
-1245,12100087,,Madagascar
-1246,12100088,,
-1247,12100089,"Diademed Sifaka
-Madagascar.",
-1248,12100090,Madagascar.,
-1249,12100091,,
-1250,12100092,Milne-Edwards’s Sifaka,Madagascar
-1251,12100093,Perrier’s Sifaka,Madagascar
-1252,12100094,Golden-crowned Sifaka,Madagascar
-1253,12100095,Verreaux’s Sifaka,Madagascar
-1254,12100096,,
-1255,12100097,,
-1256,12100098,,
-1257,12100099,Aye-aye,NW Madagascar.
-1258,12100100,,
-1259,12100101,,
-1260,12100102,,
-1261,12100103,Calabar Angwantibo,Equatorial Guinea
-1262,12100104,Golden Angwantibo,Nigeria
-1263,12100105,,
-1264,12100106,Gray Slender Loris,India: Madras.
-1265,12100107,,India: Madras.
-1266,12100108,,
-1267,12100109,,
-1268,12100110,,
-1269,12100111,"Red Slender Loris
-Sri Lanka.",
-1270,12100112,,
-1271,12100113,Bengal Slow Loris,India
-1272,12100114,Bengal Slow Loris,Malaysia
-1273,12100115,,Malaysia
-1274,12100116,,
-1275,12100117,,
-1276,12100118,Pygmy Slow Loris,Vietnam
-1277,12100119,,
-1278,12100120,Potto,Ghana
-1279,12100121,,Ghana
-1280,12100122,,
-1281,12100123,,
-1282,12100124,,
-1283,12100125,False Potto,"""Equatorial Africa""."
-1284,12100126,,
-1285,12100127,,
-1286,12100128,Southern Needle-clawed Bushbaby,Gabon
-1287,12100129,Northern Needle-clawed Bushbaby,Equatorial Guinea
-1288,12100130,,Equatorial Guinea
-1289,12100131,,
-1290,12100132,,
-1291,12100133,Bioko Allen’s Bushbaby,Equatorial Guinea
-1292,12100134,Cross River Bushbaby,Cameroon: Duala.
-1293,12100135,"Prince Demidoﬀ’s Bushbaby
-Senegal.",
-1294,12100136,"Gabon Bushbaby
-Gabon.",
-1295,12100137,Somali Bushbaby,Ethiopia
-1296,12100138,Grant’s Bushbaby,Mozambique
-1297,12100139,Dusky Bushbaby,Dem. Rep. Congo: Moera
-1298,12100140,Moholi Bushbaby,South Africa
-1299,12100141,Malawi Bushbaby,Mozambique
-1300,12100142,Uluguru Bushbaby,Tanzania
-1301,12100143,Rondo Bushbaby,Tanzania
-1302,12100144,"Senegal Bushbaby
-Senegal.",
-1303,12100145,Senegal.,
-1304,12100146,,
-1305,12100147,,
-1306,12100148,,
-1307,12100149,Thomas’s Bushbaby,Dem. Rep. Congo
-1308,12100150,Zanzibar Bushbaby,Tanzania
-1309,12100151,,
-1310,12100152,Brown Greater Galago,Mozambique
-1311,12100153,,Mozambique
-1312,12100154,,
-1313,12100155,Northern Greater Galago,Zanzibar (designated by Thomas
-1314,12100156,,Zanzibar (designated by Thomas
-1315,12100157,,
-1316,12100158,,
-1317,12100159,,
-1318,12100160,Silvery Greater Galago,Angola: Cuvo Bay.
-1319,12100161,,Angola: Cuvo Bay.
-1320,12100162,,
-1321,12100163,,
-1322,12100164,,
-1323,12100165,,
-1324,12100166,,
-1325,12100167,Horsﬁeld’s Tarsier,Indonesia
-1326,12100168,,Indonesia
-1327,12100169,,
-1328,12100170,,
-1329,12100171,Dian’s Tarsier,C Sulawesi
-1330,12100172,Peleng Tarsier,Indonesia
-1331,12100173,Pygmy Tarsier,C Sulawesi
-1332,12100174,Sangihe Tarsier,Indonesia
-1333,12100175,Philippine Tarsier,Philippine Isls
-1334,12100176,Spectral Tarsier,
-1335,12100177,,
-1336,12100178,,
-1337,12100179,,
-1338,12100180,,
-1339,12100181,Goeldi’s Marmoset,Brazil
-1340,12100182,,
-1341,12100183,,
-1342,12100184,,
-1343,12100185,,
-1344,12100186,,
-1345,12100187,Rio Acari Marmoset,
-1346,12100188,Silvery Marmoset,Brazil
-1347,12100189,Buﬀy-tufted Marmoset,Brazil
-1348,12100190,Gold-and-white Marmoset,Brazil
-1349,12100191,Emilia’s Marmoset,Brazil
-1350,12100192,Buﬀy-headed Marmoset,Brazil
-1351,12100193,White-headed Marmoset,Brazil
-1352,12100194,Santarem Marmoset,Brazil
-1353,12100195,Roosmalens’ Dwarf Marmoset,
-1354,12100196,Hershkovitz’s Marmoset,Brazil
-1355,12100197,Common Marmoset,Brazil
-1356,12100198,Wied’s Marmoset,Brazil
-1357,12100199,White Marmoset,Brazil
-1358,12100200,Manicore Marmoset,Brazil
-1359,12100201,Marca’s Marmoset,Brazil
-1360,12100202,Maués Marmoset,Brazil
-1361,12100203,Black-tailed Marmoset,Brazil
-1362,12100204,Black-headed Marmoset,Brazil
-1363,12100205,Black-tufted Marmoset,Brazil
-1364,12100206,Pygmy Marmoset,Brazil
-1365,12100207,,Brazil
-1366,12100208,,
-1367,12100209,Satéré Marmoset,
-1368,12100210,,
-1369,12100211,Superagui Lion Tamarin,Brazil
-1370,12100212,Golden-headed Lion Tamarin,Brazil
-1371,12100213,Black Lion Tamarin,Brazil
-1372,12100214,Golden Lion Tamarin,Brazil
-1373,12100215,,
-1374,12100216,Pied Tamarin,Brazil
-1375,12100217,Brown-mantled Tamarin,Brazil
-1376,12100218,,Brazil
-1377,12100219,,
-1378,12100220,,
-1379,12100221,,
-1380,12100222,,
-1381,12100223,,
-1382,12100224,,
-1383,12100225,,
-1384,12100226,,
-1385,12100227,,
-1386,12100228,Geoﬀroy’s Tamarin,Panama
-1387,12100229,Graells’s Tamarin,Peru
-1388,12100230,Emperor Tamarin,Brazil
-1389,12100231,,Brazil
-1390,12100232,,
-1391,12100233,Mottle-faced Tamarin,Brazil
-1392,12100234,White-lipped Tamarin,Brazil
-1393,12100235,,Brazil
-1394,12100236,,
-1395,12100237,,
-1396,12100238,White-footed Tamarin,Colombia
-1397,12100239,Martins’ Tamarin,Brazil
-1398,12100240,,Brazil
-1399,12100241,,
-1400,12100242,White-mantled Tamarin,Brazil
-1401,12100243,"Red-handed Tamarin
-Surinam.",
-1402,12100244,Moustached Tamarin,Brazil
-1403,12100245,,Brazil
-1404,12100246,,
-1405,12100247,Black Tamarin,Brazil: Belem.
-1406,12100248,Black-mantled Tamarin,Brazil
-1407,12100249,,Brazil
-1408,12100250,,
-1409,12100251,Cottontop Tamarin,Colombia
-1410,12100252,Red-capped Tamarin,Brazil
-1411,12100253,Golden-mantled Tamarin,Equador
-1412,12100254,,
-1413,12100255,,
-1414,12100256,White-fronted Capuchin,Venezuela
-1415,12100257,,Venezuela
-1416,12100258,,
-1417,12100259,,
-1418,12100260,,
-1419,12100261,,
-1420,12100262,,
-1421,12100263,Tufted Capuchin,French Guiana.
-1422,12100264,,French Guiana.
-1423,12100265,,
-1424,12100266,,
-1425,12100267,,
-1426,12100268,,
-1427,12100269,,
-1428,12100270,"White-headed Capuchin
-N Colombia.",
-1429,12100271,Kaapori Capuchin,Brazil
-1430,12100272,Black-striped Capuchin,Brazil
-1431,12100273,,Brazil
-1432,12100274,,
-1433,12100275,,
-1434,12100276,,
-1435,12100277,Black Capuchin,Brazil: Rio de Janeiro
-1436,12100278,,Brazil: Rio de Janeiro
-1437,12100279,,
-1438,12100280,,
-1439,12100281,Weeper Capuchin,Venezuela
-1440,12100282,Golden-bellied Capuchin,Brazil
-1441,12100283,,
-1442,12100284,,
-1443,12100285,Black-capped Squirrel Monkey,Bolivia
-1444,12100286,,Bolivia
-1445,12100287,,
-1446,12100288,Central American Squirrel Monkey,Panama
-1447,12100289,,Panama
-1448,12100290,,
-1449,12100291,Common Squirrel Monkey,Guyana
-1450,12100292,,Guyana
-1451,12100293,,
-1452,12100294,,
-1453,12100295,,
-1454,12100296,Bare-eared Squirrel Monkey,Brazil
-1455,12100297,Black Squirrel Monkey,Brazil
-1456,12100298,,
-1457,12100299,,
-1458,12100300,Azara’s Night Monkey,Argentina
-1459,12100301,,Argentina
-1460,12100302,,
-1461,12100303,,
-1462,12100304,Hershkovitz’s Night Monkey,Colombia
-1463,12100305,Gray-bellied Night Monkey,Colombia
-1464,12100306,,Colombia
-1465,12100307,,
-1466,12100308,,
-1467,12100309,,
-1468,12100310,Peruvian Night Monkey,Peru
-1469,12100311,Nancy Ma’s Night Monkey,Peru
-1470,12100312,Black-headed Night Monkey,type locality: Peru
-1471,12100313,Three-striped Night Monkey,Venezuela
-1472,12100314,Spix’s Night Monkey,Brazil
-1473,12100315,,
-1474,12100316,,
-1475,12100317,,
-1476,12100318,,
-1477,12100319,,
-1478,12100320,Baptista Lake Titi,Brazil
-1479,12100321,Barbara Brown’s Titi,Brazil
-1480,12100322,Prince Bernhard’s Titi,Brazil
-1481,12100323,Brown Titi,Brazil
-1482,12100324,Chestnut-bellied Titi,Brazil
-1483,12100325,Ashy Black Titi,
-1484,12100326,Coimbra Filho’s Titi,Brazil
-1485,12100327,Coppery Titi,Brazil
-1486,12100328,White-tailed titi,Brazil
-1487,12100329,White-eared Titi,Bolivia
-1488,12100330,Hershkovitz’ Titi,Brazil
-1489,12100331,Hoﬀmanns’s Titi,Brazil
-1490,12100332,Lucifer Titi,Peru
-1491,12100333,Black Titi,Venezuela
-1492,12100334,Colombian Black-handed Titi,Colombia
-1493,12100335,Coastal Black-handed Titi,Brazil
-1494,12100336,Rio Beni Titi,Bolivia
-1495,12100337,Red-bellied Titi,Brazil
-1496,12100338,Black-fronted Titi,Brazil
-1497,12100339,Rio Mayo Titi,Peru
-1498,12100340,Ollala Brothers’ Titi,Bolivia
-1499,12100341,Ornate Titi,Colombia
-1500,12100342,White-coated Titi,Paraguay
-1501,12100343,Atlantic Titi,Brazil
-1502,12100344,Rio Purus Titi,Brazil
-1503,12100345,Red-headed Titi,Brazil
-1504,12100346,Stephen Nash’s Titi,Brazil: somewhere along the middle to upper Rio Purus.
-1505,12100347,Collared Titi,Brazil
-1506,12100348,,
-1507,12100349,,
-1508,12100350,Bald Uacari,Brazil
-1509,12100351,,Brazil
-1510,12100352,,
-1511,12100353,,
-1512,12100354,,
-1513,12100355,Black-headed Uacari,Venezuela
-1514,12100356,,
-1515,12100357,White-nosed Saki,Brazil
-1516,12100358,Red-backed Bearded Saki,
-1517,12100359,Brown-backed Bearded Saki,Brazil
-1518,12100360,Black Bearded Saki,Brazil
-1519,12100361,Uta Hick’s Bearded Saki,Brazil
-1520,12100362,,
-1521,12100363,Equatorial Saki,Peru
-1522,12100364,White-footed Saki,Brazil
-1523,12100365,Rio Tapajos Saki,Brazil
-1524,12100366,Monk Saki,Brazil
-1525,12100367,,Brazil
-1526,12100368,,
-1527,12100369,White-faced Saki,French Guiana
-1528,12100370,,French Guiana
-1529,12100371,,
-1530,12100372,,
-1531,12100373,,
-1532,12100374,,
-1533,12100375,Red-handed Howler,Brazil
-1534,12100376,"Black Howler
-Paraguay.",
-1535,12100377,Coiba Island Howler,Panama
-1536,12100378,,Panama
-1537,12100379,,
-1538,12100380,"Brown Howler
-Brazil.",
-1539,12100381,Brazil.,
-1540,12100382,,
-1541,12100383,Guyanan Red Howler,Guyana: coast region.
-1542,12100384,Amazon Black Howler,Brazil
-1543,12100385,Mantled Howler,Nicaragua
-1544,12100386,Guatemalan Black Howler,Guatemala
-1545,12100387,Bolivian Red Howler,Bolivia
-1546,12100388,Venezuelan Red Howler,Colombia
-1547,12100389,,Colombia
-1548,12100390,,
-1549,12100391,,
-1550,12100392,,
-1551,12100393,,
-1552,12100394,White-fronted Spider Monkey,Venezuela
-1553,12100395,Peruvian Spider Monkey,Peru
-1554,12100396,Black-headed Spider Monkey,NW Ecuador
-1555,12100397,,NW Ecuador
-1556,12100398,,
-1557,12100399,Geoﬀroy’s Spider Monkey,Nicaragua
-1558,12100400,,Nicaragua
-1559,12100401,,
-1560,12100402,,
-1561,12100403,,
-1562,12100404,,
-1563,12100405,Brown Spider Monkey,Colombia
-1564,12100406,White-cheeked Spider Monkey,Brazil
-1565,12100407,Red-faced Spider Monkey,French Guiana.
-1566,12100408,,
-1567,12100409,Southern Muriqui,Brazil
-1568,12100410,Northern Muriqui,Brazil
-1569,12100411,,
-1570,12100412,Gray Woolly Monkey,Brazil
-1571,12100413,,Brazil
-1572,12100414,,
-1573,12100415,Brown Woolly Monkey,Colombia
-1574,12100416,Colombian Woolly Monkey,Colombia
-1575,12100417,Silvery Woolly Monkey,Peru
-1576,12100418,,
-1577,12100419,Yellow-tailed Woolly Monkey,Peru
-1578,12100420,,
-1579,12100421,,
-1580,12100422,,
-1581,12100423,,
-1582,12100424,Allen’s Swamp Monkey,Dem. Rep. Congo
-1583,12100425,,
-1584,12100426,Agile Mangabey,Dem. Rep. Congo
-1585,12100427,"Sooty Mangabey
-West Africa.",
-1586,12100428,West Africa.,
-1587,12100429,,
-1588,12100430,Golden-bellied Mangabey,Dem. Rep. Congo: Upper Congo.
-1589,12100431,Tana River Mangabey,Kenya
-1590,12100432,Sanje Mangabey,Tanzania
-1591,12100433,"Collared Mangabey
-West Africa.",
-1592,12100434,,
-1593,12100435,"Sykes’ Monkey
-Angola.",
-1594,12100436,Angola.,
-1595,12100437,,
-1596,12100438,,
-1597,12100439,,
-1598,12100440,,
-1599,12100441,,
-1600,12100442,,
-1601,12100443,,
-1602,12100444,,
-1603,12100445,,
-1604,12100446,,
-1605,12100447,,
-1606,12100448,Red-tailed Monkey,Angola (NW
-1607,12100449,,Angola (NW
-1608,12100450,,
-1609,12100451,,
-1610,12100452,,
-1611,12100453,,
-1612,12100454,Campbell’s Mona Monkey,Sierra Leone.
-1613,12100455,"Moustached Guenon
-Africa.",
-1614,12100456,Africa.,
-1615,12100457,,
-1616,12100458,,
-1617,12100459,Dent’s Mona Monkey,Dem. Rep. Congo
-1618,12100460,"Diana Monkey
-Liberia.",
-1619,12100461,Silver Monkey,Uganda: SW Ankole.
-1620,12100462,Dryas Monkey,Dem. Rep. Congo
-1621,12100463,White-throated Guenon,"""West Africa""; restricted by Groves (2001<i>c</i>:214) to Benin"
-1622,12100464,,"""West Africa""; restricted by Groves (2001<i>c</i>:214) to Benin"
-1623,12100465,,
-1624,12100466,Red-eared Guenon,Equatorial Guinea
-1625,12100467,,Equatorial Guinea
-1626,12100468,,
-1627,12100469,Hamlyn’s Monkey,Dem. Rep. Congo
-1628,12100470,,Dem. Rep. Congo
-1629,12100471,,
-1630,12100472,Golden Monkey,Dem. Rep. Congo
-1631,12100473,L’Hoest’s Monkey,Dem. Rep. Congo
-1632,12100474,Lowe’s Mona Monkey,Côte d’Ivoire: Bandama.
-1633,12100475,"Blue Monkey
-Angola.",
-1634,12100476,Angola.,
-1635,12100477,,
-1636,12100478,,
-1637,12100479,,
-1638,12100480,,
-1639,12100481,,
-1640,12100482,"Mona Monkey
-""Guinea"".",
-1641,12100483,De Brazza’s Monkey,Sudan
-1642,12100484,Greater spot-nosed Monkey,Equatorial Guinea
-1643,12100485,,Equatorial Guinea
-1644,12100486,,
-1645,12100487,"Lesser Spot-nosed Monkey
-""Guinea"".",
-1646,12100488,"""Guinea"".",
-1647,12100489,,
-1648,12100490,Crested Mona Monkey,Equatorial Guinea
-1649,12100491,,Equatorial Guinea
-1650,12100492,,
-1651,12100493,,
-1652,12100494,,
-1653,12100495,Preuss’s Monkey,Cameroon
-1654,12100496,,Cameroon
-1655,12100497,,
-1656,12100498,Roloway Monkey,"""Guinea"" (= West Africa in general)."
-1657,12100499,Sclater’s Guenon,Nigeria
-1658,12100500,Sun-tailed Monkey,C Gabon
-1659,12100501,Wolf’s Mona Monkey,"""Central West Africa."""
-1660,12100502,,"""Central West Africa."""
-1661,12100503,,
-1662,12100504,,
-1663,12100505,Grivet,Sudan
-1664,12100506,Malbrouck,Dem. Rep. Congo
-1665,12100507,Bale Mountains Vervet,Ethiopia
-1666,12100508,"Vervet Monkey
-""Africa"".",
-1667,12100509,"""Africa"".",
-1668,12100510,,
-1669,12100511,,
-1670,12100512,,
-1671,12100513,,
-1672,12100514,Green Monkey,Cape Verde Isls.
-1673,12100515,"Tantalus Monkey
-No locality.",
-1674,12100516,No locality.,
-1675,12100517,,
-1676,12100518,,
