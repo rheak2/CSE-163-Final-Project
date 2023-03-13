@@ -2,12 +2,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set()
-from utils import extinction_level_numerical, avg_tl_change_multiple_years, csv_processing, species_threat_level_data_processing
-# import sys
-#     # caution: path[0] is reserved for script path (or '' in REPL)
-# sys.path.insert(1, '/CSE-163-Final-Project/process_table_7.py')
-# from process_table_7 
-# from process_table_7 import process_big_data
+from utils import extinction_level_numerical, avg_tl_change_multiple_years, csv_processing, species_threat_level_data_processing, process_big_data
+
 
 """
 List of variables/strings that need to be changed when data processing complete:
@@ -42,8 +38,8 @@ def main():
         
     # species_threat_level_data = avg_tl_change_multiple_years(2007, 2009, mini_df)
     # print(species_threat_level_data)
-
-    mini_df = csv_processing("Code/Book1.csv")
+    df = process_big_data()
+    mini_df = csv_processing(df)
     species_threat_level_data = species_threat_level_data_processing(mini_df)
 
     # Find species with top 5 average threat level change 2007-2021
@@ -63,11 +59,11 @@ def main():
     # Create line plot of change in average threat levels for each class between 2007 and 2021
 
     sns.relplot(data=class_threat_level_by_year_df.T, kind="line")
-    plt.title("Class Exctinction Threat Levels 2007-2021")
+    plt.title("Class Exctinction Threat Levels 2007-2009")
     plt.xlabel("Year")
     plt.ylabel("Threat Level")
     plt.ylim(0, 7)
-    plt.savefig("Threat Levels by Class 2007-2021.png", bbox_inches="tight")
+    plt.savefig("Threat Levels by Class 2007-2009.png", bbox_inches="tight")
 
 
 if __name__ == "__main__":
