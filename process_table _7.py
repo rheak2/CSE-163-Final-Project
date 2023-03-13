@@ -34,16 +34,6 @@ CLASSES_2 = ['MAMMALS (Mammalia)', 'BIRDS (Aves)', 'REPTILES (Reptilia)',
              'MILLIPEDES (Diplopoda)', 'FUNGI (Mushrooms and Lichens)']
 
 
-def first_loc(place):
-    """
-    modifies location to only contain the first word
-    """
-    if place != np.nan:
-        place = place.split(',')
-        place[0] = place[0].strip('"')
-        return(place[0])
-
-
 def update_threat(df, year_1, year_2):
     cy = 'List (' + str(year_2) + ')'
     py = 'List (' + str(year_1) + ')'
@@ -65,71 +55,6 @@ def fill_in_threat(df):
     return df
 
 
-def process_loc_data():
-    print('running process loc data')
-    # clean up data to match other data
-    filename = os.path.join('Table_7_Loc_Data', 'msw3-all-2.pdf')
-    # loc = pd.DataFrame()
-    # next_pages = pd.DataFrame()
-    df_2 = pd.DataFrame()
-    # curr_table = cm.read_pdf(filename, flavor='stream',
-    #                          pages=str(1),
-    #                          table_areas=['230, 3000, 1450, 200'])
-    # df_1 = curr_table[0].df
-    # print(df_1)
-    # for i in range(2, 10):
-    #     hold_df = pd.DataFrame()
-    #     print('running 1 ' + str(i))
-    #     curr_table = cm.read_pdf(filename, flavor='stream',
-    #                              pages=str(i),
-    #                              table_areas=['230, 3000, 1450, 200'])
-    #     hold_df = curr_table[0].df
-    #     next_pages = next_pages.append(hold_df, ignore_index=True)
-    # print(next_pages)
-    for i in range(107, 120):
-        hold_df = pd.DataFrame()
-        print('running 2 ' + str(i))
-        curr_table = cm.read_pdf(filename, flavor='stream',
-                                 pages=str(i),
-                                 table_areas=['810, 2900, 2000, 300'],
-                                 columns=['900, 1036, 1747'])
-        hold_df = curr_table[0].df
-        df_2 = df_2.append(hold_df, ignore_index=True)
-    print('done with loops')
-    # drop the extra info on top, make row 1 the column names
-    # next_pages['Scientific name'] = next_pages[5] + ' ' + next_pages[6]
-    # next_pages = next_pages[[0, 'Scientific name']]
-    # print(df_1)
-    # # df_1.columns = df_1.iloc[0]
-    # # drop column names from data
-    # df_1 = df_1.drop([0])
-    # df_1 = df_1[['ID', 'Genus', 'Species']]
-    # print(df_1)
-    # print(df_1.columns)
-    # print(df_2)
-    # make row 1 the column names
-    df_2.columns = df_2.iloc[0]
-    # drop column names from data
-    df_2 = df_2.drop([0])
-    print(df_2.columns)
-    df_2['Location'] = df_2['TypeLocality'].apply(first_loc)
-    df_2 = df_2[['ID', 'CommonName', 'Location']]
-    print(df_2.loc[203:205])
-    # print(df_2['CommonName'])
-    # print('df 1')
-    # print(df_1)
-    # loc = pd.merge(pd.merge(df_1, df_2, on=['ID'], how='outer'),
-    #                next_pages, on = ['ID'], how='outer')
-    # loc['Scientific name'] = loc['Genus'] + ' ' + loc['Species']
-    # loc = loc[['Scientific name', 'CommonName', 'Location']]
-    # print(loc.columns)
-    # loc = loc.rename(columns={'CommonName': 'Common name'})
-    # next_pages.to_csv('checking_1.2.csv')
-    # df_1.to_csv('checking_part_1.csv')
-    df_2.to_csv('checking part_2.csv')
-    # loc.to_csv('mammal_location_2.csv')
-    # print(loc)
-
 def process_big_data() -> pd.DataFrame:
     """
     Not complete docstring
@@ -142,7 +67,7 @@ def process_big_data() -> pd.DataFrame:
     for pdf_name in os.listdir('Table_7_Loc_Data'):
         filename = os.path.join('Table_7_Loc_Data', pdf_name)
         # if the file is the right pdf
-        if (pdf_name[-4:] == '.pdf') and (pdf_name != 'msw3-all.pdf') and (pdf_name != 'msw3-all-2.pdf'):
+        if (pdf_name[-4:] == '.pdf') and (pdf_name != 'msw3-all.pdf'):
             yr = int(pdf_name[0:4])
             print(yr)
             fin_df = pd.DataFrame()
@@ -269,26 +194,15 @@ def process_big_data() -> pd.DataFrame:
                            'List (2019)', 'List (2020)', 'List (2021)']]
     merged_df = merged_df.astype(str)
     merged_df = fill_in_threat(merged_df)
-    # loc_data = pd.read_csv('location.csv')
-    # merged_df = pd.merge(merged_df, loc_data, left_on='Scientific name',
-                        #  right_on='Scientific name', how='outer')
-    # to save to csv for testing purposes
-    merged_df.to_csv('final_combined_data')
-    return(merged_df)
+    loc_data = pd.read_csv('mammal_location_data.csv')
+    final_df = pd.merge(merged_df, loc_data, how='left')
+    # to save for testing purposes, will remove before final submission
+    final_df.to_csv('final_combined_data')
+    return(final_df)
 
 
 # EVERYTHING BELOW THIS LINE IS FOR TESTING PURPOSES
 # AND RUNNING CERTAIN FUNCTIONS FOR TESTING
-
-# def update_and_merge(df: pd.DataFrame): # add in , csv_file: str
-    # final_df = pd.DataFrame()
-    # csv = pd.read_csv(csv_file)
-    # df = df.astype(str)
-    # df = df.apply(fill_in_threat)
-    # final_df = pd.merge(df, csv, how='left')
-    # return df
-
-
 # df = pd.read_csv('final_combined_data')
 # df = df.astype(str)
 # df = df[['Scientific name', 'Common name', 'Class',
@@ -297,35 +211,26 @@ def process_big_data() -> pd.DataFrame:
 #                            'List (2013)', 'List (2014)', 'List (2015)',
 #                            'List (2016)', 'List (2017)', 'List (2018)',
 #                            'List (2019)', 'List (2020)', 'List (2021)']]
-
 # print(df)
 # df = fill_in_threat(df)
 # # df = df.apply(fill_in_threat(df))
 # print(df)
-
 # print(update_and_merge(df))
-
-
 # test_df = pd.read_csv()
-
-
 # if '\n' in word:
 #     word = word.split('\n')
 #     test_df['Common name'] = word[0]
 #     test_df['Location'] = word[1]
 #     return (data['Common name', 'Location'])
-
 # print(test_df['Common name'])
 # def split(word):
 #     if '\n' in word:
 #         word = word.split('\n')
 #         return (word[1])
-
 # def repl(df, cn, loc):
 #     # df[loc] = df[loc].where('\n' not in df[cn], df[cn][1].)
 #     new_loc = df[cn].apply(split)
 #     df[loc] = df[new_loc]
 #     return (df[cn, loc])
-
 # test_df = test_df.apply(repl(test_df, 'Common name', 'Location'))
 # print(test_df)
