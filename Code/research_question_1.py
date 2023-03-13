@@ -59,11 +59,11 @@ def main():
     # Create line plot of change in average threat levels for each class between 2007 and 2021
 
     sns.relplot(data=class_threat_level_by_year_df.T, kind="line")
-    plt.title("Class Exctinction Threat Levels 2007-2009")
+    plt.title("Class Exctinction Threat Levels 2007-2021")
     plt.xlabel("Year")
     plt.ylabel("Threat Level")
     plt.ylim(0, 7)
-    plt.savefig("Threat Levels by Class 2007-2009.png", bbox_inches="tight")
+    plt.savefig("Threat Levels by Class 2007-2021.png", bbox_inches="tight")
 
 
 if __name__ == "__main__":

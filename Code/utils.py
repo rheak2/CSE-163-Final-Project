@@ -208,13 +208,13 @@ def csv_processing(df):
     
     # Create dataframe with numerical values for extinction threat level in given year range
         # Create new dataframe including species name, class, average threat level
-    # mini_df = df[["Scientific name", "Class", "List (2007)", "List (2008)", "List (2009)"]]
-    mini_df = df[["Scientific name", "Class", "List (2007)", "List (2008)",
-                  "List (2009)", "List (2010)", "List (2011)",
-                  "List (2012)", "List (2013)", "List (2013)",
-                  "List (2014)", "List (2015)", "List (2016)",
-                  "List (2017)", "List (2018)", "List (2019)",
-                  "List (2020)", "List (2021)"]]
+    mini_df = df[["Common name", "Class", "List (2007)", "List (2008)", "List (2009)"]]
+    # mini_df = df[["Common name", "Class", "List (2007)", "List (2008)",
+    #               "List (2009)", "List (2010)", "List (2011)",
+    #               "List (2012)", "List (2013)", "List (2013)",
+    #               "List (2014)", "List (2015)", "List (2016)",
+    #               "List (2017)", "List (2018)", "List (2019)",
+    #               "List (2020)", "List (2021)"]]
     for year in range(2007, 2010):
         numerical_exinction_category = extinction_level_numerical(str(year), mini_df)
         column_label = "List (" + str(year) + ")"
