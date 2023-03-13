@@ -42,7 +42,7 @@ def update_threat(df, year_1, year_2):
         df[cy] = df[cy].where(df[cy] != 'nan', df[py])
         return(df[cy])
     else:
-        nt = ['NT'] * len(df[cy])
+        nt = ['NR'] * len(df[cy])
         df[cy] = df[cy].where(df[cy] != 'nan', nt)
         return(df[cy])
 
@@ -208,8 +208,8 @@ def csv_processing(df):
     
     # Create dataframe with numerical values for extinction threat level in given year range
         # Create new dataframe including species name, class, average threat level
-    # mini_df = df[["Common name", "Class", "List (2007)", "List (2008)", "List (2009)"]]
-    mini_df = df[["Common name", "Class", "List (2007)", "List (2008)",
+    # mini_df = df[["Scientific name", "Class", "List (2007)", "List (2008)", "List (2009)"]]
+    mini_df = df[["Scientific name", "Class", "List (2007)", "List (2008)",
                   "List (2009)", "List (2010)", "List (2011)",
                   "List (2012)", "List (2013)", "List (2013)",
                   "List (2014)", "List (2015)", "List (2016)",
@@ -234,13 +234,16 @@ def species_threat_level_data_processing(df):
 def extinction_level_numerical(year: str, df: pd.DataFrame) -> pd.DataFrame:
     """
     This methods  takes as argument the year, and returns a DataFrame
-    showing the extinction threat level on a numerical scale from 0 to 7.
+    showing the extinction threat level on a numerical scale from 0 to 8.
+    NR stands for No Risk, and is used in cases where a species' first entry
+    appears after 2007, in which case it is assumed that it previously faced
+    no risk.
     """
     # Change extinction category from string to numeric value
     # Create dictionary mapping each extinction category to its numeric value
-    extinction_category_dict = {"LC": 0, "NT": 1, "LR/cd": 2, "VU": 3, "EN": 4, "CR": 5, "EW": 6, "EX": 7,\
-                                "LC (PE)": 0, "NT (PE)": 1, "LR/cd (PE)": 2, "VU (PE)": 3, "EN (PE)": 4,\
-                                      "CR (PE)": 5, "EW (PE)": 6, "EX (PE)": 7,}
+    extinction_category_dict = {"NR": 0, "LC": 1, "NT": 2, "LR/cd": 3, "VU": 4, "EN": 5, "CR": 6, "EW": 7, "EX": 8,\
+                                "LC (PE)": 1, "NT (PE)": 2, "LR/cd (PE)": 3, "VU (PE)": 4, "EN (PE)": 5,\
+                                      "CR (PE)": 6, "EW (PE)": 7, "EX (PE)": 8}
     red_list_category = "List (" + year + ")"
     # Create list of all numerical values of extinction level in the year
     category_in_year = df[red_list_category]
