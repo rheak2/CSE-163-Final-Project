@@ -47,7 +47,7 @@ def train_and_test_model(data: pd.DataFrame) -> pd.DataFrame:
 
     test_str = "The MSE between the test predictions and the true values is"
     print(test_str, test_error)
-    print(data)
+
     return data
 
 
@@ -57,14 +57,10 @@ def plot_change_over_time(df: pd.DataFrame) -> None:
     for each species, plot the average change in threat levels
     for each prediction.
     '''
-    avg_pred_train_by_type = df.groupby('Class')['Train Predictions'].mean().reset_index()
-    beetles = df['Class'] == 'beetles'
-    crustaceans = df['Class'] == 'crustaceans'
-    df_with_nan = df[beetles | crustaceans]
-    print("df_with_nan:", df_with_nan)
-    avg_pred_test_by_type = df.groupby('Class')['Test Predictions'].mean().reset_index()
-    plot_predictions(avg_pred_train_by_type, 'train')
-    plot_predictions(avg_pred_test_by_type, 'test')
+    avg_pred_tn = df.groupby('Class')['Train Predictions'].mean().reset_index()
+    avg_pred_tst = df.groupby('Class')['Test Predictions'].mean().reset_index()
+    plot_predictions(avg_pred_tn, 'train')
+    plot_predictions(avg_pred_tst, 'test')
 
 
 def plot_predictions(data_df: pd.DataFrame, pred: str) -> None:
@@ -93,7 +89,6 @@ def plot_predictions(data_df: pd.DataFrame, pred: str) -> None:
 def do_question_3():
     df = utils.process_big_data()
     mini_df = utils.csv_processing(df)
-    species_threat_level_data = utils.species_threat_level_data_processing(mini_df)
-    df_with_predictions = train_and_test_model(species_threat_level_data)
+    species_tl_data = utils.species_threat_level_data_processing(mini_df)
+    df_with_predictions = train_and_test_model(species_tl_data)
     plot_change_over_time(df_with_predictions)
-
