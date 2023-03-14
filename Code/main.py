@@ -1,4 +1,6 @@
 """
+Giulia Clini, Elizabeth Karas, and Rhea Kulkarni
+CSE 163 Final Project
 This file runs the main functions from rq1, rq2
 and rq3.
 """
