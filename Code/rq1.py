@@ -6,14 +6,15 @@ from utils import csv_processing, species_threat_level_data_processing, process_
 
 
 """
-List of variables/strings that need to be changed when data processing complete:
-
-2007-2021 csv filename --> filepath for processed extinction data
-Change all year ranges to cover all data
+This file contains the code required to answer research question 1. Firstly
+it reads the data, and then it finds the top 5 species for average yearly
+threat level change 2007-2021. Finally, it finds the average threat level
+by class and returns a line graph visualising it.
 """
 
 
 def do_question_1():
+    
     df = process_big_data()
     mini_df = csv_processing(df)
     species_threat_level_data = species_threat_level_data_processing(mini_df)
@@ -22,7 +23,8 @@ def do_question_1():
 
     top_5 = species_threat_level_data[["Common name", "Average Yearly TL Change Over Time"]]
     top_5 = top_5.nlargest(5, "Average Yearly TL Change Over Time")
-    print(top_5)
+    # Uncomment line below to see top 5
+    # print(top_5)
     
 
     # Use groupby to find the average threat level by class

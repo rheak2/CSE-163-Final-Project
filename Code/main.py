@@ -1,6 +1,6 @@
 from rq1 import do_question_1
 from rq2 import do_question_2
-from Research_Question_3.py import do_question_3
+from rq3 import do_question_3
 
 
 
