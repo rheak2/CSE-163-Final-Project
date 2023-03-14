@@ -246,14 +246,8 @@ def csv_processing(df):
     extinction threat level.
     """
     
-    # Will probably not have to dropna once data is processed
-    # df = pd.read_csv(csv_filepath)
-    # df = df.dropna()
-    
     # Create dataframe with numerical values for extinction threat level in
     # given year range
-    # Create new dataframe including species name, class, average threat level
-    # mini_df = df[["Common name", "Class", "List (2007)", "List (2008)", "List (2009)"]]
     mini_df = df[["Common name", "Class", "List (2007)", "List (2008)",
                   "List (2009)", "List (2010)", "List (2011)",
                   "List (2012)", "List (2013)", "List (2014)", "List (2015)",
