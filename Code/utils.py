@@ -35,7 +35,15 @@ CLASSES_2 = ['MAMMALS (Mammalia)', 'BIRDS (Aves)', 'REPTILES (Reptilia)',
              'MILLIPEDES (Diplopoda)', 'FUNGI (Mushrooms and Lichens)']
 
 
-def update_threat(df, year_1, year_2):
+def update_threat(df: pd.DataFrame, year_1: int, year_2: int) -> pd.Series:
+    """
+    This function takes in a dataframe, the current year, and
+    the previous year. For each value of NaN in a given column, this
+    function will replace the value with the corresponding value for
+    the previous year, and return the updated column.
+    If the year is 2007 (there is no 2006 data), NaN is replaced with
+    NR (no risk)
+    """
     cy = 'List (' + str(year_2) + ')'
     py = 'List (' + str(year_1) + ')'
     if year_2 != 2007:
@@ -47,7 +55,13 @@ def update_threat(df, year_1, year_2):
         return(df[cy])
 
 
-def fill_in_threat(df):
+def fill_in_threat(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    This function takes in the dataframe from process_big_data()
+    for each column in the dataframe that represents a year, this
+    function will fill in all NaN values cill call the function
+    update_threat
+    """
     for col in df.columns[3:]:
         col = str(col)
         year = int(col[6:10])
@@ -58,9 +72,10 @@ def fill_in_threat(df):
 
 def process_big_data() -> pd.DataFrame:
     """
-    Not complete docstring
-    lots of if statements because the files are all read differently by
-    camelot
+    This function processes the data in the Table_7_Loc_Data folder
+    It reads each pdf and returns a larger dataframe containing the threat
+    levels for each animal over the years 2007-2021, the class that animal
+    is in, and the location where the animal resides if it is known
     """
     print('running process big data')
     merged_df = pd.DataFrame(columns=['Scientific name'])
@@ -196,10 +211,23 @@ def process_big_data() -> pd.DataFrame:
     merged_df = merged_df.astype(str)
     merged_df = fill_in_threat(merged_df)
     loc_data = pd.read_csv('mammal_location_data.csv')
-    final_df = pd.merge(merged_df, loc_data, how='left')
-    # to save for testing purposes, will remove before final submission
-    final_df.to_csv('final_combined_data')
+    loc_data = loc_data[['Scientific name', 'Common name', 'Location']]
+    loc_data = loc_data.dropna(thresh=2)
+    suff_A = ['_on_A_match_1', '_on_A_match_2']
+    suff_B = ['_on_B_match_1', '_on_B_match_2']
+    final_df = pd.concat([merged_df.merge(loc_data, on='Scientific name',
+                                          suffixes=suff_A, how='left'),
+                          merged_df.merge(loc_data, on='Common name',
+                                          suffixes=suff_B, how='left')])
+    final_df = final_df[['Scientific name', 'Common name', 'Class',
+                         'List (2007)', 'List (2008)', 'List (2009)',
+                         'List (2010)', 'List (2011)', 'List (2012)',
+                         'List (2013)', 'List (2014)', 'List (2015)',
+                         'List (2016)', 'List (2017)', 'List (2018)',
+                         'List (2019)', 'List (2020)', 'List (2021)',
+                         'Location']].drop_duplicates()
     return(final_df)
+
 
 def csv_processing(df):
     # Will probably not have to dropna once data is processed
@@ -216,7 +244,7 @@ def csv_processing(df):
                   "List (2020)", "List (2021)"]]
     mini_df = mini_df.loc[mini_df['Class'].isin(["amphibians", "beetles", "birds"
                                                  "fishes", "crustaceans", "invertebrates",
-                                                 "mammals", "reptiles", "plants"])]
+                                                 "mammals", "reptiles"])]
     for year in range(2007, 2022):
         numerical_exinction_category = extinction_level_numerical(str(year), mini_df)
         column_label = "List (" + str(year) + ")"
