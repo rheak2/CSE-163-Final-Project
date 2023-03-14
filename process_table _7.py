@@ -77,7 +77,6 @@ def process_big_data() -> pd.DataFrame:
     levels for each animal over the years 2007-2021, the class that animal
     is in, and the location where the animal resides if it is known
     """
-    print('running process big data')
     merged_df = pd.DataFrame(columns=['Scientific name'])
     # go through each file in the folder
     for pdf_name in os.listdir('Table_7_Loc_Data'):
@@ -85,7 +84,6 @@ def process_big_data() -> pd.DataFrame:
         # if the file is the right pdf
         if (pdf_name[-4:] == '.pdf') and (pdf_name != 'msw3-all.pdf'):
             yr = int(pdf_name[0:4])
-            print(yr)
             fin_df = pd.DataFrame()
             for i in range(1, 40):
                 # read and create a dataframe for each pdf
