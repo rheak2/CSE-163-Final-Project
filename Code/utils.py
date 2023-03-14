@@ -201,21 +201,23 @@ def process_big_data() -> pd.DataFrame:
     final_df.to_csv('final_combined_data')
     return(final_df)
 
-def csv_processing(csv_filepath):
+def csv_processing(df):
     # Will probably not have to dropna once data is processed
-    df = pd.read_csv(csv_filepath)
-    df = df.dropna()
+    # df = pd.read_csv(csv_filepath)
+    # df = df.dropna()
     
     # Create dataframe with numerical values for extinction threat level in given year range
         # Create new dataframe including species name, class, average threat level
-    mini_df = df[["Common name", "Class", "List (2007)", "List (2008)", "List (2009)"]]
-    # mini_df = df[["Common name", "Class", "List (2007)", "List (2008)",
-    #               "List (2009)", "List (2010)", "List (2011)",
-    #               "List (2012)", "List (2013)", "List (2013)",
-    #               "List (2014)", "List (2015)", "List (2016)",
-    #               "List (2017)", "List (2018)", "List (2019)",
-    #               "List (2020)", "List (2021)"]]
-    for year in range(2007, 2010):
+    # mini_df = df[["Common name", "Class", "List (2007)", "List (2008)", "List (2009)"]]
+    mini_df = df[["Common name", "Class", "List (2007)", "List (2008)",
+                  "List (2009)", "List (2010)", "List (2011)",
+                  "List (2012)", "List (2013)", "List (2014)", "List (2015)",
+                  "List (2016)", "List (2017)", "List (2018)", "List (2019)",
+                  "List (2020)", "List (2021)"]]
+    mini_df = mini_df.loc[mini_df['Class'].isin(["amphibians", "beetles", "birds"
+                                                 "fishes", "crustaceans", "invertebrates",
+                                                 "mammals", "reptiles", "plants"])]
+    for year in range(2007, 2022):
         numerical_exinction_category = extinction_level_numerical(str(year), mini_df)
         column_label = "List (" + str(year) + ")"
         # Replace string extinction threat level with the numerical value
@@ -226,7 +228,7 @@ def csv_processing(csv_filepath):
 def species_threat_level_data_processing(df):
     # Find average threat level change by year for each species
         
-    species_threat_level_data = avg_tl_change_multiple_years(2007, 2009, df)
+    species_threat_level_data = avg_tl_change_multiple_years(2007, 2021, df)
     return species_threat_level_data
     
 
@@ -242,8 +244,7 @@ def extinction_level_numerical(year: str, df: pd.DataFrame) -> pd.DataFrame:
     # Change extinction category from string to numeric value
     # Create dictionary mapping each extinction category to its numeric value
     extinction_category_dict = {"NR": 0, "LC": 1, "NT": 2, "LR/cd": 3, "VU": 4, "EN": 5, "CR": 6, "EW": 7, "EX": 8,\
-                                "LC (PE)": 1, "NT (PE)": 2, "LR/cd (PE)": 3, "VU (PE)": 4, "EN (PE)": 5,\
-                                      "CR (PE)": 6, "EW (PE)": 7, "EX (PE)": 8}
+                                    "CR (PE)": 6, "CR(PE)": 6, "CR(PEW)": 6}
     red_list_category = "List (" + year + ")"
     # Create list of all numerical values of extinction level in the year
     category_in_year = df[red_list_category]
@@ -279,11 +280,16 @@ def tl_change_between_multiple_yrs(lower_year: int, upper_year: int, df: pd.Data
 
 
 def avg_tl_change_multiple_years(lower_year: int, upper_year: int, data:pd.DataFrame) -> pd.DataFrame:
+    """
+    This method takes as argument any range of years and a dataframe and adds columns
+    to that dataframe showing the average yearly change in extinction threat level over the
+    year range for all species.
+    """
     df = tl_change_between_multiple_yrs(lower_year, upper_year, data)
     year_range_length = upper_year - lower_year
     # Find mean of the threat level changes between all years and add this as a column
     # to the dataframe
-    data['Average TL Change Over Time'] = df.iloc[:, year_range_length + 3:].mean(axis=1)
+    data['Average Yearly TL Change Over Time'] = df.iloc[:, year_range_length + 3:].mean(axis=1)
     return data
 
 
