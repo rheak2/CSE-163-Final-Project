@@ -1,5 +1,10 @@
 '''
-docstring
+Giulia Clini, Elizabeth Karas, and Rhea Kulkarni
+CSE 163 Final Project
+This file contains the code required to answer research question 3.
+First it manipulates the data to include the necessary columns,
+then constructs a decision tree regression model while also calculating
+the MSE values.
 '''
 
 import utils
@@ -14,7 +19,10 @@ sns.set()
 
 
 def train_and_test_model(data: pd.DataFrame) -> pd.DataFrame:
-
+    '''
+    Given the dataframe, create a decision tree regression model
+    and calculate the MSE for the training and test datasets.
+    '''
     # Separate data into features and labels
     # features = data.loc[:, ['Common name', 'location']]
     features = data.loc[:, ['Common name', 'Scientific name']]
@@ -87,6 +95,9 @@ def plot_predictions(data_df: pd.DataFrame, pred: str) -> None:
 
 
 def do_question_3():
+    '''
+    Perform all of the functions for research question 3
+    '''
     df = utils.process_big_data()
     mini_df = utils.csv_processing(df)
     species_tl_data = utils.species_threat_level_data_processing(mini_df)
