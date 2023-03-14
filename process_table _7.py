@@ -214,13 +214,15 @@ def process_big_data() -> pd.DataFrame:
     loc_data = loc_data.dropna(thresh=2)
     suff_A = ['_on_A_match_1', '_on_A_match_2']
     suff_B = ['_on_B_match_1', '_on_B_match_2']
-    final_df = pd.concat([merged_df.merge(loc_data, on='Scientific name', suffixes=suff_A, how='left'), 
-                          merged_df.merge(loc_data, on='Common name', suffixes=suff_B, how='left')])
+    final_df = pd.concat([merged_df.merge(loc_data, on='Scientific name',
+                                          suffixes=suff_A, how='left'),
+                          merged_df.merge(loc_data, on='Common name',
+                                          suffixes=suff_B, how='left')])
     final_df = final_df[['Scientific name', 'Common name', 'Class',
-                           'List (2007)', 'List (2008)', 'List (2009)',
-                           'List (2010)', 'List (2011)', 'List (2012)',
-                           'List (2013)', 'List (2014)', 'List (2015)',
-                           'List (2016)', 'List (2017)', 'List (2018)',
-                           'List (2019)', 'List (2020)', 'List (2021)',
-                           'Location']].drop_duplicates()
+                         'List (2007)', 'List (2008)', 'List (2009)',
+                         'List (2010)', 'List (2011)', 'List (2012)',
+                         'List (2013)', 'List (2014)', 'List (2015)',
+                         'List (2016)', 'List (2017)', 'List (2018)',
+                         'List (2019)', 'List (2020)', 'List (2021)',
+                         'Location']].drop_duplicates()
     return(final_df)
