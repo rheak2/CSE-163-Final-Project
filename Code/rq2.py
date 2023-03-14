@@ -55,9 +55,9 @@ def scatter_plot(threat_data, conservation_data):
     # sns.set_style("ticks")
 
     scatter_plot_df = threat_data.merge(conservation_data, left_on="Location", right_on="Country", how="inner")
-    scatter_plot_df["Average Yearly Threat Level Change 2007-2021"] = threat_data["Average Yearly TL Change Over Time"]
-    scatter_plot_df["Conservation Efforts 2021"] = conservation_data["Num Index"]
-    scatter_plot_df = scatter_plot_df.dropna()
+    # scatter_plot_df["Average Yearly Threat Level Change 2007-2021"] = threat_data["Average Yearly TL Change Over Time"]
+    # scatter_plot_df["Conservation Efforts 2021"] = conservation_data["Num Index"]
+    # scatter_plot_df = scatter_plot_df.dropna()
     sns.relplot(data=scatter_plot_df, x="Num Index", y="Average Yearly TL Change Over Time", hue="Location")
     plt.xlabel("Conservation Efforts 2021")
     plt.ylabel("Average Yearly Threat Level Change 2007-2021")

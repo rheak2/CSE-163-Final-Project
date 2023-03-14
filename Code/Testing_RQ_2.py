@@ -52,17 +52,17 @@ def main():
     threat_data = species_threat_level_data_processing(extinction_data)
 
     # ADD LOCATION TO THIS DF ONCE FULL DATASET AVAILABLE
-    # threat_data = threat_data[["Common name", "Average TL Change Over Time"]]
-    # print(threat_data)
-    # location_threat_geometry = threat_data.merge(gdf, left_on="Location", right_on="name", how="inner")
-    # print(location_threat_geometry)
-    # location_threat_geometry = gpd.GeoDataFrame(location_threat_geometry, geometry="geometry")
-    # # Plot a map of the average extinction threat level change around the world
-    # fig, ax = plt.subplots(nrows=1, figsize=(15, 7))
-    # gdf.plot(color="#EEEEEE", ax=ax)
-    # location_threat_geometry.plot(column="Average TL Change Over Time", ax=ax, legend=True)
-    # plt.title("Map of Extinction Threat Level Change 2007-2021")
-    # plt.savefig("Threat level change map.png")  
+    threat_data = threat_data[["Common name", "Average TL Change Over Time"]]
+    print(threat_data)
+    location_threat_geometry = threat_data.merge(gdf, left_on="Location", right_on="name", how="inner")
+    print(location_threat_geometry)
+    location_threat_geometry = gpd.GeoDataFrame(location_threat_geometry, geometry="geometry")
+    # Plot a map of the average extinction threat level change around the world
+    fig, ax = plt.subplots(nrows=1, figsize=(15, 7))
+    gdf.plot(color="#EEEEEE", ax=ax)
+    location_threat_geometry.plot(column="Average TL Change Over Time", ax=ax, legend=True)
+    plt.title("Map of Extinction Threat Level Change 2007-2021")
+    plt.savefig("Threat level change map.png")  
 
 
     # Create Scatter Plot
