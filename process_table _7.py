@@ -225,4 +225,6 @@ def process_big_data() -> pd.DataFrame:
                          'List (2016)', 'List (2017)', 'List (2018)',
                          'List (2019)', 'List (2020)', 'List (2021)',
                          'Location']].drop_duplicates()
+    data['Location'] = data['Location'].replace('USA', 'United States of America')
+    data['Location'] = data['Location'].replace('Algoa Bay', 'South Africa')
     return(final_df)
