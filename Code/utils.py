@@ -249,7 +249,7 @@ def csv_processing(df):
                   "List (2009)", "List (2010)", "List (2011)",
                   "List (2012)", "List (2013)", "List (2014)", "List (2015)",
                   "List (2016)", "List (2017)", "List (2018)", "List (2019)",
-                  "List (2020)", "List (2021)", "Location"]]
+                  "List (2020)", "List (2021)", "Location", "Scientific name"]]
     mini_df = mini_df.loc[mini_df['Class'].isin(["amphibians", "beetles",
                                                  "birds", "fishes",
                                                  "crustaceans",
