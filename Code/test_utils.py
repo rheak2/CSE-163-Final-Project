@@ -210,8 +210,3 @@ def test_final_df():
     test_df = pd.read_csv('final_combined_data')
     assert_equals(test_df[test_df['Scientific name']=='Dasyurus viverrinus'].index.values[0],
                   test_df[test_df['Location']=='Australia'].index.values[1])
-
-
-test_table_7_processing()
-test_loc_processing()
-test_final_df()
