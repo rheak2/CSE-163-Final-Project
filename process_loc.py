@@ -67,10 +67,5 @@ def process_loc_data() -> None:
     loc.to_csv('mammal_location_data.csv')
 
 
-# PROCESS LOC TESTING
-print(process_loc_data())
-# data = pd.read_csv('mammal_location_data_2.csv')
-# data = data[['Scientific name', 'Common name', 'Location']]
-# print(data)
-# data = data.dropna(thresh=2)
-# print(data)
+# PROCESS LOC RUNNING
+# process_loc_data()
