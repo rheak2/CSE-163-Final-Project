@@ -17,9 +17,8 @@ def main():
     df = pd.read_csv("Code/Book1.csv")
     df = df.dropna()
     mini_df = csv_processing(df)
-    mini_df["Species THreat Level Change 2007-2008"] = (mini_df.loc[:, "List (2008)"] - mini_df.loc[:, "List (2007)"])
-    print(mini_df)
-    # species_threat_level_data = species_threat_level_data_processing(mini_df)
+    mini_df["Species Threat Level Change 2007-2008"] = (mini_df.loc[:, "List (2008)"] - mini_df.loc[:, "List (2007)"])
+    species_threat_level_data = species_threat_level_data_processing(mini_df)
     
     
 
