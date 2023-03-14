@@ -237,7 +237,6 @@ def process_big_data() -> pd.DataFrame:
 
 
 def csv_processing(df):
-
     """
     This method takes in a dataframe and returns a smaller dataframe
     including only the animal classes we are interested in. Additionally
