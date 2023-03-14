@@ -63,7 +63,8 @@ def fill_in_threat(df: pd.DataFrame) -> pd.DataFrame:
     """
     for col in df.columns[3:]:
         col = str(col)
-        year = int(col[6:10])
+        year = 2007
+        # year = int(col[6:10])
         prev_yr = year - 1
         df[col] = update_threat(df, prev_yr, year)
     return df
@@ -202,7 +203,6 @@ def process_big_data() -> pd.DataFrame:
             if yr != 2008:
                 fin_df = fin_df.drop(columns=['Reason for change'])
             merged_df = pd.merge(merged_df, fin_df, how='outer')
-    # merged_df = merged_df.apply(fill_in_threat())
     merged_df = merged_df[['Scientific name', 'Common name', 'Class',
                            'List (2007)', 'List (2008)', 'List (2009)',
                            'List (2010)', 'List (2011)', 'List (2012)',
@@ -233,3 +233,5 @@ def process_big_data() -> pd.DataFrame:
     final_df['Location'] = final_df['Location'].replace('Algoa Bay',
                                                         'South Africa')
     return(final_df)
+
+process_big_data()

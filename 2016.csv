@@ -1,0 +1,104 @@
+,Scientific name,Common name,List (2016),Class
+0,Ailuropoda melanoleuca,Giant Panda,VU,mammals
+1,Antechinus bellus,Fawn Antechinus,VU,mammals
+2,Cephalophus dorsalis,Bay Duiker,NT,mammals
+3,Cephalophus leucogaster,White-bellied Duiker,NT,mammals
+4,Cephalophus silvicultor,Yellow-backed Duiker,NT,mammals
+5,Conilurus penicillatus,Brush-tailed Rabbit-rat,VU,mammals
+6,Dasyurus viverrinus,Eastern Quoll,EN,mammals
+7,Dendrolagus spadix,Lowlands Tree Kangaroo,VU,mammals
+8,Desmana moschata,Russian Desman,EN,mammals
+9,Equus quagga,Plains Zebra,NT,mammals
+10,Eupleres goudotii,Eastern Falanouc,VU,mammals
+11,Galidictis fasciata,Broad-striped Vontsira,VU,mammals
+12,Giraffa camelopardalis,Giraffe,VU,mammals
+13,Gorilla beringei,Eastern Gorilla,CR,mammals
+14,Gymnobelideus leadbeateri,Leadbeater's Possum,CR,mammals
+15,Hipposideros hypophyllus,Kolar Leaf-nosed Bat,CR,mammals
+16,Leporillus conditor,Greater Stick-nest Rat,NT,mammals
+17,Melomys rubicola,Bramble Cay Melomys,EX,mammals
+18,Mesembriomys gouldii,Black-footed Tree-rat,VU,mammals
+19,Muntiacus atherodes,Bornean Yellow Muntjac,NT,mammals
+20,Muntiacus vuquangensis,Large-antlered Muntjac,CR,mammals
+21,Notomys cervinus,Fawn Hopping-mouse,NT,mammals
+22,Nyctalus lasiopterus,Giant Noctule,VU,mammals
+23,Onychogalea fraenata,Bridled Nailtail Wallaby,VU,mammals
+24,Ornithorhynchus anatinus,Platypus,NT,mammals
+25,Pantholops hodgsonii,Tibetan Antelope,NT,mammals
+26,Perameles gunnii,Eastern Barred Bandicoot,VU,mammals
+27,Petauroides volans,Greater Glider,VU,mammals
+28,Petaurus australis,Yellow-bellied Glider,NT,mammals
+29,Petrogale godmani,Godman's Rock Wallaby,NT,mammals
+30,Petrogale lateralis,Black-footed Rock Wallaby,VU,mammals
+31,Petrogale mareeba,Mareeba Rock Wallaby,NT,mammals
+32,Petrogale purpureicollis,Purple-necked Rock Wallaby,NT,mammals
+33,Phascolarctos cinereus,Koala,VU,mammals
+34,Pongo pygmaeus,Bornean Orangutan,CR,mammals
+35,Pteropus caniceps,North Moluccan Flying Fox,VU,mammals
+36,Pteropus livingstonii,Livingstone's Flying Fox,CR,mammals
+37,Thylamys fenestrae,NaN,NT,mammals
+38,Thylamys velutinus,Dwarf Fat-tailed Mouse Opossum,NT,mammals
+39,Charadrius sanctaehelenae,St Helena Plover,VU,birds
+40,Chloropsis sonnerati,Greater Green Leafbird,VU,birds
+41,Cyanoramphus forbesi,Chatham Parakeet,VU,birds
+42,Emberiza rustica,Rustic Bunting,VU,birds
+43,Garrulax bicolor,Black-and-white Laughingthrush,EN,birds
+44,Garrulax rufifrons,Rufous-fronted Laughingthrush,CR,birds
+45,Hydrobates leucorhous,Leach's Storm-petrel,VU,birds
+46,Icterus oberi,Montserrat Oriole,VU,birds
+47,Pycnonotus zeylanicus,Straw-headed Bulbul,EN,birds
+48,Pygoscelis adeliae,Adélie Penguin,LC,birds
+49,Pygoscelis papua,Gentoo Penguin,LC,birds
+50,Pyrrhula murina,Azores Bullfinch,VU,birds
+51,Sternula balaenarum,Damara Tern,VU,birds
+52,Terenura sicki,Orange-bellied Antwren,CR,birds
+53,Zosterops flavus,Javan White-eye,VU,birds
+54,Zosterops modestus,Seychelles White-eye,VU,birds
+55,Acanthochelys pallidipectoris,Chaco Side-necked Turtle,EN,reptiles
+56,Ameiva corvina,Sombrero Ameiva,CR,reptiles
+57,Chelonoidis abingdonii,Pinta Giant Tortoise,EX,reptiles
+58,Cyclanorbis elegans,Nubian Flapshell Turtle,CR,reptiles
+59,Cyclanorbis senegalensis,Senegal Flapshell Turtle,VU,reptiles
+60,Cycloderma frenatum,Zambezi Flapshell Turtle,EN,reptiles
+61,Erythrolamprus cursor,Lacépède's Ground Snake,CR(PE),reptiles
+62,Erythrolamprus ornatus,Ornate Ground Snake,CR,reptiles
+63,Geochelone elegans,Indian Star Tortoise,VU,reptiles
+64,Liolaemus dicktracyi,NaN,VU,reptiles
+65,Mesoclemmys hogei,Hoge's Side-necked Turtle,CR,reptiles
+66,Podocnemis lewyana,Magdalena River Turtle,CR,reptiles
+67,Arius festinus,NaN,CR,fishes
+68,Bedotia longianalis,Zona,EN,fishes
+69,Bedotia marojejy,NaN,EN,fishes
+70,Eusphyra blochii,Winghead Shark,EN,fishes
+71,Katria katria,Kataria,EN,fishes
+72,Marcusenius victoriae,Victoria Stonebasher,LC,fishes
+73,Pachypanchax omalonota,NaN,EN,fishes
+74,Paretroplus dambabe,NaN,CR,fishes
+75,Paretroplus gymnopreopercularis,NaN,CR,fishes
+76,Ptychochromis oligacanthus,NaN,EN,fishes
+77,Ptychochromoides betsileanus,Trondo Mainty,CR(PE),fishes
+78,Rheocles alaotrensis,Katrana,EN,fishes
+79,Rheocles derhami,NaN,CR,fishes
+80,Rhincodon typus,Whale Shark,EN,fishes
+81,Bellamya phthinotropis,NaN,CR,molluscs
+82,Ceratophallus concavus,NaN,CR,molluscs
+83,Ceratophallus crassus,NaN,EN,molluscs
+84,Cleopatra cridlandi,NaN,CR,molluscs
+85,Gabbiella barthi,NaN,CR,molluscs
+86,Agriocnemis palaeforma,Papyrus Wisp,VU,dragonflies & damselflies
+87,Neodythemis nyungwe,Nyungwe Junglewatcher,VU,dragonflies & damselflies
+88,Acrostira bellamyi,Gomera Stick Grasshopper,CR,dragonflies & damselflies
+89,Acrostira tamarani,Gran Canaria Stick Grasshopper,EN,dragonflies & damselflies
+90,Chrysochraon beybienkoi,Calabrian Gold Grasshopper,CR,dragonflies & damselflies
+91,Commidendrum robustum,Gumwood,CR,trees
+92,Degeneria vitiensis,NaN,LC,trees
+93,Lachanodes arborea,She Cabbage Tree,EW,trees
+94,Magnolia jardinensis,NaN,CR,trees
+95,Neuburgia alata,NaN,EN,trees
+96,Elaphoglossum nervosum,Veined Tongue-fern,CR,ferns
+97,Aloe elkerriana,NaN,LC,other flowering plants
+98,Aloe macleayi,NaN,LC,other flowering plants
+99,Brachycorythis disoides,NaN,VU,other flowering plants
+100,Cyanea eleeleensis,`oha Wai,EX,other flowering plants
+101,Hibiscadelphus woodii,NaN,EX,other flowering plants
+102,Melicope macropus,NaN,EX,other flowering plants
