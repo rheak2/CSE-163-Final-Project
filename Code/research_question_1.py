@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set()
-from utils import extinction_level_numerical, avg_tl_change_multiple_years, csv_processing, species_threat_level_data_processing, process_big_data
+from utils import csv_processing, species_threat_level_data_processing, process_big_data
 
 
 """
