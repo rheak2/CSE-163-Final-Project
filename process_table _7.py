@@ -89,6 +89,7 @@ def process_big_data() -> pd.DataFrame:
             for i in range(1, 40):
                 # read and create a dataframe for each pdf
                 hold_df = pd.DataFrame()
+                frames = []
                 try:
                     if yr == 2008 and i == 1:
                         curr_table = cm.read_pdf(filename,
@@ -107,7 +108,8 @@ def process_big_data() -> pd.DataFrame:
                                                  flavor='stream',
                                                  pages=str(i))
                         hold_df = curr_table[0].df
-                    fin_df = fin_df.append(hold_df, ignore_index=True)
+                    frames = [fin_df, hold_df]
+                    fin_df = pd.concat(frames, ignore_index=True)
                 except IndexError:
                     break
             # each individual pdf is processed differently by camelot
@@ -225,8 +227,9 @@ def process_big_data() -> pd.DataFrame:
                          'List (2016)', 'List (2017)', 'List (2018)',
                          'List (2019)', 'List (2020)', 'List (2021)',
                          'Location']].drop_duplicates()
-    final_df['Location'] = final_df['Location'].replace('USA',
-                                                        'United States' 
-                                                        'of America')
-    final_df['Location'] = final_df['Location'].replace('Algoa Bay', 'South Africa')
+    final_df['Location'] = final_df['Location'
+                                    ].replace('USA',
+                                              'United States of America')
+    final_df['Location'] = final_df['Location'].replace('Algoa Bay',
+                                                        'South Africa')
     return(final_df)

@@ -90,6 +90,7 @@ def process_big_data() -> pd.DataFrame:
             for i in range(1, 40):
                 # read and create a dataframe for each pdf
                 hold_df = pd.DataFrame()
+                frames = []
                 try:
                     if yr == 2008 and i == 1:
                         curr_table = cm.read_pdf(filename,
@@ -108,7 +109,8 @@ def process_big_data() -> pd.DataFrame:
                                                  flavor='stream',
                                                  pages=str(i))
                         hold_df = curr_table[0].df
-                    fin_df = fin_df.append(hold_df, ignore_index=True)
+                    frames = [fin_df, hold_df]
+                    fin_df = pd.concat(frames, ignore_index=True)
                 except IndexError:
                     break
             # each individual pdf is processed differently by camelot
@@ -229,7 +231,7 @@ def process_big_data() -> pd.DataFrame:
     final_df['Location'] = final_df['Location'
                                     ].replace('USA',
                                               'United States of America')
-    final_df['Location'] = final_df['Location'].replace('Algoa Bay', 
+    final_df['Location'] = final_df['Location'].replace('Algoa Bay',
                                                         'South Africa')
     return(final_df)
 
@@ -239,16 +241,19 @@ def csv_processing(df):
     # df = pd.read_csv(csv_filepath)
     # df = df.dropna()
     
-    # Create dataframe with numerical values for extinction threat level in given year range
-        # Create new dataframe including species name, class, average threat level
+    # Create dataframe with numerical values for extinction threat level in
+    # given year range
+    # Create new dataframe including species name, class, average threat level
     # mini_df = df[["Common name", "Class", "List (2007)", "List (2008)", "List (2009)"]]
     mini_df = df[["Common name", "Class", "List (2007)", "List (2008)",
                   "List (2009)", "List (2010)", "List (2011)",
                   "List (2012)", "List (2013)", "List (2014)", "List (2015)",
                   "List (2016)", "List (2017)", "List (2018)", "List (2019)",
                   "List (2020)", "List (2021)", "Location"]]
-    mini_df = mini_df.loc[mini_df['Class'].isin(["amphibians", "beetles", "birds"
-                                                 "fishes", "crustaceans", "invertebrates",
+    mini_df = mini_df.loc[mini_df['Class'].isin(["amphibians", "beetles",
+                                                 "birds", "fishes",
+                                                 "crustaceans",
+                                                 "invertebrates",
                                                  "mammals", "reptiles"])]
     for year in range(2007, 2022):
         numerical_exinction_category = extinction_level_numerical(str(year), mini_df)
