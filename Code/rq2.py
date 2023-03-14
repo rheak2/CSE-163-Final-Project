@@ -58,14 +58,19 @@ def scatter_plot(threat_data, conservation_data):
     # scatter_plot_df["Average Yearly Threat Level Change 2007-2021"] = threat_data["Average Yearly TL Change Over Time"]
     # scatter_plot_df["Conservation Efforts 2021"] = conservation_data["Num Index"]
     # scatter_plot_df = scatter_plot_df.dropna()
-    sns.relplot(data=scatter_plot_df, x="Average Yearly TL Change Over Time", y="Num Index", hue="Location")
-    plt.xlabel("Conservation Efforts 2021")
-    plt.ylabel("Average Yearly Threat Level Change 2007-2021")
-    plt.title("Conservation Efforts vs Threat Level for Species in 2021")
-    plt.savefig("Conservation vs threat level change scatterplot.png", bbox_inches="tight")
+    # sns.relplot(data=scatter_plot_df, x="Average Yearly TL Change Over Time", y="Num Index", hue="Location")
+    # plt.xlabel("Conservation Efforts 2021")
+    # plt.ylabel("Average Yearly Threat Level Change 2007-2021")
+    # plt.title("Conservation Efforts vs Threat Level for Species in 2021")
+    # plt.savefig("Conservation vs threat level change scatterplot.png", bbox_inches="tight")
+    sns.scatterplot(data=scatter_plot_df, x="Location", y="Num Index", hue="Average Yearly TL Change Over Time")
+    # sns.barplot(data=scatter_plot_df, x="Location", y="Average Yearly TL Change Over Time", hue="Letter Index")
+    plt.xlabel("Country")
+    plt.ylabel("Average Yearly TL Change Over Time")
+    plt.title("Average Yearly TL Change Over Time by Country, distinguished by Conservation Effort")
+    plt.savefig("Conservation vs threat level change barchart.png", bbox_inches="tight")
 
-
-if __name__ == "__main__":
+def do_question_2():
     conservation_data = process_conservation_data("Code/Conservation Data.txt")
     gdf = gpd.read_file("Code/countries.geo.json")
     df = process_big_data()
@@ -75,4 +80,7 @@ if __name__ == "__main__":
     conservation_rating_map(conservation_data, gdf)
     threat_level_map(threat_data, gdf)
     scatter_plot(threat_data, conservation_data)
+
+if __name__ == "__main__":
+    do_question_2()
 
