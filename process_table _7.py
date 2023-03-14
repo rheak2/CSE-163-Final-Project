@@ -233,5 +233,3 @@ def process_big_data() -> pd.DataFrame:
     final_df['Location'] = final_df['Location'].replace('Algoa Bay',
                                                         'South Africa')
     return(final_df)
-
-process_big_data()
