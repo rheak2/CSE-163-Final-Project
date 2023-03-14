@@ -216,7 +216,7 @@ def csv_processing(df):
                   "List (2020)", "List (2021)"]]
     mini_df = mini_df.loc[mini_df['Class'].isin(["amphibians", "beetles", "birds"
                                                  "fishes", "crustaceans", "invertebrates",
-                                                 "mammals", "reptiles"])]
+                                                 "mammals", "reptiles", "plants"])]
     for year in range(2007, 2022):
         numerical_exinction_category = extinction_level_numerical(str(year), mini_df)
         column_label = "List (" + str(year) + ")"
@@ -263,8 +263,8 @@ def tl_change_between_two_yrs(lower_year: int, upper_year: int, df: pd.DataFrame
     year_range_string = str(lower_year) + "-" + str(upper_year)
     lower_year_column = "List (" + str(lower_year) + ")"
     upper_year_column = "List (" + str(upper_year) + ")"
-    df["Species Threat Level Change " + year_range_string] = \
-        (df.loc[:, [upper_year_column]] - df.loc[:, [lower_year_column]])
+    df.loc[:, "Species Threat Level Change " + year_range_string] = \
+          (df.loc[:, upper_year_column] - df.loc[:, lower_year_column])
     return df
 
 
