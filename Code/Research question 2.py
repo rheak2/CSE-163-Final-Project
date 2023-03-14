@@ -71,6 +71,7 @@ if __name__ == "__main__":
     df = process_big_data()
     extinction_data = csv_processing(df)
     print(extinction_data)
+    conservation_rating_map(conservation_data)
     # threat_data = species_threat_level_data_processing(extinction_data)
     # print(threat_data)
     # conservation_rating_map(conservation_data, gdf)

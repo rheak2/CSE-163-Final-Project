@@ -18,8 +18,17 @@ def csv_to_df(file_path: str) -> pd.DataFrame:
     the DataFrame that is produced using the manipulate_data
     function.
     '''
-    book_1_df = utils.csv_processing(file_path)
-    test_tl_df = Research_Question_3.manipulate_data(book_1_df)
+    book1_df = pd.read_csv(file_path)
+    print(book1_df)
+    mini_df = book1_df[["Common name", "Class", "List (2007)", "List (2008)",
+                        "List (2009)"]]
+    
+    '''
+    mini_df = mini_df.loc[mini_df['Class'].isin(["amphibians", "beetles", "birds"
+                                                 "fishes", "crustaceans", "invertebrates",
+                                                 "mammals", "reptiles", "plants"])]
+    '''
+    test_tl_df = Research_Question_3.manipulate_data(mini_df)
     return test_tl_df
 
 
@@ -35,12 +44,12 @@ def test_manipulate_data() -> None:
     actual_num_rows = len(species_tl_df)
     print(expected_num_rows, actual_num_rows)
     # utils.assert_equals(expected_num_rows, actual_num_rows)
-    expected_num_cols = 10
+    expected_num_cols = 8
     actual_num_cols = len(species_tl_df.columns)
-    print(expected_num_cols, actual_num_cols)
+    print(expected_num_cols, actual_num_cols, species_tl_df.columns)
     # utils.assert_equals(expected_num_cols, actual_num_cols)
     expected_avg_tl = -0.333
-    actual_avg_tl = species_tl_df.loc[0, 'Average TL Change Over Time']
+    actual_avg_tl = species_tl_df.loc[0, 'Average Yearly TL Change Over Time']
     print(expected_avg_tl, actual_avg_tl)
     # utils.assert_equals(expected_avg_tl, actual_avg_tl)
 
