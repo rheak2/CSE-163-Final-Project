@@ -236,16 +236,11 @@ def csv_processing(df):
     
     # Create dataframe with numerical values for extinction threat level in given year range
         # Create new dataframe including species name, class, average threat level
-    # mini_df = df[["Common name", "Class", "List (2007)", "List (2008)", "List (2009)"]]
-    mini_df = df[["Common name", "Class", "List (2007)", "List (2008)",
-                  "List (2009)", "List (2010)", "List (2011)",
-                  "List (2012)", "List (2013)", "List (2014)", "List (2015)",
-                  "List (2016)", "List (2017)", "List (2018)", "List (2019)",
-                  "List (2020)", "List (2021)"]]
+    mini_df = df[["Common name", "Class", "List (2007)", "List (2008)", "List (2009)"]]
     mini_df = mini_df.loc[mini_df['Class'].isin(["amphibians", "beetles", "birds"
                                                  "fishes", "crustaceans", "invertebrates",
                                                  "mammals", "reptiles"])]
-    for year in range(2007, 2022):
+    for year in range(2007, 2010):
         numerical_exinction_category = extinction_level_numerical(str(year), mini_df)
         column_label = "List (" + str(year) + ")"
         # Replace string extinction threat level with the numerical value
@@ -256,7 +251,7 @@ def csv_processing(df):
 def species_threat_level_data_processing(df):
     # Find average threat level change by year for each species
         
-    species_threat_level_data = avg_tl_change_multiple_years(2007, 2021, df)
+    species_threat_level_data = avg_tl_change_multiple_years(2007, 2009, df)
     return species_threat_level_data
     
 
