@@ -22,10 +22,10 @@ Change all year ranges to cover all data
 
 def main():
     # Will probably not have to dropna once data is processed
-    df = pd.read_csv("Book1.csv")
+    df = pd.read_csv("Code/Book1.csv")
     df = df.dropna()
     
-    mini_df = csv_processing("Code/Book1.csv")
+    mini_df = csv_processing(df)
     species_threat_level_data = species_threat_level_data_processing(mini_df)
 
     # Find species with top 5 average threat level change 2007-2021
