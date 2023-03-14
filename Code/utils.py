@@ -216,7 +216,7 @@ def csv_processing(df):
                   "List (2020)", "List (2021)"]]
     mini_df = mini_df.loc[mini_df['Class'].isin(["amphibians", "beetles", "birds"
                                                  "fishes", "crustaceans", "invertebrates",
-                                                 "mammals", "reptiles", "plants"])]
+                                                 "mammals", "reptiles"])]
     for year in range(2007, 2022):
         numerical_exinction_category = extinction_level_numerical(str(year), mini_df)
         column_label = "List (" + str(year) + ")"
