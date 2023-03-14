@@ -1,3 +1,8 @@
+"""
+This file runs the main functions from rq1, rq2
+and rq3.
+"""
+
 from rq1 import do_question_1
 from rq2 import do_question_2
 from rq3 import do_question_3
