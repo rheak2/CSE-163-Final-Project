@@ -15,7 +15,7 @@ Colombia,D
 Mexico,C
 Peru,D
 Uruguay,D
-USA,D
+United States of America,D
 Venezuela,E
 Azerbaijan,G
 China,E

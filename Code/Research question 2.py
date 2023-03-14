@@ -44,7 +44,7 @@ def threat_level_map(threat_data, gdf):
     # Plot a map of the average extinction threat level change around the world
     fig, ax = plt.subplots(nrows=1, figsize=(15, 7))
     gdf.plot(color="#EEEEEE", ax=ax)
-    location_threat_geometry.plot(column="Average TL Change Over Time", ax=ax, legend=True)
+    location_threat_geometry.plot(column="Average Yearly TL Change Over Time", ax=ax, legend=True)
     plt.title("Map of Extinction Threat Level Change 2007-2021")
     plt.savefig("Threat level change map.png")  
 
@@ -56,7 +56,7 @@ def scatter_plot(threat_data):
     # sns.set_style("ticks")
 
     scatter_plot_df = pd.DataFrame()
-    scatter_plot_df["Average Yearly Threat Level Change 2007-2021"] = threat_data["Average TL Change Over Time"]
+    scatter_plot_df["Average Yearly Threat Level Change 2007-2021"] = threat_data["Average Yearly TL Change Over Time"]
     scatter_plot_df["Conservation Efforts 2021"] = conservation_data["Num Index"]
     scatter_plot_df = scatter_plot_df.dropna()
     sns.relplot(data=scatter_plot_df, x="Conservation Efforts 2021", y="Average Yearly Threat Level Change 2007-2021")
@@ -70,7 +70,6 @@ if __name__ == "__main__":
     gdf = gpd.read_file("Code/countries.geo.json")
     df = process_big_data()
     extinction_data = csv_processing(df)
-    print(extinction_data.columns)
     threat_data = species_threat_level_data_processing(extinction_data)
     # print(threat_data)
     conservation_rating_map(conservation_data, gdf)
