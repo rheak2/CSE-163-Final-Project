@@ -1,5 +1,4 @@
 import pandas as pd
-import geopandas as gpd
 import camelot as cm
 import os
 import numpy as np
@@ -244,7 +243,6 @@ def csv_processing(df):
     rating in 2007-2021. It also contains a numerical conversion of the
     extinction threat level.
     """
-    
     # Create dataframe with numerical values for extinction threat level in
     # given year range
     mini_df = df[["Common name", "Class", "List (2007)", "List (2008)",
@@ -258,12 +256,13 @@ def csv_processing(df):
                                                  "invertebrates",
                                                  "mammals", "reptiles"])]
     for year in range(2007, 2022):
-        numerical_exinction_category = extinction_level_numerical(str(year), mini_df)
+        numerical_exinction_category = extinction_level_numerical(str(year),
+                                                                  mini_df)
         column_label = "List (" + str(year) + ")"
         # Replace string extinction threat level with the numerical value
         mini_df.loc[:, column_label] = numerical_exinction_category
-    
     return mini_df
+
 
 def species_threat_level_data_processing(df):
     """
@@ -271,10 +270,8 @@ def species_threat_level_data_processing(df):
     the average threat level change between 2007 and 2021.
     """
     # Find average threat level change by year for each species
-        
     species_threat_level_data = avg_tl_change_multiple_years(2007, 2021, df)
     return species_threat_level_data
-    
 
 
 def extinction_level_numerical(year: str, df: pd.DataFrame) -> pd.DataFrame:
@@ -287,8 +284,9 @@ def extinction_level_numerical(year: str, df: pd.DataFrame) -> pd.DataFrame:
     """
     # Change extinction category from string to numeric value
     # Create dictionary mapping each extinction category to its numeric value
-    extinction_category_dict = {"NR": 0, "LC": 1, "NT": 2, "LR/cd": 3, "VU": 4, "EN": 5, "CR": 6, "EW": 7, "EX": 8,\
-                                    "CR (PE)": 6, "CR(PE)": 6, "CR(PEW)": 6}
+    extinction_category_dict = {"NR": 0, "LC": 1, "NT": 2, "LR/cd": 3, "VU": 4,
+                                "EN": 5, "CR": 6, "EW": 7, "EX": 8,
+                                "CR (PE)": 6, "CR(PE)": 6, "CR(PEW)": 6}
     red_list_category = "List (" + year + ")"
     # Create list of all numerical values of extinction level in the year
     category_in_year = df[red_list_category]
@@ -298,71 +296,80 @@ def extinction_level_numerical(year: str, df: pd.DataFrame) -> pd.DataFrame:
     return numerical_list
 
 
-def tl_change_between_two_yrs(lower_year: int, upper_year: int, df: pd.DataFrame):
+def tl_change_between_two_yrs(lower_year: int, upper_year: int,
+                              df: pd.DataFrame):
     """
-    This method takes as argument any two consecutive years and a dataframe and adds a column
-    to that dataframe showing the change in extinction threat level between those two years for
-    all the species in the dataframe.
+    This method takes as argument any two consecutive years and a dataframe
+    and adds a column to that dataframe showing the change in extinction threat
+    level between those two years for all the species in the dataframe.
     """
     year_range_string = str(lower_year) + "-" + str(upper_year)
     lower_year_column = "List (" + str(lower_year) + ")"
     upper_year_column = "List (" + str(upper_year) + ")"
     df.loc[:, "Species Threat Level Change " + year_range_string] = \
-          (df.loc[:, upper_year_column] - df.loc[:, lower_year_column])
+        (df.loc[:, upper_year_column] - df.loc[:, lower_year_column])
     return df
 
 
-def tl_change_between_multiple_yrs(lower_year: int, upper_year: int, df: pd.DataFrame):
+def tl_change_between_multiple_yrs(lower_year: int, upper_year: int,
+                                   df: pd.DataFrame):
     """
-    This method takes as argument any range of years and a dataframe and adds columns
-    to that dataframe showing the change in extinction threat level between consecutive years for
-    all the species in the dataframe.
+    This method takes as argument any range of years and a dataframe and adds
+    columns to that dataframe showing the change in extinction threat level
+    between consecutive years for all the species in the dataframe
     """
     for year in range(lower_year, upper_year):
         df = tl_change_between_two_yrs(year, year + 1, df)
     return df
 
 
-def avg_tl_change_multiple_years(lower_year: int, upper_year: int, data:pd.DataFrame) -> pd.DataFrame:
+def avg_tl_change_multiple_years(lower_year: int, upper_year: int,
+                                 data: pd.DataFrame) -> pd.DataFrame:
     """
-    This method takes as argument any range of years and a dataframe and adds columns
-    to that dataframe showing the average yearly change in extinction threat level over the
-    year range for all species.
+    This method takes as argument any range of years and a dataframe and
+    adds columns to that dataframe showing the average yearly change in
+    extinction threat level over the year range for all species.
     """
     df = tl_change_between_multiple_yrs(lower_year, upper_year, data)
     year_range_length = upper_year - lower_year
-    # Find mean of the threat level changes between all years and add this as a column
-    # to the dataframe
-    data['Average Yearly TL Change Over Time'] = df.iloc[:, year_range_length + 3:].mean(axis=1)
+    # Find mean of the threat level changes between all years and add this as
+    # a column to the dataframe
+    data['Average Yearly TL Change Over Time'
+         ] = df.iloc[:, year_range_length + 3:].mean(axis=1)
     return data
 
 
 def process_conservation_data(file_path: str) -> pd.DataFrame:
-    '''
+    """
     Given the path of the file as a string, returns a DataFrame
     storing each country in the World Animal Protection Index
     dataset, it's (letter) ranking, and a numerical index from
     1 to 7, with 1 corresponding to ranking 'A' and 7 to 'G'.
-    '''
-    
-    # Create an empty DataFrame with the correct columns and a dictionary mapping
-    # letter indices with numerical ones
-    conservation_df: pd.DataFrame = pd.DataFrame(columns=('Country', 'Letter Index', 'Num Index'))
-    letter_num_index: dict[str, int] = {'A': 1, 'B': 2, 'C': 3, 'D': 4, 'E': 5, 'F': 6, 'G': 7}
+    """
+    # Create an empty DataFrame with the correct columns and a dictionary
+    # mapping letter indices with numerical ones
+    conservation_df: pd.DataFrame = pd.DataFrame(columns=('Country',
+                                                          'Letter Index',
+                                                          'Num Index'))
+    letter_num_index: dict[str, int] = {'A': 1, 'B': 2, 'C': 3, 'D': 4, 'E': 5,
+                                        'F': 6, 'G': 7}
 
     # Open the file and store each line in a list
     with open(file_path) as f:
         lines: list[str] = f.readlines()
-        
-        # For each line, split at the comma and store the country (first element in the
-        # corresponding list), the letter index (the second element), and the numerical index
-        # (from mapping in the letter_num_index dict) in three separate variables
+        # For each line, split at the comma and store the country
+        # (first element in the corresponding list),
+        # the letter index (the second element),
+        # and the numerical index (from mapping in the letter_num_index dict)
+        # in three separate variables
         for line_index in range(len(lines)):
             words: list[str] = lines[line_index].split(',')
             letter_index: str = words[1].strip()
             num_index: int = letter_num_index[letter_index]
-            
             # Append all three values as a row in the conservation_df DataFrame
-            conservation_df = conservation_df.append({'Country': words[0], 'Letter Index': letter_index, 'Num Index' : num_index}, ignore_index=True)
-
+            conservation_df = conservation_df.append({'Country': words[0],
+                                                      'Letter Index':
+                                                      letter_index,
+                                                      'Num Index': num_index},
+                                                     ignore_index=True)
     return conservation_df
