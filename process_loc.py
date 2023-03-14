@@ -1,7 +1,8 @@
 """
-This file processes the location data.
-Returns a csv file that can be accessed by other files
-In separate file as this takes 3 hours to run
+This file processes the location data in the pdf
+msw3-all.pdf
+Adds a csv file that can be accessed by other files
+in separate file as this takes 3 hours to run
 """
 
 import pandas as pd
