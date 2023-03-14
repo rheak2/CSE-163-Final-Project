@@ -13,7 +13,7 @@ Change all year ranges to cover all data
 """
 
 
-def main():
+def do_question_1():
     df = process_big_data()
     mini_df = csv_processing(df)
     species_threat_level_data = species_threat_level_data_processing(mini_df)
@@ -44,4 +44,4 @@ def main():
 
 
 if __name__ == "__main__":
-   main()
+   do_question_1()
