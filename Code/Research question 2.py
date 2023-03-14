@@ -39,7 +39,6 @@ def threat_level_map(threat_data, gdf):
     threat_data = threat_data[["Common name", "Average Yearly TL Change Over Time", "Location"]]
     print(threat_data)
     location_threat_geometry = threat_data.merge(gdf, left_on="Location", right_on="name", how="inner")
-    print(location_threat_geometry)
     location_threat_geometry = gpd.GeoDataFrame(location_threat_geometry, geometry="geometry")
     # Plot a map of the average extinction threat level change around the world
     fig, ax = plt.subplots(nrows=1, figsize=(15, 7))
@@ -71,7 +70,7 @@ if __name__ == "__main__":
     df = process_big_data()
     extinction_data = csv_processing(df)
     threat_data = species_threat_level_data_processing(extinction_data)
-    # print(threat_data)
+    print(threat_data.loc[:, "Location"])
     conservation_rating_map(conservation_data, gdf)
     threat_level_map(threat_data, gdf)
     # scatter_plot(threat_data)
