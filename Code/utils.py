@@ -291,8 +291,8 @@ def tl_change_between_two_yrs(lower_year: int, upper_year: int, df: pd.DataFrame
     year_range_string = str(lower_year) + "-" + str(upper_year)
     lower_year_column = "List (" + str(lower_year) + ")"
     upper_year_column = "List (" + str(upper_year) + ")"
-    df.loc[:, "Species Threat Level Change " + year_range_string] = \
-          (df.loc[:, upper_year_column] - df.loc[:, lower_year_column])
+    df.loc[:, ["Species Threat Level Change " + year_range_string]] = \
+          (df.loc[:, [upper_year_column]] - df.loc[:, [lower_year_column]])
     return df
 
 
