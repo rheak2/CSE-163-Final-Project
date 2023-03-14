@@ -237,6 +237,15 @@ def process_big_data() -> pd.DataFrame:
 
 
 def csv_processing(df):
+
+    """
+    This method takes in a dataframe and returns a smaller dataframe
+    including only the animal classes we are interested in. Additionally
+    the smaller dataframe only contains columns for name, class, extinction
+    rating in 2007-2021. It also contains a numerical conversion of the
+    extinction threat level.
+    """
+    
     # Will probably not have to dropna once data is processed
     # df = pd.read_csv(csv_filepath)
     # df = df.dropna()
@@ -264,6 +273,10 @@ def csv_processing(df):
     return mini_df
 
 def species_threat_level_data_processing(df):
+    """
+    This method takes in a dataframe and returns a dataframe showing
+    the average threat level change between 2007 and 2021.
+    """
     # Find average threat level change by year for each species
         
     species_threat_level_data = avg_tl_change_multiple_years(2007, 2021, df)
