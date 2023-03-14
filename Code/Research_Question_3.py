@@ -5,7 +5,6 @@ docstring
 import utils
 import pandas as pd
 from sklearn.tree import DecisionTreeRegressor
-from process_table_7.py import process_big_data
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
 import seaborn as sns
@@ -13,9 +12,10 @@ import matplotlib.pyplot as plt
 
 sns.set()
 
-def manipulate_data(data:pd.DataFrame) -> pd.DataFrame:
-    data = utils.extinction_level_numerical(data)
-    data = utils.tl_change_between_multiple_yrs(2007, 2021, data)
+def manipulate_data(data: pd.DataFrame) -> pd.DataFrame:
+    for year in range(2007, 2022):
+        data = utils.extinction_level_numerical(str(year), data)
+    data = utils.avg_tl_change_multiple_yrs(2007, 2021, data)
     return data
 
 
@@ -76,7 +76,8 @@ def plot_predictions(data_df: pd.DataFrame, graph_title: str, img_title: str) ->
 
 
 def do_question_3():
-    df = process_big_data('Table_7_Loc_Data')
+    df = utils.process_big_data()
     df = manipulate_data(df)
     df_with_predictions = train_and_test_model(df)
     plot_change_over_time(df_with_predictions)
+
