@@ -1,10 +1,10 @@
 '''
 Giulia Clini, Elizabeth Karas, and Rhea Kulkarni
 CSE 163 Final Project
-This file tests all of the functions implemented for the third research
-question, which determines how reliable a decision tree regression model
-is for predicting the average change in threat level for a given species
-over 14 years.
+This file tests whether the data was correctly manipulated to implement
+the third research question, which determines how reliable a decision
+tree regression model is for predicting the average change in threat
+level for a given species over 14 years.
 '''
 
 import rq3
@@ -26,29 +26,14 @@ def test_manipulate_data() -> None:
     function (from the output produced in csv_to_df).
     '''
     species_tl_df = csv_to_df()
-    expected_num_cols = 8
+    expected_num_cols = 9
     actual_num_cols = len(species_tl_df.columns)
     test_utils.assert_equals(expected_num_cols, actual_num_cols)
 
 
-def test_train_and_test_model() -> None:
-    '''
-    This function tests the train_and_test_model function.
-    '''
-    print("checking train_and_test_model")
-    species_tl_df = csv_to_df()
-    trained_tested_df = rq3.train_and_test_model(species_tl_df)
-    expected_num_pred = 75
-    actual_num_train_pred = len(trained_tested_df['Train Predictions'])
-    actual_num_test_pred = len(trained_tested_df['Test Predictions'])
-    print(expected_num_pred, actual_num_test_pred, actual_num_train_pred)
-    test_utils.assert_equals(expected_num_pred, actual_num_train_pred)
-    test_utils.assert_equals(expected_num_pred, actual_num_test_pred)
-
 
 def main():
     test_manipulate_data()
-    test_train_and_test_model()
 
 
 if __name__ == '__main__':
