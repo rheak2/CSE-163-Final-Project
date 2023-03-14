@@ -1,3 +1,12 @@
+"""
+Giulia Clini, Elizabeth Karas, and Rhea Kulkarni
+CSE 163 Final Project
+This file runs tests for research question 1. It is
+essentially the same code as the actual rq1 file,
+but it is edited to only go over a smaller year range
+and a smaller dataset.
+"""
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -5,12 +14,6 @@ sns.set()
 from test_utils import csv_processing, species_threat_level_data_processing
 
 
-"""
-List of variables/strings that need to be changed when data processing complete:
-
-2007-2021 csv filename --> filepath for processed extinction data
-Change all year ranges to cover all data
-"""
 
 
 def main():

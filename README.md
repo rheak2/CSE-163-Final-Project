@@ -17,4 +17,3 @@ Step 2: Running python program
     the process_big_data() function will sometimes result in warnings. These warnings are due to Camelot reading whitespace on the pdf pages and do not result in any data loss. These are the only warnings you should receive if everything is installed correctly.
 
     Running the main.py file will run the code to produce the results for each of the research questions. The files rq1.py, rq2.py, and rq3.py detail the code that will run when main.py runs. The folder also includes the testing files for each question.
-    # add in statement about warnings that you receive

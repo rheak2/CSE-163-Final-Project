@@ -1,3 +1,13 @@
+"""
+Giulia Clini, Elizabeth Karas, and Rhea Kulkarni
+CSE 163 Final Project
+This file contains all the functions that are
+needed for the research question files. It's
+purpose is to avoid redundancy within certain functions
+It contains data processing as well as data frame
+formatting methods
+"""
+
 import pandas as pd
 import camelot as cm
 import os
