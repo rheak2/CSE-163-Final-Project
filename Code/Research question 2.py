@@ -36,7 +36,7 @@ def threat_level_map(threat_data, gdf):
  
 
     # ADD LOCATION TO THIS DF ONCE FULL DATASET AVAILABLE
-    threat_data = threat_data[["Common name", "Average TL Change Over Time"]]
+    threat_data = threat_data[["Common name", "Average Yearly TL Change Over Time", "Location"]]
     print(threat_data)
     location_threat_geometry = threat_data.merge(gdf, left_on="Location", right_on="name", how="inner")
     print(location_threat_geometry)
@@ -70,11 +70,10 @@ if __name__ == "__main__":
     gdf = gpd.read_file("Code/countries.geo.json")
     df = process_big_data()
     extinction_data = csv_processing(df)
-    print(extinction_data)
-    conservation_rating_map(conservation_data)
-    # threat_data = species_threat_level_data_processing(extinction_data)
+    print(extinction_data.columns)
+    threat_data = species_threat_level_data_processing(extinction_data)
     # print(threat_data)
-    # conservation_rating_map(conservation_data, gdf)
-    # # threat_level_map(threat_data, gdf)
+    conservation_rating_map(conservation_data, gdf)
+    threat_level_map(threat_data, gdf)
     # scatter_plot(threat_data)
 
