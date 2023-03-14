@@ -1,3 +1,13 @@
+"""
+Giulia Clini, Elizabeth Karas, and Rhea Kulkarni
+CSE 163 Final Project
+This file contains all the functions that are
+needed for the testing files. It is essentially
+the same as utils.py, except that the year ranges
+are shortened so that the test files can run over
+smaller dataframes.
+"""
+
 import pandas as pd
 import numpy as np
 import math
